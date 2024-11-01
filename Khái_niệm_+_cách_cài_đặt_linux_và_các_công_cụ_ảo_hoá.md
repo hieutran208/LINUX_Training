@@ -15,7 +15,7 @@
 - Chọn Hệ Điều Hành, nhập tên cho máy ảo và chọn vị trí lưu trữ máy ảo (thư mục nơi máy ảo sẽ được lưu).
 - Cấu Hình Bộ Nhớ: Chọn lượng RAM mà máy ảo sẽ sử dụng (Tối thiểu là 512 MB, nhưng 1 GB hoặc nhiều hơn là lý tưởng)
 - Cấu Hình Đĩa Cứng Ảo: Chọn "Create a new virtual disk", sau đó chọn "Allocate all disk space now" để phân bổ toàn bộ dung lượng đĩa hoặc "Split virtual disk into multiple files" nếu muốn chia dung lượng đĩa để tiết kiệm không gian bộ nhớ. Chọn kích thước đĩa cứng (nên có ít nhất 10 GB). Nhấn "Next" và sau đó nhấn "Finish" để tạo máy ảo.
-- Khởi chạy Máy Ảo: Chọn máy ảo mới tạo để khởi động từ file ISO. Khi màn hình cài đặt của Ubuntu xuất hiện, thiết lập các tiêu chí: cấu hình mạng, thông tin người dùng,...để hoàn tất cài đặt. Sau đó khời động lại để Urbuntu bắt đầu được khởi chạy
+- Khởi chạy Máy Ảo: Chọn máy ảo mới tạo để khởi động từ file ISO. Khi màn hình cài đặt của Ubuntu xuất hiện, thiết lập các tiêu chí: cấu hình mạng, thông tin người dùng,...rồi chờ Urbuntu hoàn tất cài đặt. Sau đó tiến hành restart để Urbuntu bắt đầu được khởi chạy
 
 *Cách cài đặt Urbuntu bản Desktop về máy thực*: Linux bản Desktop được thiết kế để sử dụng trên máy tính cá nhân, phục vụ nhu cầu sử dụng hàng ngày của người dùng như lướt web, văn phòng, đồ họa, và giải trí.
 - Tải xuống file ISO của Ubuntu Desktop từ trang chính thức: https://ubuntu.com/download/desktop
