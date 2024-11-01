@@ -8,7 +8,7 @@
 - Truy cập trang web của VMware và tải xuống phiên bản mới nhất của VMware Workstation Player.
 - Chạy tệp cài đặt và làm theo các bước trên màn hình để hoàn tất cài đặt
 
-*Cách thiết lập máy ảo Urbuntu bản Server trên VMWare*: Linux bản Server được thiết kế để chạy trên máy chủ, được tối ưu hóa để cho hiệu suất, bảo mật và khả năng phục vụ nhiều người dùng cùng lúc
+*Cách thiết lập máy ảo Urbuntu bản Server trên VMWare (tương tự với bản Desktop trên VMWare)*: Linux bản Server được thiết kế để chạy trên máy chủ, được tối ưu hóa để cho hiệu suất, bảo mật và khả năng phục vụ nhiều người dùng cùng lúc
 - Tải xuống file ISO của Ubuntu Server từ trang chính thức: https://ubuntu.com/download/server
 - Khởi tạo máy ảo: Mở VMware Workstation Player và nhấn vào "Create a New Virtual Machine" để tạo máy ảo mới.
 - Chọn File ISO: chọn "Installer disc image file (iso)", sau đó nhấn vào "Browse" và chọn file ISO của Ubuntu Server vừa tải về.
