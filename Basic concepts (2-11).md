@@ -1,6 +1,9 @@
 **Khái niệm Linux và các Distro Linux**
+
 *Linux* là một hệ điều hành mã nguồn mở, nghĩa là người dùng có thể tuỳ chỉnh hệ điều hành cho phù hợp với nhu cầu sử dụng. Linux nổi tiếng với tính ổn định, bảo mật và khả năng tùy biến cao. So với Windows hay MacOS, HĐH Linux có phần khó thao tác với người dùng thông thường do sử dụng giao diện dòng lệnh. Vì vậy, Linux chủ yếu được sử dụng trong các môi trường như: máy chủ, máy trạm hay các hệ thống phát triển phần mềm.
-*Distro Linux* là các phiên bản của HĐH Linux. Mỗi distro có cách cài đặt, quản lý gói và giao diện riêng để hướng tới một nhóm đối tượng có nhu cầu khác nhau. Có một số distro phổ biến như: Urbuntu (dễ sử dụng, phổ biến cho người mới bắt đầu và các máy tính để bàn); CentOS (dựa trên Red Hat Enterprise Linux, thường được sử dụng cho các máy chủ); Fedora ( tích hợp các công nghệ mới nhất và phù hợp cho người yêu thích thử nghiệm);....Các distro linux được chia thành 4 nhóm chính :
+
+*Distro Linux* là các phiên bản của HĐH Linux. Mỗi distro có cách cài đặt, quản lý gói và giao diện riêng để hướng tới một nhóm đối tượng có nhu cầu khác nhau. Có một số distro phổ biến như: Urbuntu (dễ sử dụng, phổ biến cho người mới bắt đầu và các máy tính để bàn); CentOS (dựa trên Red Hat Enterprise Linux, thường được sử dụng cho các máy chủ); Fedora ( tích hợp các công nghệ mới nhất và phù hợp cho người yêu thích thử nghiệm);....Các distro linux được chia thành 4 nhóm chính:
+
 - Nhóm 1: Arch, Gentoo và Slackware
 Các các bản distro này nhắm vào người dùng am hiểu Linux. Do đó, phần lớn các phương thức xây dựng, cũng như cấu hình của hệ thống được thực hiện qua dòng lệnh.
 - Nhóm 2: Debian, Fedora
