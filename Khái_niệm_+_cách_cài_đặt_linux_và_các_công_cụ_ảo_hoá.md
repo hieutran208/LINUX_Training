@@ -3,9 +3,11 @@
 - Distro Linux là các phiên bản của hệ điều hành Linux. Mỗi distro có thể có cách cài đặt, quản lý gói và giao diện riêng để hướng tới một nhóm đối tượng với nhu cầu sử dụng khác nhau. Có một số distro phổ biến như: Urbuntu (dễ sử dụng, phổ biến cho người mới bắt đầu và các máy tính để bàn); CentOS (dựa trên Red Hat Enterprise Linux, thường được sử dụng cho các máy chủ); Fedora ( tích hợp các công nghệ mới nhất và phù hợp cho người  yêu thích thử nghiệm);....
 
 **Cài đặt các công cụ ảo hóa trên Windows Desktop và thiết lập máy ảo Urbuntu (lấy ví dụ với VMWare)**
+
 *Cách cài đặt máy ảo VMWare*
 Bước 1: Truy cập trang web của VMware và tải xuống phiên bản mới nhất của VMware Workstation Player.
 Bước 2: Chạy tệp cài đặt và làm theo các bước trên màn hình để hoàn tất cài đặt
+
 *Cách thiết lập máy ảo trên VMWare* 
 - Khởi tạo máy ảo: Mở VMware Workstation Player và nhấn vào "Create a New Virtual Machine" để tạo máy ảo mới. Sau đó làm theo các bước sau:
 - 
