@@ -9,7 +9,7 @@
 - Nhóm 3: Centos, RHEL, SUSE EL: nhắm vào thị trường máy chủ, doanh nghiệp, cơ quan… Vì chúng có sự ổn định cao, thời gian ra phiên bản mới lâu, khoảng 3 – 5 năm tùy distrolinux. Ngoài ra, còn có dịch vụ hỗ trợ thương mại cho công ty, hướng dẫn sử dụng sản phẩm.
 - Nhóm 4: Ubuntu, Open SUSE, Linux Mint: người mới bắt đầu dùng Linux và người dùng cuối. Đặc tính của chúng là phát triển trong thời gian ngắn, ứng dụng các công nghệ mới liên tục, nhiều công cụ đồ họa để thiết kế và cấu hình hệ thống theo nhu cầu sử dụng. Nhóm này cũng rất thân thiện với người dùng mới làm quen Linux.
 
-**Cài đặt công cụ ảo hóa (VMWare) và cài đặt Urbuntu**
+**Cài đặt công cụ ảo hóa (VMWare) và Urbuntu**
 
 *Cách cài đặt máy ảo VMWare trên Window Desktop*
 - Truy cập trang web của VMware và tải xuống phiên bản mới nhất của VMware Workstation Player.
