@@ -9,8 +9,10 @@
 - Chạy tệp cài đặt và làm theo các bước trên màn hình để hoàn tất cài đặt
 
 *Cách cài đặt máy ảo VMWare trên Urbuntu*
-- Truy cập trang web của VMware và tải xuống phiên bản mới nhất của VMware Workstation Player.
-- Chạy tệp cài đặt và làm theo các bước trên màn hình để hoàn tất cài đặt
+- Cập nhật gói: sudo apt update
+- Tải tệp cài đặt VMWare: wget -O VMware-Player.bundle "https://www.vmware.com/go/getplayer-linux"
+- Cấp quyền thực thi cho tệp cài đặt: chmod +x VMware-Player.bundle
+- Cài đặt VMware Workstation Player: sudo ./VMware-Player.bundle
 
 *Cách cài đặt và thiết lập máy ảo Urbuntu bản Server trên VMWare (tương tự với bản Desktop trên VMWare)*: Linux bản Server được thiết kế để chạy trên máy chủ, được tối ưu hóa để cho hiệu suất, bảo mật và khả năng phục vụ nhiều người dùng cùng lúc
 - Tải xuống file ISO của Ubuntu Server từ trang chính thức: https://ubuntu.com/download/server
