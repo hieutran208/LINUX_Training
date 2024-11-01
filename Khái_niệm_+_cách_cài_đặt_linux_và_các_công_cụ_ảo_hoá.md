@@ -2,7 +2,7 @@
 - Linux là một hệ điều hành mã nguồn mở, nghĩa là người dùng có thể tuỳ chỉnh hệ điều hành cho phù hợp với nhu cầu sử dụng. Linux nổi tiếng với tính ổn định, bảo mật và khả năng tùy biến cao. So với Windows hay MacOS, HĐH Linux có phần khó thao tác với người dùng thông thường do sử dụng giao diện dòng lệnh. Vì vậy, Linux chủ yếu được sử dụng trong các môi trường như: máy chủ, máy trạm hay các hệ thống phát triển phần mềm.
 - Distro Linux là các phiên bản của hệ điều hành Linux. Mỗi distro có thể có cách cài đặt, quản lý gói và giao diện riêng để hướng tới một nhóm đối tượng với nhu cầu sử dụng khác nhau. Có một số distro phổ biến như: Urbuntu (dễ sử dụng, phổ biến cho người mới bắt đầu và các máy tính để bàn); CentOS (dựa trên Red Hat Enterprise Linux, thường được sử dụng cho các máy chủ); Fedora ( tích hợp các công nghệ mới nhất và phù hợp cho người yêu thích thử nghiệm);....
 
-**Cài đặt các công cụ ảo hóa trên Windows Desktop và thiết lập máy ảo Urbuntu (lấy ví dụ với VMWare)**
+**Cài đặt công cụ ảo hóa trên Windows Desktop (lấy ví dụ với VMWare) và thiết lập máy ảo Urbuntu**
 
 *Cách cài đặt máy ảo VMWare*
 - Truy cập trang web của VMware và tải xuống phiên bản mới nhất của VMware Workstation Player.
