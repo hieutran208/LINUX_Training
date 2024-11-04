@@ -38,3 +38,40 @@ VÍ DỤ: cd /home/trantrunghieu/Documents -> Di chuyển đến thư mục "Doc
 
 *3. Tra cứu hướng dẫn/options của lệnh: man [tên lệnh]*
 - VÍ DỤ: man ls -> Hiển thị hướng dẫn sử dụng và các options chi tiết dành cho lệnh "ls"
+
+**Các loại stream trong Linux**
+
+*Streams là các luồng dữ liệu đóng vai trò chính trong việc truyền tải thông tin giữa người dùng. Trong Linux, Standard Input (stdin), Standard Output (stdout) và Standard Error (stderr) là ba luồng (streams) chính để giao tiếp giữa người dùng và hệ thống, được sử dụng rộng rãi trong việc quản lý đầu vào, đầu ra, và xử lý lỗi khi thực thi các lệnh.*
+
+1. Standard Input (stdin)
+   
+Mã đại diện: 0
+
+Mục đích sử dụng: Đây là luồng đầu vào mặc định, thường nhận dữ liệu từ bàn phím hoặc từ một nguồn đầu vào khác (ví dụ: từ một tệp hoặc đầu ra của lệnh khác).
+
+Cách sử dụng:
+- Nhập dữ liệu từ bàn phím: Khi bạn chạy lệnh cần đầu vào từ người dùng, stdin sẽ nhận dữ liệu trực tiếp từ bàn phím. Ví dụ: cat > file.txt
+- Sau khi chạy lệnh này, bạn có thể nhập nội dung từ bàn phím vào tệp file.txt. Để kết thúc, nhấn Ctrl + D.
+- Chuyển hướng stdin từ tệp: Sử dụng < để lấy đầu vào từ một tệp thay vì từ bàn phím. Ví dụ: cat < file.txt (Lệnh này sẽ hiển thị nội dung của file.txt mà không cần nhập trực tiếp từ bàn phím.)
+
+2. Standard Output (stdout)
+   
+Mã đại diện: 1
+
+Mục đích sử dụng: Đây là luồng đầu ra mặc định, dùng để hiển thị thông tin từ các lệnh hoặc chương trình ra màn hình.
+
+Cách sử dụng:
+- Xuất dữ liệu ra màn hình: Khi một lệnh hoàn thành và không xảy ra lỗi, kết quả sẽ được hiển thị qua stdout. Ví dụ: echo "Hello, world!"
+- Kết quả "Hello, world!" sẽ được in ra màn hình.
+- Chuyển hướng stdout vào tệp: Dùng > để ghi kết quả vào tệp thay vì hiển thị trên màn hình. Ví dụ: ls > output.txt (Lệnh này sẽ lưu danh sách tệp/thư mục hiện tại vào output.txt thay vì hiển thị ra màn hình.)
+
+3. Standard Error (stderr)
+   
+Mã đại diện: 2
+
+Mục đích sử dụng: Đây là luồng dành cho các thông báo lỗi từ các lệnh hoặc chương trình.
+
+Cách sử dụng:
+- Hiển thị lỗi ra màn hình: Khi có lỗi xảy ra, stderr sẽ gửi thông báo lỗi ra màn hình. Ví dụ: ls /nonexistent_directory
+- Nếu thư mục không tồn tại, một thông báo lỗi sẽ xuất hiện.
+- Chuyển hướng stderr vào tệp: Dùng 2> để ghi thông báo lỗi vào tệp thay vì hiển thị trên màn hình. Ví dụ: ls /nonexistent_directory 2> error.log (Thông báo lỗi sẽ được lưu vào error.log thay vì hiển thị trên màn hình.)
