@@ -12,13 +12,13 @@
 - Mục đích sử dụng: Zsh là shell thay thế hiện đại, phát triển từ Bash và bổ sung nhiều tính năng tiện lợi. Người dùng ưa thích Zsh nhờ khả năng tùy biến mạnh mẽ và hỗ trợ nhiều plugin.
 - Lệnh để khởi chạy: zsh
 4. Ksh (Korn Shell)
-- Mục đích sử dụng:  Ksh kết hợp các tính năng của Bourne Shell và C Shell, có hiệu suất cao và phù hợp để chạy các ứng dụng đòi hỏi xử lý phức tạp.
+- Mục đích sử dụng:  Ksh có hiệu suất cao và phù hợp để chạy các ứng dụng đòi hỏi xử lý phức tạp.
 - Lệnh để khởi chạy: ksh
 5. Csh (C Shell)
 - Mục đích sử dụng: Csh có cú pháp tương tự ngôn ngữ lập trình C, do đó dễ dàng cho các lập trình viên quen với C.
 - Lệnh để khởi chạy: csh
 6. Fish (Friendly Interactive Shell)
-- Mục đích sử dụng: Fish được thiết kế để dễ dùng, có cú pháp thân thiện và hỗ trợ các tính năng như highlight cú pháp và tự động gợi ý lệnh.
+- Mục đích sử dụng: Fish được thiết kế để dễ dùng khi hỗ trợ các tính năng như highlight cú pháp và tự động gợi ý lệnh.
 - Lệnh để khởi chạy: fish
 7. Dash (Debian Almquist Shell)
 - Mục đích sử dụng: Dash là shell siêu nhẹ và nhanh, thường dùng cho các script hệ thống trong môi trường Debian/Ubuntu, nơi yêu cầu tiết kiệm tài nguyên.
