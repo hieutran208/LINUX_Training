@@ -23,7 +23,7 @@
 - Cài đặt VMware Workstation Player: sudo ./Downloads/VMware-Player.bundle
 - Sau bước cài đặt, ta đã có thể mở VMWare Workstation Player bằng cách tìm kiếm trong menu ứng dụng
   
-*3. Cách cài đặt và thiết lập máy ảo Urbuntu bản Server trên VMWare (tương tự với bản Desktop trên VMWare)*: Linux bản Server được thiết kế để chạy trên máy chủ, được tối ưu hóa để cho hiệu suất, bảo mật và khả năng phục vụ nhiều người dùng cùng lúc
+*3. Cách cài đặt và thiết lập máy ảo Urbuntu bản Server trên VMWare (tương tự với bản Desktop trên VMWare)*:
 - Tải xuống file ISO của Ubuntu Server từ trang chính thức: https://ubuntu.com/download/server
 - Khởi tạo máy ảo: Mở VMware Workstation Player và nhấn vào "Create a New Virtual Machine" để tạo máy ảo mới.
 - Chọn File ISO: chọn "Installer disc image file (iso)", sau đó nhấn vào "Browse" và chọn file ISO của Ubuntu Server vừa tải về.
@@ -32,7 +32,7 @@
 - Cấu Hình Đĩa Cứng Ảo: Chọn "Create a new virtual disk", sau đó chọn "Allocate all disk space now" để phân bổ toàn bộ dung lượng đĩa hoặc "Split virtual disk into multiple files" nếu muốn chia dung lượng đĩa để tiết kiệm không gian bộ nhớ. Chọn kích thước đĩa cứng (nên có ít nhất 10 GB). Nhấn "Next" và sau đó nhấn "Finish" để tạo máy ảo.
 - Khởi chạy Máy Ảo: Chọn máy ảo mới tạo để khởi động từ file ISO. Khi màn hình cài đặt của Ubuntu xuất hiện, thiết lập các tiêu chí: cấu hình mạng, thông tin người dùng,...rồi chờ Urbuntu hoàn tất cài đặt. Sau đó tiến hành restart để Urbuntu bắt đầu được khởi chạy
 
-**Cách cài đặt và thiết lập Urbuntu bản Desktop về máy thực**: Linux bản Desktop được thiết kế để sử dụng trên máy tính cá nhân, phục vụ nhu cầu sử dụng hàng ngày của người dùng như lướt web, văn phòng, đồ họa, và giải trí.
+**Cách cài đặt và thiết lập Urbuntu bản Desktop về máy thực**
 
 *Tải xuống file ISO của Ubuntu Desktop từ trang chính thức:* https://ubuntu.com/download/desktop
 
