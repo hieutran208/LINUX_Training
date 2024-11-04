@@ -24,7 +24,7 @@
 - Mục đích sử dụng: Dash là shell siêu nhẹ và nhanh, thường dùng cho các script hệ thống trong môi trường Debian/Ubuntu, nơi yêu cầu tiết kiệm tài nguyên.
 - Lệnh để khởi chạy: dash
 
-**Thay đổi thư mục làm việc, xem thư mục đang làm việc**
+**Thay đổi thư mục làm việc, xem thư mục đang làm việc và tra cứu hướng dẫn/options của các lệnh**
 
 *1. Thay Đổi Thư Mục Làm Việc với lệnh cd: cd [đường dẫn]*
 
@@ -36,3 +36,5 @@ VÍ DỤ: cd /home/trantrunghieu/Documents -> Di chuyển đến thư mục "Doc
 *2. Xem thư mục đang làm việc: pwd*
 - VÍ DỤ: pwd -> Hiển thị đường dẫn thư mục hiện tại đang làm việc
 
+*3. Tra cứu hướng dẫn/options của lệnh: man [tên lệnh]*
+- VÍ DỤ: man ls -> Hiển thị hướng dẫn sử dụng và các options chi tiết dành cho lệnh "ls"
