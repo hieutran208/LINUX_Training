@@ -103,7 +103,8 @@ VÍ DỤ: ls /nonexistent_directory 2> error.log => Lấy các lỗi của cú p
 
 *Piping Data giữa các Programs*
 
-- Mục đích sử dụng: Giúp kết nối đầu ra của một chương trình với đầu vào của chương trình khác thông qua ký tự |. 
+- Mục đích sử dụng: Giúp kết nối đầu ra của một chương trình với đầu vào của chương trình khác thông qua ký tự '|'
+- Lưu ý: Câu lệnh 1 phải tạo ra đầu ra
 - Các cách sử dụng: 
 
 1.Tìm kiếm tệp
