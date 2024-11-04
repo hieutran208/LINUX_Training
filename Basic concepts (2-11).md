@@ -35,9 +35,13 @@
 **Cách cài đặt và thiết lập Urbuntu bản Desktop về máy thực**: Linux bản Desktop được thiết kế để sử dụng trên máy tính cá nhân, phục vụ nhu cầu sử dụng hàng ngày của người dùng như lướt web, văn phòng, đồ họa, và giải trí.
 
 *Tải xuống file ISO của Ubuntu Desktop từ trang chính thức:* https://ubuntu.com/download/desktop
+
 *Tải xuống Rufus* từ trang chính thức https://rufus.ie/vi/ để tạo USB boot cho Urbuntu
+
 *Cấu hình Rufus:* Chọn USB trong mục “Device”, trong mục “Boot selection”, chọn file ISO của Ubuntu mà bạn vừa tải; trong mục “Partition scheme”, chọn “GPT” nếu máy tính của bạn sử dụng UEFI hoặc “MBR” nếu máy dùng BIOS cổ điển. Nhấn “Start” và chờ Rufus tạo USB boot.
+
 *Khởi Động Máy Tính Từ USB Boot:* Cắm USB vào máy tính và khởi động lại máy. Khi máy tính khởi động, nhấn phím vào BIOS/UEFI (thường là các phím F2 hoặc F12 tùy vào máy). Trong menu boot, chọn khởi động từ USB.
+
 *Bắt Đầu Cài Đặt Ubuntu*
 - Khi máy khởi động từ USB, bạn sẽ thấy màn hình chào của Ubuntu với các tùy chọn như “Try Ubuntu” và “Install Ubuntu”. Nếu bạn muốn trải nghiệm trước mà không cài đặt, chọn “Try Ubuntu”. Để bắt đầu cài đặt, chọn “Install Ubuntu”.
 - Chọn Ngôn Ngữ và Bố Cục Bàn Phím: Chọn ngôn ngữ và bố cục bàn phím phù hợp.
