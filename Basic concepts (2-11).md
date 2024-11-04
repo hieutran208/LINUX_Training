@@ -17,10 +17,11 @@
 
 *Cách cài đặt máy ảo VMWare trên Urbuntu*
 - Cập nhật gói: sudo apt update
-- Tải tệp cài đặt VMWare: wget -O VMware-Player.bundle "https://www.vmware.com/go/getplayer-linux"
-- Cấp quyền thực thi cho tệp cài đặt: chmod +x VMware-Player.bundle
-- Cài đặt VMware Workstation Player: sudo ./VMware-Player.bundle
-
+- Cài đặt các gói phụ thuộc để VMWare hoạt động đúng: sudo apt install build-essential linux-headers-$(uname -r)
+- Truy cập trang tải xuống https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion và tải tệp cài đặt VMWare theo chỉ dẫn, ta sẽ có tệp .bundle
+- Cd vào thư mục download và cấp quyền thực thi cho tệp cài đặt: chmod +x VMware-Player.bundle
+- Cài đặt VMware Workstation Player: sudo ./Downloads/VMware-Player.bundle
+- Sau bước cài đặt, ta đã có thể mở VMWare Workstation Player bằng cách tìm kiếm trong menu ứng dụng hoặc chạy lệnh "vmplayer"
 *Cách cài đặt và thiết lập máy ảo Urbuntu bản Server trên VMWare (tương tự với bản Desktop trên VMWare)*: Linux bản Server được thiết kế để chạy trên máy chủ, được tối ưu hóa để cho hiệu suất, bảo mật và khả năng phục vụ nhiều người dùng cùng lúc
 - Tải xuống file ISO của Ubuntu Server từ trang chính thức: https://ubuntu.com/download/server
 - Khởi tạo máy ảo: Mở VMware Workstation Player và nhấn vào "Create a New Virtual Machine" để tạo máy ảo mới.
