@@ -82,11 +82,48 @@ Cách sử dụng:
 **Redirect Input, Output và cách Piping Data giữa các Programs**
 
 *Redirect Input*
-
 - Mục đích sử dụng: Cú pháp '<' dùng để chuyển hướng đầu vào từ một tệp
 
-VÍ DỤ: sort < unsorted_list.txt => đọc nội dung từ unsorted_list.txt và sắp xếp nó.
+VÍ DỤ: cat < unsorted_list.txt => đọc nội dung từ unsorted_list.txt 
 
 *Redirect Output*
+- Mục đích sử dụng: chuyển hướng đầu ra của một lệnh đến một tệp hoặc một thiết bị khác. Có một số cách sử dụng sau: 
+1. Chuyển hướng stdout vào tệp:
+- Sử dụng > để ghi đè nội dung tệp hoặc tạo tệp mới.
 
-- Mục đích sử dụng: Cú pháp '<' dùng để chuyển hướng đầu vào từ một tệp
+VÍ DỤ: ls > output.txt => Lấy đầu ra của lệnh phía trước (trong trường hợp này là ls) và ghi đè nó vào tệp output.txt.
+- Sử dụng >> để thêm dữ liệu vào cuối tệp mà không ghi đè.
+
+VÍ DỤ: ls > output.txt => Lấy đầu ra của lệnh phía trước (trong trường hợp này là ls) và thêm vào tệp output.txt.
+
+2. Chuyển hướng stderr vào tệp:
+
+- Sử dụng 2> để ghi thông báo lỗi vào một tệp.
+VÍ DỤ: ls /nonexistent_directory 2> error.log => Lấy các lỗi của cú pháp phía trước rồi ghi vào tệp error.log
+
+*Piping Data giữa các Programs*
+
+- Mục đích sử dụng: Giúp kết nối đầu ra của một chương trình với đầu vào của chương trình khác thông qua ký tự |. Lưu ý khi sử dụng là lệnh thứ 1 phải tạo ra đầu ra và piping không xử lí lỗi nên nếu lệnh thứ 1 có lỗi thì cần dùng cú pháp "2>" để chuyển hướng lỗi
+- Các cách sử dụng và ví dụ cụ thể
+1. Tìm Kiếm và Sắp Xếp
+- VÍ DỤ: Sử dụng ls để liệt kê các tệp và sau đó dùng grep để tìm kiếm một tệp cụ thể: ls | grep "file.txt"
+
+=> Lệnh trên sẽ liệt kê tất cả các tệp trong thư mục hiện tại và chỉ hiển thị tệp có tên file.txt.
+
+2. Đếm Số Dòng
+-VÍ DỤ: Kết hợp cat và wc -l để đếm số dòng trong một tệp: cat file.txt | wc -l
+
+=> Ở đây, cat file.txt đọc nội dung của file.txt và wc -l đếm số dòng trong đầu ra đó.
+
+3. Sắp Xếp và Xóa Duplicates
+- VÍ DỤ: Đọc một tệp, sắp xếp nội dung, và loại bỏ các dòng trùng lặp: cat list.txt | sort | uniq
+
+=> Lệnh này sẽ hiển thị danh sách các mục duy nhất trong list.txt.
+
+4. Kiểm Tra Tiến Trình
+-VÍ DỤ: Sử dụng ps để liệt kê các tiến trình và grep để tìm kiếm một tiến trình cụ thể: ps aux | grep "nginx"
+
+=> Lệnh này sẽ tìm kiếm trong danh sách các tiến trình hiện tại để xem thông tin về tiến trình nginx.
+
+5. Kết Hợp Nhiều Lệnh
+- VÍ DỤ: Đọc tệp, tìm kiếm từ khóa, sắp xếp và loại bỏ trùng lặp: cat file.txt | grep "keyword" | sort | uniq
