@@ -3,40 +3,31 @@
 *Linux cung cấp nhiều loại shell khác nhau, mỗi loại có đặc điểm và chức năng riêng. Bash và Zsh là hai shell phổ biến cho người dùng thông thường và các lập trình viên do khả năng tùy chỉnh và hỗ trợ mạnh mẽ. Dưới đây là một số shell phổ biến*
 
 1.Bash (Bourne Again Shell)
-- Mô tả: Đây là shell mặc định trên hầu hết các hệ thống Linux, được phát triển từ Bourne Shell (sh) với nhiều cải tiến.
-- Tính năng: Hỗ trợ scripting mạnh mẽ, có lịch sử lệnh, tab completion, và các biến môi trường phong phú.
+- Mục đích sử dụng: Đây là shell mặc định trên nhiều bản phân phối Linux và được dùng phổ biến cho mọi tác vụ trên hệ thống. Bash hỗ trợ cả làm việc tương tác và viết script tự động hóa, nhờ tính năng mạnh mẽ và dễ tùy chỉnh.
 - Lệnh để khởi chạy: bash
 2. Sh (Bourne Shell)
-- Mô tả: Đây là shell chuẩn đầu tiên trong UNIX, được phát triển bởi Stephen Bourne.
-- Tính năng: Dùng chủ yếu cho scripting trên UNIX, có cú pháp đơn giản và chiếm ít tài nguyên.
+- Mục đích sử dụng: Đây là shell gốc của UNIX, có cú pháp đơn giản và tiêu chuẩn, chủ yếu dùng cho việc viết script hệ thống vì tính tương thích cao.
 - Lệnh để khởi chạy: sh
 3. Zsh (Z Shell)
-- Mô tả: Zsh là một shell hiện đại và được cải tiến từ Bash, với nhiều tính năng bổ sung.
-- Tính năng: Có nhiều tính năng mở rộng như tab completion, spelling correction, và theme. Zsh cũng hỗ trợ nhiều plugin mạnh mẽ (như Oh My Zsh).
+- Mục đích sử dụng: Zsh là shell thay thế hiện đại, phát triển từ Bash và bổ sung nhiều tính năng tiện lợi. Người dùng ưa thích Zsh nhờ khả năng tùy biến mạnh mẽ và hỗ trợ nhiều plugin.
 - Lệnh để khởi chạy: zsh
 4. Ksh (Korn Shell)
-- Mô tả: Được phát triển bởi David Korn, Ksh là một shell kết hợp các tính năng của Bourne Shell và C Shell.
-- Tính năng: Tương thích tốt với các script của Bourne Shell nhưng có thêm các tính năng từ C Shell và khả năng xử lý script phức tạp.
+- Mục đích sử dụng:  Ksh kết hợp các tính năng của Bourne Shell và C Shell, có hiệu suất cao và phù hợp để chạy các ứng dụng đòi hỏi xử lý phức tạp.
 - Lệnh để khởi chạy: ksh
 5. Csh (C Shell)
-- Mô tả: Được phát triển bởi Bill Joy, C Shell có cú pháp giống ngôn ngữ lập trình C.
-- Tính năng: Hỗ trợ alias, scripting, và có các tính năng điều khiển lịch sử lệnh tốt.
+- Mục đích sử dụng: Csh có cú pháp tương tự ngôn ngữ lập trình C, do đó dễ dàng cho các lập trình viên quen với C.
 - Lệnh để khởi chạy: csh
 6. Tcsh (TENEX C Shell)
-- Mô tả: Tcsh là phiên bản mở rộng của C Shell với nhiều tính năng cải tiến.
-- Tính năng: Hỗ trợ tab completion, chỉnh sửa lịch sử lệnh tốt hơn, và cải thiện tính năng scripting.
+- Mục đích sử dụng: Tcsh là phiên bản nâng cấp của Csh với các tính năng bổ sung như tab completion và lịch sử lệnh.
 - Lệnh để khởi chạy: tcsh
 7. Fish (Friendly Interactive Shell)
-- Mô tả: Fish là shell hiện đại, được thiết kế để dễ sử dụng với cú pháp thân thiện hơn.
-- Tính năng: Hỗ trợ highlight cú pháp, tự động gợi ý lệnh, và có giao diện cấu hình web.
+- Mục đích sử dụng: Fish được thiết kế để dễ dùng, có cú pháp thân thiện và hỗ trợ các tính năng như highlight cú pháp và tự động gợi ý lệnh.
 - Lệnh để khởi chạy: fish
 8. Dash (Debian Almquist Shell)
-- Mô tả: Là phiên bản nhẹ hơn của Bash, Dash thường được dùng cho các script hệ thống do chiếm ít tài nguyên.
-- Tính năng: Đơn giản, hiệu quả, và nhanh hơn Bash trong việc chạy các script không tương tác.
+- Mục đích sử dụng: Dash là shell siêu nhẹ và nhanh, thường dùng cho các script hệ thống trong môi trường Debian/Ubuntu, nơi yêu cầu tiết kiệm tài nguyên.
 - Lệnh để khởi chạy: dash
 9. Mksh (MirBSD Korn Shell)
-- Mô tả: Là phiên bản cải tiến từ Korn Shell, Mksh được phát triển trên hệ điều hành MirBSD.
-- Tính năng: Gọn nhẹ, tối ưu cho script hệ thống và tương thích tốt với cả Linux và BSD.
+- Mục đích sử dụng: Mksh là một biến thể của Korn Shell, gọn nhẹ và có hiệu suất tốt, thích hợp cho các hệ thống yêu cầu shell nhẹ.
 - Lệnh để khởi chạy: mksh
 
 
