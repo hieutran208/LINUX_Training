@@ -94,7 +94,7 @@ VÍ DỤ: cat < unsorted_list.txt => đọc nội dung từ unsorted_list.txt
 VÍ DỤ: ls > output.txt => Lấy đầu ra của lệnh phía trước (trong trường hợp này là ls) và ghi đè nó vào tệp output.txt.
 - Sử dụng >> để thêm dữ liệu vào cuối tệp mà không ghi đè.
 
-VÍ DỤ: ls > output.txt => Lấy đầu ra của lệnh phía trước (trong trường hợp này là ls) và thêm vào tệp output.txt.
+VÍ DỤ: ls >> output.txt => Lấy đầu ra của lệnh phía trước (trong trường hợp này là ls) và thêm vào tệp output.txt.
 
 2. Chuyển hướng stderr vào tệp:
 
