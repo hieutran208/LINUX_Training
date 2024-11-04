@@ -104,14 +104,15 @@ VÍ DỤ: ls /nonexistent_directory 2> error.log => Lấy các lỗi của cú p
 *Piping Data giữa các Programs*
 
 - Mục đích sử dụng: Giúp kết nối đầu ra của một chương trình với đầu vào của chương trình khác thông qua ký tự |. Lưu ý khi sử dụng là lệnh thứ 1 phải tạo ra đầu ra và piping không xử lí lỗi nên nếu lệnh thứ 1 có lỗi thì cần dùng cú pháp "2>" để chuyển hướng lỗi
-- Các cách sử dụng và ví dụ cụ thể
-1. Tìm Kiếm và Sắp Xếp
+- Các cách sử dụng: 
+
+1.Tìm kiếm tệp
 - VÍ DỤ: Sử dụng ls để liệt kê các tệp và sau đó dùng grep để tìm kiếm một tệp cụ thể: ls | grep "file.txt"
 
 => Lệnh trên sẽ liệt kê tất cả các tệp trong thư mục hiện tại và chỉ hiển thị tệp có tên file.txt.
 
 2. Đếm Số Dòng
--VÍ DỤ: Kết hợp cat và wc -l để đếm số dòng trong một tệp: cat file.txt | wc -l
+- VÍ DỤ: Kết hợp cat và wc -l để đếm số dòng trong một tệp: cat file.txt | wc -l
 
 => Ở đây, cat file.txt đọc nội dung của file.txt và wc -l đếm số dòng trong đầu ra đó.
 
@@ -121,7 +122,7 @@ VÍ DỤ: ls /nonexistent_directory 2> error.log => Lấy các lỗi của cú p
 => Lệnh này sẽ hiển thị danh sách các mục duy nhất trong list.txt.
 
 4. Kiểm Tra Tiến Trình
--VÍ DỤ: Sử dụng ps để liệt kê các tiến trình và grep để tìm kiếm một tiến trình cụ thể: ps aux | grep "nginx"
+- VÍ DỤ: Sử dụng ps để liệt kê các tiến trình và grep để tìm kiếm một tiến trình cụ thể: ps aux | grep "nginx"
 
 => Lệnh này sẽ tìm kiếm trong danh sách các tiến trình hiện tại để xem thông tin về tiến trình nginx.
 
