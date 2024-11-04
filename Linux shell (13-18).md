@@ -34,5 +34,5 @@ VÍ DỤ: cd /home/trantrunghieu/Documents -> Di chuyển đến thư mục "Doc
 - cd - : Quay lại thư mục làm việc trước đó.
 
 *2. Xem thư mục đang làm việc: pwd*
-VÍ DỤ: pwd -> Hiển thị đường dẫn thư mục hiện tại đang làm việc
+- VÍ DỤ: pwd -> Hiển thị đường dẫn thư mục hiện tại đang làm việc
 
