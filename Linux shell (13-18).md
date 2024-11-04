@@ -30,4 +30,11 @@
 - Mục đích sử dụng: Mksh là một biến thể của Korn Shell, gọn nhẹ và có hiệu suất tốt, thích hợp cho các hệ thống yêu cầu shell nhẹ.
 - Lệnh để khởi chạy: mksh
 
+**Thay đổi thư mục làm việc, xem thư mục đang làm việc**
 
+*1. Thay Đổi Thư Mục Làm Việc với lệnh cd: cd [đường dẫn]*
+
+VÍ DỤ: cd /home/trantrunghieu/Documents -> Di chuyển đến thư mục "Documents" trong đường dẫn /home/trantrunghieu.
+- cd ..: Di chuyển lên một thư mục cha (thư mục cấp trên của thư mục hiện tại).
+- cd ~: Di chuyển đến thư mục home của người dùng hiện tại.
+- cd -: Quay lại thư mục làm việc trước đó.
