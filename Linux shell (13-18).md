@@ -51,7 +51,8 @@ Mục đích sử dụng: Đây là luồng đầu vào mặc định, thường
 
 Cách sử dụng:
 - Nhập dữ liệu từ bàn phím: Khi bạn chạy lệnh cần đầu vào từ người dùng, stdin sẽ nhận dữ liệu trực tiếp từ bàn phím. Ví dụ: cat > file.txt
-- Sau khi chạy lệnh này, bạn có thể nhập nội dung từ bàn phím vào tệp file.txt. Để kết thúc, nhấn Ctrl + D.
+  
+=> Sau khi chạy lệnh này, bạn có thể nhập nội dung từ bàn phím vào tệp file.txt. Để kết thúc, nhấn Ctrl + D.
 - Chuyển hướng stdin từ tệp: Sử dụng < để lấy đầu vào từ một tệp thay vì từ bàn phím. Ví dụ: cat < file.txt (Lệnh này sẽ hiển thị nội dung của file.txt mà không cần nhập trực tiếp từ bàn phím.)
 
 *2. Standard Output (stdout)*
@@ -62,7 +63,8 @@ Mục đích sử dụng: Đây là luồng đầu ra mặc định, dùng để
 
 Cách sử dụng:
 - Xuất dữ liệu ra màn hình: Khi một lệnh hoàn thành và không xảy ra lỗi, kết quả sẽ được hiển thị qua stdout. Ví dụ: echo "Hello, world!"
-- Kết quả "Hello, world!" sẽ được in ra màn hình.
+
+=> Kết quả "Hello, world!" sẽ được in ra màn hình.
 - Chuyển hướng stdout vào tệp: Dùng > để ghi kết quả vào tệp thay vì hiển thị trên màn hình. Ví dụ: ls > output.txt (Lệnh này sẽ lưu danh sách tệp/thư mục hiện tại vào output.txt thay vì hiển thị ra màn hình.)
 
 *3. Standard Error (stderr)*
@@ -73,5 +75,6 @@ Mục đích sử dụng: Đây là luồng dành cho các thông báo lỗi t�
 
 Cách sử dụng:
 - Hiển thị lỗi ra màn hình: Khi có lỗi xảy ra, stderr sẽ gửi thông báo lỗi ra màn hình. Ví dụ: ls /nonexistent_directory
-- Nếu thư mục không tồn tại, một thông báo lỗi sẽ xuất hiện.
+
+=> Nếu thư mục không tồn tại, một thông báo lỗi sẽ xuất hiện.
 - Chuyển hướng stderr vào tệp: Dùng 2> để ghi thông báo lỗi vào tệp thay vì hiển thị trên màn hình. Ví dụ: ls /nonexistent_directory 2> error.log (Thông báo lỗi sẽ được lưu vào error.log thay vì hiển thị trên màn hình.)
