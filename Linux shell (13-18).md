@@ -78,3 +78,15 @@ Cách sử dụng:
 
 => Nếu thư mục không tồn tại, một thông báo lỗi sẽ xuất hiện.
 - Chuyển hướng stderr vào tệp: Dùng 2> để ghi thông báo lỗi vào tệp thay vì hiển thị trên màn hình. Ví dụ: ls /nonexistent_directory 2> error.log (Thông báo lỗi sẽ được lưu vào error.log thay vì hiển thị trên màn hình.)
+
+**Redirect Input, Output và cách Piping Data giữa các Programs**
+
+*Redirect Input*
+
+- Mục đích sử dụng: Cú pháp '<' dùng để chuyển hướng đầu vào từ một tệp
+
+VÍ DỤ: sort < unsorted_list.txt => đọc nội dung từ unsorted_list.txt và sắp xếp nó.
+
+*Redirect Output*
+
+- Mục đích sử dụng: Cú pháp '<' dùng để chuyển hướng đầu vào từ một tệp
