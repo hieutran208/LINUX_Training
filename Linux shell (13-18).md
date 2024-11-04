@@ -99,6 +99,7 @@ VÍ DỤ: ls > output.txt => Lấy đầu ra của lệnh phía trước (trong 
 2. Chuyển hướng stderr vào tệp:
 
 - Sử dụng 2> để ghi thông báo lỗi vào một tệp.
+
 VÍ DỤ: ls /nonexistent_directory 2> error.log => Lấy các lỗi của cú pháp phía trước rồi ghi vào tệp error.log
 
 *Piping Data giữa các Programs*
