@@ -17,24 +17,22 @@
 5. Csh (C Shell)
 - Mục đích sử dụng: Csh có cú pháp tương tự ngôn ngữ lập trình C, do đó dễ dàng cho các lập trình viên quen với C.
 - Lệnh để khởi chạy: csh
-6. Tcsh (TENEX C Shell)
-- Mục đích sử dụng: Tcsh là phiên bản nâng cấp của Csh với các tính năng bổ sung như tab completion và lịch sử lệnh.
-- Lệnh để khởi chạy: tcsh
-7. Fish (Friendly Interactive Shell)
+6. Fish (Friendly Interactive Shell)
 - Mục đích sử dụng: Fish được thiết kế để dễ dùng, có cú pháp thân thiện và hỗ trợ các tính năng như highlight cú pháp và tự động gợi ý lệnh.
 - Lệnh để khởi chạy: fish
-8. Dash (Debian Almquist Shell)
+7. Dash (Debian Almquist Shell)
 - Mục đích sử dụng: Dash là shell siêu nhẹ và nhanh, thường dùng cho các script hệ thống trong môi trường Debian/Ubuntu, nơi yêu cầu tiết kiệm tài nguyên.
 - Lệnh để khởi chạy: dash
-9. Mksh (MirBSD Korn Shell)
-- Mục đích sử dụng: Mksh là một biến thể của Korn Shell, gọn nhẹ và có hiệu suất tốt, thích hợp cho các hệ thống yêu cầu shell nhẹ.
-- Lệnh để khởi chạy: mksh
 
 **Thay đổi thư mục làm việc, xem thư mục đang làm việc**
 
 *1. Thay Đổi Thư Mục Làm Việc với lệnh cd: cd [đường dẫn]*
 
 VÍ DỤ: cd /home/trantrunghieu/Documents -> Di chuyển đến thư mục "Documents" trong đường dẫn /home/trantrunghieu.
-- cd ..: Di chuyển lên một thư mục cha (thư mục cấp trên của thư mục hiện tại).
-- cd ~: Di chuyển đến thư mục home của người dùng hiện tại.
-- cd -: Quay lại thư mục làm việc trước đó.
+- cd .. : Di chuyển lên một thư mục cha (thư mục cấp trên của thư mục hiện tại).
+- cd ~ : Di chuyển đến thư mục home của người dùng hiện tại.
+- cd - : Quay lại thư mục làm việc trước đó.
+
+*2. Xem thư mục đang làm việc: pwd*
+VÍ DỤ: pwd -> Hiển thị đường dẫn thư mục hiện tại đang làm việc
+
