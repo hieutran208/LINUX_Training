@@ -43,7 +43,7 @@ VÍ DỤ: cd /home/trantrunghieu/Documents -> Di chuyển đến thư mục "Doc
 
 *Streams là các luồng dữ liệu đóng vai trò chính trong việc truyền tải thông tin giữa người dùng. Trong Linux, Standard Input (stdin), Standard Output (stdout) và Standard Error (stderr) là ba luồng (streams) chính để giao tiếp giữa người dùng và hệ thống, được sử dụng rộng rãi trong việc quản lý đầu vào, đầu ra, và xử lý lỗi khi thực thi các lệnh.*
 
-1. Standard Input (stdin)
+*1. Standard Input (stdin)*
    
 Mã đại diện: 0
 
@@ -54,7 +54,7 @@ Cách sử dụng:
 - Sau khi chạy lệnh này, bạn có thể nhập nội dung từ bàn phím vào tệp file.txt. Để kết thúc, nhấn Ctrl + D.
 - Chuyển hướng stdin từ tệp: Sử dụng < để lấy đầu vào từ một tệp thay vì từ bàn phím. Ví dụ: cat < file.txt (Lệnh này sẽ hiển thị nội dung của file.txt mà không cần nhập trực tiếp từ bàn phím.)
 
-2. Standard Output (stdout)
+*2. Standard Output (stdout)*
    
 Mã đại diện: 1
 
@@ -65,7 +65,7 @@ Cách sử dụng:
 - Kết quả "Hello, world!" sẽ được in ra màn hình.
 - Chuyển hướng stdout vào tệp: Dùng > để ghi kết quả vào tệp thay vì hiển thị trên màn hình. Ví dụ: ls > output.txt (Lệnh này sẽ lưu danh sách tệp/thư mục hiện tại vào output.txt thay vì hiển thị ra màn hình.)
 
-3. Standard Error (stderr)
+*3. Standard Error (stderr)*
    
 Mã đại diện: 2
 
