@@ -45,7 +45,7 @@
   - Tasks: Cung cấp thông tin của các tiến trình: số tiến trình, số threads và kernel threads được sử dụng, số tiến trình đang chạy
 
 4. Ý nghĩa chỉ số load average
-- Load Average (trung bình tải) là một chỉ số đo lường mức độ tải của hệ thống trong một khoảng thời gian nhất định. Nó cho biết số lượng trung bình các tiến trình đang ở trạng thái có thể chạy hoặc đang chờ các hoạt động I/O trong một khoảng thời gian cụ thể. Khi sử dụng câu lệnh top/htop để theo dõi tiến trình, load average được hiển thị dưới dạng 3 số liên tiếp nhau, biểu thị tải trong lần lượt 1, 5 và 15 phút qua
+- Load Average (trung bình tải) là chỉ số đo mức độ tải của hệ thống trong một khoảng thời gian nhất định. Nó cho biết số lượng trung bình các tiến trình đang ở trạng thái có thể chạy trong một khoảng thời gian cụ thể. Khi sử dụng câu lệnh top/htop để theo dõi tiến trình, load average được hiển thị dưới dạng 3 số liên tiếp nhau, biểu thị tải trong lần lượt 1, 5 và 15 phút qua
 - Ý nghĩa thông số:
   - Load Average = 1 có nghĩa là hệ thống đang sử dụng đầy đủ tài nguyên của một CPU
   - Load Average > 1 có nghĩa là có nhiều tiến trình đang chờ CPU, gây ra tình trạng quá tải.
