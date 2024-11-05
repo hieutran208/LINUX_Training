@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/19e1d0fb-4ab2-4ce0-89db-33f5f2d7b67f)**THAO TÁC VỚI TIẾN TRÌNH VÀ TRÌNH QUẢN LÝ CỬA SỔ**
+**THAO TÁC VỚI TIẾN TRÌNH VÀ TRÌNH QUẢN LÝ CỬA SỔ**
 
 *Tiến trình: Tiến trình là các chương trình chạy trên hệ thống. PID là số hiệu tiến trình, dùng để nhận biết các tiến trình*
 
@@ -79,6 +79,18 @@ a. Các thông số hệ thống
   - hi: Phần trăm CPU để xử lí các gián đoạn phần cứng
   - si: Phần trăm CPU để xử lí các gián đoạn phần mềm
   - st: Phần trăm CPU do máy ảo sử dụng 
+
+- Dòng thứ 4 lần lượt hiển thị các thông số về bộ nhớ vật lý (RAM) :
+  - Tổng dung lượng RAM cài đặt trên hệ thống
+  - Bộ nhớ trống
+  - Bộ nhớ đã sử dụng
+  - Dung lượng đang được dùng làm bộ đệm (buffer) và bộ nhớ cache
+
+- Dòng thứ 5 lần lượt hiển thị các thông số về swap space (Swap là RAM ảo, được sử dụng khi bộ nhớ vật lý (RAM) bị đầy):
+  - Tổng swap có sẵn (kB)
+  - Tổng swap còn trống
+  - Tổng swap đã sử dụng
+  - Bộ nhớ khả dụng
 
 b. Các thông số tiến trình
 ![image](https://github.com/user-attachments/assets/900f7e26-a522-4ae6-901a-e7d27fe7dd81)
