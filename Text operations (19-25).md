@@ -31,8 +31,21 @@ VÍ DỤ 2: sort -r file.txt => Sắp xếp các dòng theo thứ tự ngược 
 
 VÍ DỤ 3: cat file1.txt file2.txt | sort => Kết hợp hai tệp, sau đó sắp xếp các dòng và hiển thị ra màn hình
 
-*4. Lệnh uniq*
-- Mục đích sử dụng: bỏ các dòng trùng lặp trong file
+*4. Lệnh split*
+- Mục đích sử dụng: chia tệp thành các phân đoạn có kích thước bằng nhau để xem và thao tác dễ dàng hơn (thường sử dụng trên các tệp tương đối lớn)
+- Cách sử dụng: Đây là một số cách thường dùng với lệnh split
+
+CÁCH 1: Chia theo số dòng: split -l [Số dòng cần chia] [file đầu vào] [Tiền tố của các tệp con được chia]n tố của các tệp con được chia]
+
+CÁCH 2: Chia theo kích thước: split -b [Kích thước mỗi tệp con được chia theo bytes] [file đầu vào] [Tiền tố của các tệp con được chia]
+
+CÁCH 3: Chia theo số tệp: split -n [Số các tệp con] [file đầu vào] [Tiền tố của các tệp con được chia]
+
+*5. Lệnh uniq*
+- Mục đích sử dụng: bỏ các dòng liên tiếp trùng lặp trong file
 - Cách sử dụng: Có một số ví dụ về các cách sử dụng phổ biến với lệnh uniq
 
-VÍ DỤ 1: 
+VÍ DỤ 1: sort example.txt | uniq => Dùng `sort` trước để đảm bảo các dòng giống nhau ở gần nhau, sau đó xoá bỏ các dòng trùng lặp
+
+VÍ DỤ 2: uniq -c example.txt => Đếm số lần xuất hiện của mỗi dòng
+
