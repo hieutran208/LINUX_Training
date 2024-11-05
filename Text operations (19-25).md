@@ -96,3 +96,37 @@ VÍ DỤ 3 (Trích xuất các kí tự từ 1->3 trong mỗi dòng): cut -c1-3 
 VÍ DỤ 1: wc file.txt => Hiển thị lần lượt số dòng, số từ và số kí tự trong file
 
 VÍ DỤ 2: wc -w file.txt => Chỉ đếm số từ (options -l và -m sẽ chỉ hiển thị số dòng và số kí tự)
+
+**Các lệnh grep, sed, awk**
+
+*1.Lệnh grep*
+- Mục đích sử dụng: Dùng để tìm kiếm mẫu văn bản
+- Cách sử dụng: Có một số ví dụ về các cách sử dụng phổ biến với lệnh grep
+
+VÍ DỤ 1: grep "line" file.txt => Tìm kiếm từ "line" trong file.txt (nếu muốn tìm chuỗi dùng option -r)
+
+VÍ DỤ 2: grep -i "Line" file1.txt file2.txt => Tìm kiếm từ trong nhiều file, không phân biệt chữ hoa, chữ thường
+
+VÍ DỤ 3: ps aux | grep "D" => Hiển thị các tiến trình có chứa từ cần tìm
+
+*2. Lệnh sed*
+- Mục đích sử dụng: chỉnh sửa văn bản trực tiếp từ file
+- Cách sử dụng: Có một số ví dụ về các cách sử dụng phổ biến với lệnh sed
+
+VÍ DỤ 1: sed '3s/this/This/' file.txt => thay thế 'this' thành 'This' ở dòng thứ 3 trong file.txt với option -s
+
+VÍ DỤ 2: sed 's/this/This/g' file.txt => thay thế 'this' thành 'This' trong mọi lần xuất hiện với option -g
+
+VÍ DỤ 3: sed '/keyword/d' file.txt => Xoá các dòng có chứa từ 'keyword' trong tệp
+
+*3. Lệnh awk*
+- Mục đích sử dụng: xử lý văn bản theo mẫu, chủ yếu dùng trong các tệp dữ liệu có cấu trúc
+- Cách sử dụng: Có một số cách sử dụng phổ biến với lệnh awk
+
+CÁCH 1: awk '{print $cột_thứ_1 $cột_thứ_2 }' file.txt => In ra các cột cụ thể
+
+CÁCH 2: awk '$số_thứ_tự_cột điều_kiện {print $0}' file.txt => In ra các dòng thoả mãn điều kiện trong một cột cụ thể
+
+CÁCH 3: awk '{sum += $số_thứ_tự_cột} END {print sum}' file.txt => Tính tổng các giá trị trong một cột cụ thể
+
+
