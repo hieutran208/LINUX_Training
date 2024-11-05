@@ -1,8 +1,8 @@
 **THAO TÁC VỚI TIẾN TRÌNH VÀ TRÌNH QUẢN LÝ CỬA SỔ**
 
-*Tiến trình: Tiến trình là các chương trình chạy trên hệ thống. PID là số hiệu tiến trình, dùng để nhận biết các tiến trình*
+**A. Các câu lệnh thường dùng để theo dõi và quản lý tiến trình**
 
-**A. Các câu lệnh thường dùng để hiển thị thông tin, trạng thái của tiến trình**
+*Tiến trình: Tiến trình là các chương trình chạy trên hệ thống. PID là số hiệu tiến trình, dùng để nhận biết các tiến trình*
 
 *1. Các câu lệnh ps thường dùng để kiểm tra thông tin tiến trình*
 
@@ -21,16 +21,18 @@
 
 (*Câu lệnh này có thể dùng để tra cứu PID của tiến trình, kiểm tra một tiến trình có hoạt động hay không)
 
-*2. Lệnh top để hiển thị trạng thái tiến trình*
+*2. Lệnh top/htop để hiển thị trạng thái tiến trình*
 
+a. Lệnh top 
 - Giống như ps, top cũng có chức năng hiển thị thông tin tiến trình nhưng nâng cao hơn khi danh sách tiến trình được update liên tục. Ngoài ra có bổ sung thêm nhiều thông số quan trọng như: phân phối CPU, cấp phát bộ nhớ,…giúp dễ dàng theo dõi trạng thái hoạt động của hệ thống, phòng tránh xung đột và bế tắc xảy ra, tối ưu hoá hoạt động của CPU
 - Cú pháp: top (Muốn tắt top để về terminal, ta nhấn Ctrl + Z)
 
-*3. Lệnh htop để hiển thị trạng thái tiến trình*
-
+b. Lệnh htop
 - Câu lệnh htop cũng hiển thị đầy đủ các thông tin như top nhưng có một số tính năng nâng cao hơn như: dùng màu sắc để hiển thị thông tin hệ thống (CPU, bộ nhớ), phím tắt để quản lý tiến trình thay vì dùng lệnh, tìm kiếm tiến trình trên giao diện,....
 - Muốn sử dụng htop ta phải cài về bằng lệnh: sudo apt install htop
 - Cú pháp: htop (Muốn tắt htop để về terminal, ta nhấn Ctrl + Z)
+
+*3. Sử dụng lệnh kill để dừng tiến trình*
 
 **B. Ý nghĩa các thông số khi hiển thị thông tin, trạng thái tiến trình**
 
@@ -125,6 +127,6 @@ Về cơ bản, tên các cột hiển thị thông tin tiến trình sẽ giố
   - Load Average > 1 có nghĩa là có nhiều tiến trình đang chờ CPU, gây ra tình trạng quá tải.
   - Load Average < 1 cho thấy hệ thống có tài nguyên dự phòng và không bị quá tải.
 
-**C. Quản lý tiến trình**
+**C. Dừng tiến trình bằng lệnh kill**
 
 
