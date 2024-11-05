@@ -154,7 +154,7 @@ b. Chèn văn bản vào file
 - Sau khi mở file, trình soạn thảo sẽ ở chế độ command mode. Để chèn văn bản ta cần nhấn phím “i” để chuyển sang chế độ insert mode. Ở chế độ này, ta có thể gõ chữ vào văn bản từ bàn phím. Khi hoàn thành, nhấn “esc” để quay lại chế độ command mode. 
 
 c. Điều hướng con trỏ 
-- Khi điều hướng con trỏ, ta chủ yếu dùng các phím mũi tên. Nhưng nếu file lớn, ta cũng có thể di chuyển tới dòng bất kì bằng lệnh “:<số dòng>” (ví dụ dòng số 5 thì nhấn “:5”); di chuyển đến đầu và đầu dòng cuối văn bản lần lượt bằng lệnh “:0” và “:$”
+- Khi điều hướng con trỏ, ta chủ yếu dùng các phím mũi tên. Nhưng nếu file lớn, ta cũng có thể di chuyển tới dòng bất kì bằng lệnh “:<số dòng>” (ví dụ dòng số 5 thì nhấn “:5”); di chuyển đến dòng đầu và dòng cuối văn bản lần lượt bằng lệnh “:0” và “:$”
 
 d. Xoá trong văn bản
 - Muốn xoá một kí tự ta nhấn “x” hoặc delete 
@@ -167,3 +167,5 @@ e. Tìm kiếm trong văn bản
 
 f. Thoát khỏi trình soạn thảo 
 - Ở chế độ command mode, để thoát khỏi vim sau khi lưu các thay đổi, gõ :x hoặc :wq. Nếu muốn thoát mà không lưu thay đổi, gõ :q!.
+
+**E. Byobu và các thao tác cơ bản với byobu**
