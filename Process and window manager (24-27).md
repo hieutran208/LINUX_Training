@@ -1,4 +1,4 @@
-**THAO TÁC VỚI TIẾN TRÌNH VÀ TRÌNH QUẢN LÝ CỬA SỔ**
+![image](https://github.com/user-attachments/assets/2f88a295-4f7c-4f54-9e40-028598aa2748)**THAO TÁC VỚI TIẾN TRÌNH VÀ TRÌNH QUẢN LÝ CỬA SỔ**
 
 **A. Các câu lệnh thường dùng để theo dõi và quản lý tiến trình**
 
@@ -33,7 +33,12 @@ b. Lệnh htop
 
 *3. Sử dụng lệnh kill để dừng tiến trình*
 - Thông thường, để kết thúc một tiến trình ta dùng cú pháp: *kill <PID tiến trình>*. Đây là cú pháp mặc định, gọi là sigterm
-- 
+- Nguyên lý hoạt động và phân biệt của sigterm và sigkill (kill -9)
+  - Sigterm: Gửi tín hiệu yêu cầu tự kết thúc tới tiến trình và tiến trình cha tương ứng. Đây là tín hiệu yêu cầu tiến trình tự kết thúc một cách an toàn, lưu trữ dữ liệu và giải phóng tài nguyên trước khi dừng.
+  - Sigkill: Ép buộc tiến trình kết thúc ngay lập tức mà không thông qua tiến trình con hay tiến trình cha. Do vậy tiến trình không có thời gian để xử lý dữ liệu hoặc giải phóng tài nguyên. Thường chỉ dùng khi tiến trình không phản hồi tín hiệu sigterm thông thường
+
+=> Thông thường cách dừng hoạt động đúng đắn nên là dùng sigterm trước. Trừ khi tiến trình đó không phản hồi trong quá trình dừng hoạt động, hoặc không xử lý sigterm thì mới kill bằng sigkill. Sigkill dễ làm mất dung lượng và tạo ra các tiến trình ma (zombie) vì khi tiến trình bị ngừng hoạt động sẽ không có cơ hội thông báo cho tiến trình cha hoặc tiến trình con về việc bị ngừng hoạt động.
+
 **B. Ý nghĩa các thông số khi theo dõi tiến trình**
 
 *1. Các thông số tiến trình khi hiển thị thông tin với lệnh ps*
