@@ -67,6 +67,19 @@ VÍ DỤ 2: head -n 20 file.txt => Hiển thị nội dung 20 dòng đầu file.
   
 VÍ DỤ 1: tail file.txt => Hiển thị nội dung 10 dòng cuối file.txt lên terminal
 
-VÍ DỤ 2: tail -n 20 file.txt => Hiển thị nội dung 20 dòng cuối file.txt lên terminal
+VÍ DỤ 2: tail -f 20 file.txt => Hiển thị các nội dung gần nhất thêm vào file.txt
 
+*3. Lệnh less*
+- Mục đích sử dụng: Hiển thị nội dung file dưới dạng trang (thường dùng cho các file có kích thước lớn)
 
+*Các thao tác sử dụng:*
+
+- Trang trước: Dùng phím Space hoặc bấm phím b
+- Trang kế: Dùng phím Enter hoặc phím d
+- Đến đầu file: Dùng phím g
+- Đến cuối file: Dùng phím G
+- Tìm kiếm từ: sử dụng '/', sau đó gõ từ cần tìm kiếm
+- Thoát khỏi giao diện: Ctrl + Z
+
+*4. Lệnh cut*
+- Mục đích sử dụng: 
