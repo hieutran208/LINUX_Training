@@ -12,13 +12,13 @@
 - Hiển thị các cột cần thiết của tiến trình đang chạy: ps -e -o [tên các cột cần hiển thị]
 - Hiển thị các cột cần thiết và sắp xếp theo cách sử dụng: ps –e -o [tên các cột cần hiển thị] --sort=<tiền tố>[cột cần sắp xếp]
 
-(Đây cũng là câu lệnh có thể sử dụng để hiển thị tiến trình chiếm nhiều CPU và RAM nhất)
+(*Đây cũng là câu lệnh có thể sử dụng để hiển thị tiến trình chiếm nhiều CPU và RAM nhất)
 
 (Tiền tố: “+” sắp xếp theo thứ tự tăng dần, “-” sắp xếp theo thứ tự giảm dần) 
 
 - Kiểm tra/tra cứu một tiến trình bất kì dựa trên tên của nó: ps aux | grep <từ khoá>
 
-(Câu lệnh này có thể dùng để tra cứu PID của tiến trình, kiểm tra một tiến trình có hoạt động hay không)
+(*Câu lệnh này có thể dùng để tra cứu PID của tiến trình, kiểm tra một tiến trình có hoạt động hay không)
 
 2. Lệnh top để hiển thị trạng thái tiến trình
 - Giống như ps, top cũng có chức năng hiển thị thông tin tiến trình nhưng nâng cao hơn khi danh sách tiến trình được update liên tục. Ngoài ra có bổ sung thêm nhiều thông số quan trọng như: phân phối CPU, cấp phát bộ nhớ,…giúp dễ dàng theo dõi trạng thái hoạt động của hệ thống, phòng tránh xung đột và bế tắc xảy ra, tối ưu hoá hoạt động của CPU
