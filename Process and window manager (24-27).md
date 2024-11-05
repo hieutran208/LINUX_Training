@@ -45,7 +45,7 @@
 - VSZ: Kích thước bộ nhớ ảo sử dụng bởi tiến trình
 - RSS: Kích thước bộ nhớ thực sử dụng bởi tiến trình
 - TYY: Tên thiết bị đầu cuối điều khiển, nếu không có sẽ thấy “?”
-- STAT: Trạng thái của tiến trình 
+- STAT: Trạng thái của tiến trình (S: sleeping; Ss: là tiến trình lãnh đạo phiên, ở trạng thái sleeping; I: rảnh rỗi; R: đang chạy)
 - START: Thời gian bắt đầu của tiến trình 
 - TIME: Tổng thời gian sử dụng CPU của tiến trình
 - COMMAND: Tên tiến trình (Câu lệnh thực hiện)
