@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0375250d-0425-4c64-84e0-f8c9205e73f9)**THAO TÁC VỚI TIẾN TRÌNH VÀ TRÌNH QUẢN LÝ CỬA SỔ**
+**THAO TÁC VỚI TIẾN TRÌNH VÀ TRÌNH QUẢN LÝ CỬA SỔ**
 
 *Tiến trình: Tiến trình là các chương trình chạy trên hệ thống. PID là số hiệu tiến trình, dùng để nhận biết các tiến trình*
 
