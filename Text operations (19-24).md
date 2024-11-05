@@ -130,3 +130,17 @@ CÁCH 2: awk '$số_thứ_tự_cột điều_kiện {print $0}' file.txt => In r
 CÁCH 3: awk '{sum += $số_thứ_tự_cột} END {print sum}' file.txt => Tính tổng các giá trị trong một cột cụ thể
 
 **D. Trình soạn thảo vim**
+
+*1. Các chế độ làm việc của vim*
+
+a. Chế độ command mode
+- Là chế độ mặc định khi mở vim. Ở chế độ này ta có thể di chuyển con trỏ, thực hiện các thao tác như sao chép, dán, xóa, tìm kiếm, và điều khiển con trỏ.
+- Chuyển sang chế độ khác: Nhấn phím 'i' để chuyển sang insert mode và nhấn ':' để chuyển sang ex mode
+
+b. Chế độ insert mode
+- Đây là chế độ có thể gõ chữ vào văn bản giống như các trình soạn thảo văn bản khác.
+- Chuyển sang chế độ khác: Nhấn 'esc' để trở về chế độ command mode
+
+c. Chế độ ex mode
+- Đây là chế độ để thực hiện các câu lệnh phức tạp hoặc không thực hiện được trong chế độ command mode. Nếu như command mode chủ yếu thực hiện các thao tác với văn bản thi ex mode thực hiện các lệnh toàn cục liên quan đến quản lý tệp, cấu hình Vim và các thao tác nâng cao.
+- Chuyển qua chế độ khác: Nhấn 'esc' để trở lại chế độ command mode
