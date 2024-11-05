@@ -37,10 +37,11 @@ VÍ DỤ 2: history | grep "apt" => Hiển thị các lệnh đã chạy chứa 
 VÍ DỤ 3: history -c => Xoá lịch sử
 
 *2. Thực hiện lại lệnh*
-- Ctrl + R: Ctrl + R để tìm ngược trong lịch sử, khi tìm thấy lệnh mong muốn thì nhấn ENTER để thực hiện
-- Ctrl + S: Ctrl + S để tìm xuôi trong lịch sử, khi tìm thấy lệnh mong muốn thì nhấn ENTER để thực hiện
-- Ctrl + G: Huỷ tìm kiếm trong lịch sủ
-- Ngoài ra cũng có thể dùng phím điều hướng lên, xuống để tìm lại các lệnh
+- Ctrl + R: tìm ngược trong lịch sử, khi tìm thấy lệnh mong muốn thì nhấn ENTER để thực hiện
+- Ctrl + S: tìm xuôi trong lịch sử, khi tìm thấy lệnh mong muốn thì nhấn ENTER để thực hiện
+- Ctrl + G: Thoát tìm kiếm trong lịch sủ
+
+=> Sau khi sử dụng Ctrl + R hoặc Ctrl + S, gõ một phần câu lệnh để tìm lệnh chứa từ khoá đó
   
 **Thay đổi thư mục làm việc, xem thư mục đang làm việc và tra cứu hướng dẫn/options của các lệnh**
 
