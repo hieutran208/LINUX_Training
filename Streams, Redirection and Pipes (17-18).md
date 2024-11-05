@@ -1,4 +1,4 @@
-**STREAMS, REDIRECTION AND PIPES**
+**STREAMS, REDIRECTION VÀ PIPES**
 
 **Các loại stream trong Linux**
 
