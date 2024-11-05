@@ -4,7 +4,7 @@
 
 *Shell là một môi trường trong đó chúng ta có thể chạy các lệnh, các chương trình và Shell script. Linux cung cấp nhiều loại shell khác nhau, mỗi loại có đặc điểm và chức năng riêng. Bash là shell phổ biến do khả năng tùy chỉnh và hỗ trợ mạnh mẽ. Dưới đây là một số shell phổ biến*
 
-1.Bash (Bourne Again Shell)
+1. Bash (Bourne Again Shell)
 - Mục đích sử dụng: Đây là shell mặc định trên nhiều bản phân phối Linux và được dùng phổ biến cho mọi tác vụ trên hệ thống. Bash hỗ trợ cả làm việc tương tác và viết script tự động hóa, nhờ tính năng mạnh mẽ và dễ tùy chỉnh.
 - Lệnh để khởi chạy: bash
 
