@@ -1,6 +1,6 @@
 **STREAMS, REDIRECTION VÀ PIPES**
 
-**Các loại stream trong Linux**
+**A. Các loại stream trong Linux**
 
 *Streams là các luồng dữ liệu đóng vai trò chính trong việc truyền tải thông tin giữa người dùng. Trong Linux, Standard Input (stdin), Standard Output (stdout) và Standard Error (stderr) là ba luồng (streams) chính để giao tiếp giữa người dùng và hệ thống, được sử dụng rộng rãi trong việc quản lý đầu vào, đầu ra, và xử lý lỗi khi thực thi các lệnh.*
 
@@ -40,7 +40,7 @@ Cách sử dụng:
 => Nếu thư mục không tồn tại, một thông báo lỗi sẽ xuất hiện.
 - Chuyển hướng stderr vào tệp: Dùng 2> để ghi thông báo lỗi vào tệp thay vì hiển thị trên màn hình. Ví dụ: ls /nonexistent_directory 2> error.log (Thông báo lỗi sẽ được lưu vào error.log thay vì hiển thị trên màn hình.)
 
-**Redirect Input, Output và cách Piping Data giữa các Programs**
+**B. Redirect Input, Output và cách Piping Data giữa các Programs**
 
 *Redirect Input*
 - Mục đích sử dụng: Cú pháp '<' dùng để chuyển hướng đầu vào từ một tệp
