@@ -16,7 +16,6 @@ VÍ DỤ 4: cat file1.txt file2.txt file3.txt > file-all.txt => Kết hợp đ�
 
 *2. Lệnh tac*
 - Mục đích sử dụng: in từng dòng của tệp bắt đầu từ dòng dưới cùng và kết thúc ở dòng trên cùng
-- Cách sử dụng: Đây là ví dụ về cách sử dụng phổ biến với lệnh tac
 
 VÍ DỤ: tac file.txt => đọc file.txt từ cuối lên đầu (hữu ích khi muốn xem các mục gần đây nhất)
 
@@ -48,4 +47,26 @@ CÁCH 3: Chia theo số tệp: split -n [Số các tệp con] [file đầu vào]
 VÍ DỤ 1: sort example.txt | uniq => Dùng `sort` trước để đảm bảo các dòng giống nhau ở gần nhau, sau đó xoá bỏ các dòng trùng lặp
 
 VÍ DỤ 2: uniq -c example.txt => Đếm số lần xuất hiện của mỗi dòng
+
+*6. Lệnh nl*
+- Mục đích sử dụng: đánh số thứ tự các dòng trong file
+  
+VÍ DỤ: nl file.txt => Hiển thị nội dung file.txt kèm số dòng lên terminal
+
+**Các lệnh xem tệp: ‘head’, ‘tail’, ‘less’, ‘cut’, ‘wc’**
+
+*1. Lệnh head*
+- Mục đích sử dụng: Xem phần đầu của file (mặc định là 10 dòng đầu)
+  
+VÍ DỤ 1: head file.txt => Hiển thị nội dung 10 dòng đầu file.txt lên terminal
+
+VÍ DỤ 2: head -n 20 file.txt => Hiển thị nội dung 20 dòng đầu file.txt lên terminal
+
+*2. Lệnh tail*
+- Mục đích sử dụng: Xem phần cuối của file (mặc định là 10 dòng cuối)
+  
+VÍ DỤ 1: tail file.txt => Hiển thị nội dung 10 dòng cuối file.txt lên terminal
+
+VÍ DỤ 2: tail -n 20 file.txt => Hiển thị nội dung 20 dòng cuối file.txt lên terminal
+
 
