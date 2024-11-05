@@ -58,6 +58,20 @@ a. Các thông số hệ thống
 b. Các thông số tiến trình
 ![image](https://github.com/user-attachments/assets/900f7e26-a522-4ae6-901a-e7d27fe7dd81)
 
+Ý nghĩa các trường trong bảng hiển thị thông tin tiến trình:
+- PID: Số hiệu (ID định danh) của tiến trình
+- USER: Tên chủ sở hữu tác vụ
+- PR: Mức độ ưu tiên (20 là mức mặc định; 0 là mức cao nhất; rt là mức đặc biệt dành cho các tiến trình real-time)
+- NI: Mức độ nice (PR = 20 + NI)
+- VIRT: Kích thước bộ nhớ ảo sử dụng bởi tiến trình
+- RES: Kích thước bộ nhớ thực sử dụng bởi tiến trình
+- SHR: Kích thước bộ nhớ có thể chia sẻ với các tiến trình khác
+- S: Trạng thái của tiến trình (S: sleeping; Ss: là tiến trình lãnh đạo phiên, ở trạng thái sleeping; I: rảnh rỗi; R: đang chạy)
+- %CPU: % sử dụng CPU của tiến trình
+- %MEM: % sử dụng bộ nhớ của tiến trình
+- TIME+: Thời gian tiến trình đã được chạy
+- COMMAND: Tên tiến trình (Câu lệnh thực hiện)
+
 *3. Các thông số khi hiển thị thông tin với lệnh htop*
 ![image](https://github.com/user-attachments/assets/1892c745-4518-4e8d-89bf-5e9bbef241de)
 
