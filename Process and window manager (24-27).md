@@ -8,7 +8,6 @@
 
 - Hiển thị tất cả các tiến trình trên hệ thống: ps aux (có thể thay bằng 'ps -ef' để kết quả ngắn gọn hơn nhưng sẽ không đầy đủ bằng)
 - Hiển thị tiến trình theo tên người dùng: ps –U [tên người dùng]
-- Hiển thị tiến trình theo nhóm người dùng: ps –G [nhóm người dùng]
 - Hiển thị tiến trình theo PID: ps -ef -p [các pid cần hiển thị]
 - Hiển thị các cột cần thiết của tiến trình đang chạy: ps -e -o [tên các cột cần hiển thị]
 - Hiển thị các cột cần thiết và sắp xếp theo cách sử dụng: ps –e -o [tên các cột cần hiển thị] --sort=<tiền tố>[cột cần sắp xếp]
@@ -17,9 +16,9 @@
 
 (Tiền tố: “+” sắp xếp theo thứ tự tăng dần, “-” sắp xếp theo thứ tự giảm dần) 
 
-- Kiểm tra/tra cứu một tiến trình bất kì dựa trên tên của nó: ps aux | grep <từ khoá>
+- Tra cứu một tiến trình bất kì dựa trên tên của nó: ps aux | grep <từ khoá>
 
-(*Câu lệnh này có thể dùng để tra cứu PID của tiến trình, kiểm tra một tiến trình có hoạt động hay không)
+(*Câu lệnh này có thể dùng để tra cứu PID của tiến trình hoặc để kiểm tra một phần mềm có hoạt động hay không)
 
 *2. Lệnh top/htop để hiển thị trạng thái tiến trình*
 
@@ -33,7 +32,8 @@ b. Lệnh htop
 - Cú pháp: htop (Muốn tắt htop để về terminal, ta nhấn Ctrl + Z)
 
 *3. Sử dụng lệnh kill để dừng tiến trình*
-
+- Thông thường, để kết thúc một tiến trình ta dùng cú pháp: kill <PID tiến trình> (Nếu chưa biết PID thì dùng ps để tra cứu). Đây là cú pháp mặc định, gọi là sigterm
+- 
 **B. Ý nghĩa các thông số khi theo dõi tiến trình**
 
 *1. Các thông số tiến trình khi hiển thị thông tin với lệnh ps*
@@ -127,6 +127,6 @@ Về cơ bản, tên các cột hiển thị thông tin tiến trình sẽ giố
   - Load Average > 1 có nghĩa là có nhiều tiến trình đang chờ CPU, gây ra tình trạng quá tải.
   - Load Average < 1 cho thấy hệ thống có tài nguyên dự phòng và không bị quá tải.
 
-**C. Dừng tiến trình bằng lệnh kill**
+**C. Byobu và cách sử dụng byobu**
 
 
