@@ -48,7 +48,7 @@ b. Các thông số tiến trình
 *3. Các thông số khi hiển thị thông tin với lệnh htop*
 ![image](https://github.com/user-attachments/assets/1892c745-4518-4e8d-89bf-5e9bbef241de)
 
-Về cơ bản, các thông tin tiến trình sẽ giống với lệnh top. Tuy nhiên có chút khác biệt khi có một số phần trong thông tin hệ thống (CPU, RAM, SWAP) được hiển thị dưới dạng thanh ngang có màu sắc:
+Về cơ bản, tên các cột hiển thị thông tintiến trình sẽ giống với lệnh top. Tuy nhiên có chút khác biệt khi có một số phần thông tin hệ thống (CPU, RAM, SWAP) được hiển thị dưới dạng thanh ngang có màu sắc:
 - CPU Usage: Hiển thị nhiều thanh ngang màu sắc giúp dễ dàng theo dõi mức độ sử dụng CPU (màu xanh là phần CPU đang làm việc với các tác vụ người dùng, màu đỏ là phần CPU đang làm việc với các tác vụ hệ thống, màu xám là phần CPU ở trạng thái rảnh rỗi). Nếu có nhiều nhân CPU thì mỗi nhân sẽ có 1 thanh riêng biệt
 - Memory Usage: Cung cấp thông tin về bộ nhớ RAM và swap (Xanh: Bộ nhớ đang được sử dụng cho các tiến trình bình thường; Đỏ: Bộ nhớ đang sử dụng cho các tiến trình hệ thống; Vàng: Bộ nhớ dùng cho bộ nhớ đệm (buffer) và bộ nhớ cache.)
 
