@@ -40,14 +40,14 @@
 3. Các thông số khi hiển thị thông tin với lệnh htop
 ![image](https://github.com/user-attachments/assets/1892c745-4518-4e8d-89bf-5e9bbef241de)
 - Về cơ bản, các thông tin tiến trình sẽ giống với lệnh top. Tuy nhiên có chút khác biệt nhỏ về phần thông tin hệ thống
-  - CPU Usage: Hiển thị nhiều thanh ngang màu sắc giúp dễ dàng theo dõi mức độ sử dụng CPU.
-  - Memory Usage: Cung cấp thông tin chi tiết hơn với thanh tiến trình màu sắc cho bộ nhớ RAM và swap.
-  - Tasks: Cung cấp thông tin của các tiến trình: số tiến trình, số threads và kernel threads được sử dụng, số tiến trình đang chạy
+  - CPU Usage: Hiển thị nhiều thanh ngang màu sắc giúp dễ dàng theo dõi mức độ sử dụng CPU (màu xanh là phần CPU đang làm việc với các tác vụ người dùng, màu đỏ là phần CPU đang làm việc với các tác vụ hệ thống, còn lại là phần CPU ở trạng thái rảnh rỗi). Nếu có nhiều nhân CPU thì mỗi nhân sẽ có 1 thanh riêng biệt
+  - Memory Usage: Cung cấp thông tin về bộ nhớ RAM và swap.
+  - Tasks: Cung cấp các thông tin: số tiến trình đang hoạt động, số threads và kernel threads đang được sử dụng, số tiến trình đang chạy
 
 4. Ý nghĩa chỉ số load average
 - Load Average (trung bình tải) là chỉ số đo mức độ tải của hệ thống trong một khoảng thời gian nhất định. Nó cho biết số lượng trung bình các tiến trình đang ở trạng thái có thể chạy trong một khoảng thời gian cụ thể. Khi sử dụng câu lệnh top/htop để theo dõi tiến trình, load average được hiển thị dưới dạng 3 số liên tiếp nhau, biểu thị tải trong lần lượt 1, 5 và 15 phút qua
 - Ý nghĩa thông số:
-  - Load Average = 1 có nghĩa là hệ thống đang sử dụng đầy đủ tài nguyên của một CPU
+  - Load Average = 1 có nghĩa là hệ thống đang sử dụng đầy đủ tài nguyên của CPU
   - Load Average > 1 có nghĩa là có nhiều tiến trình đang chờ CPU, gây ra tình trạng quá tải.
   - Load Average < 1 cho thấy hệ thống có tài nguyên dự phòng và không bị quá tải.
 
