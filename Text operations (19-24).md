@@ -151,5 +151,19 @@ a. Tạo/mở một file bất kì
 - Sau khi mở Terminal, gõ lệnh vim + [đường dẫn đến file] để mở file. 
 
 b. Chèn văn bản vào file
-- Sau khi mở file, trình soạn thảo sẽ ở chế độ command mode. Để chèn văn bản ta cần nhấn phím “i” để chuyển sang chế độ insert mode. Ở chế độ này, ta có thể gõ chữ vào văn bản từ bàn phím. Khi hoàn thành, nhấn “esc” để quay lại chế độ command mode. Khi muốn thoát hẳn khỏi trình soạn thảo vim ra màn hình terminal,nếu muốn lưu các thay đổi thì gõ :x hoặc :wq, nếu không muốn lưu thay đổi, gõ :q!.
+- Sau khi mở file, trình soạn thảo sẽ ở chế độ command mode. Để chèn văn bản ta cần nhấn phím “i” để chuyển sang chế độ insert mode. Ở chế độ này, ta có thể gõ chữ vào văn bản từ bàn phím. Khi hoàn thành, nhấn “esc” để quay lại chế độ command mode. 
 
+c. Điều hướng con trỏ 
+- Khi điều hướng con trỏ, ta chủ yếu dùng các phím mũi tên. Nhưng nếu file lớn, ta cũng có thể di chuyển tới dòng bất kì bằng lệnh “:<số dòng>” (ví dụ dòng số 5 thì nhấn “:5”); di chuyển đến đầu và đầu dòng cuối văn bản lần lượt bằng lệnh “:0” và “:$”
+
+d. Xoá trong văn bản
+- Muốn xoá một kí tự ta nhấn “x” hoặc delete 
+- Xoá 1 dòng tính từ vị trí con trỏ nhấn “:d”
+- dG: Xoá từ vị trí con trỏ đến cuối file (G=shift+g)
+- Để hoàn tác ta nhấn “u”
+
+e. Tìm kiếm trong văn bản
+- Để tìm kiếm các từ, ta nhấn câu lệnh “/<từ cần tìm>” rồi nhấn ENTER. Sau khi đã có kết quả, nhấn "n" để con trỏ di chuyển đến kết quả tiếp theo hoặc Shift+n để quay lại kết quả trước
+
+f. Thoát khỏi trình soạn thảo 
+- Ở chế độ command mode, để thoát khỏi file sau khi lưu các thay đổi, gõ :x hoặc :wq. Nếu muốn thoát mà không lưu thay đổi, gõ :q!.
