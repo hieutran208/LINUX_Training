@@ -28,7 +28,7 @@ a. Lệnh top
 - Cú pháp: top (Muốn tắt top để về terminal, ta nhấn Ctrl + Z)
 
 b. Lệnh htop
-- Câu lệnh htop cũng hiển thị đầy đủ các thông tin như top nhưng có một số tính năng nâng cao hơn như: dùng màu sắc để hiển thị thông tin hệ thống (CPU, bộ nhớ), phím tắt để quản lý tiến trình thay vì dùng lệnh, tìm kiếm tiến trình trên giao diện,....
+- Câu lệnh htop cũng hiển thị đầy đủ các thông tin như top nhưng có một số tính năng nâng cao hơn như: dùng màu sắc để hiển thị thông tin hệ thống (CPU, RAM, swap), phím tắt để quản lý tiến trình,....
 - Muốn sử dụng htop ta phải cài về bằng lệnh: sudo apt install htop
 - Cú pháp: htop (Muốn tắt htop để về terminal, ta nhấn Ctrl + Z)
 
