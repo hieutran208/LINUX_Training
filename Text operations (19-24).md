@@ -1,4 +1,4 @@
-**CÁC THAO TÁC VÀ CÁC LỆNH DÙNG ĐỂ XỬ LÝ VĂN BẢN**
+**CÁC LỆNH VÀ CÁC THAO TÁC DÙNG TRONG XỬ LÝ VĂN BẢN**
 
 **A. Lệnh cat, tac, sort, split, uniq, nl**
 
