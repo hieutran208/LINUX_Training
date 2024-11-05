@@ -34,7 +34,7 @@ b. Lệnh htop
 
 *3. Sử dụng lệnh kill để dừng tiến trình*
 
-**B. Ý nghĩa các thông số khi hiển thị thông tin, trạng thái tiến trình**
+**B. Ý nghĩa các thông số khi theo dõi tiến trình**
 
 *1. Các thông số tiến trình khi hiển thị thông tin với lệnh ps*
 ![image](https://github.com/user-attachments/assets/66a42ee3-7613-474a-a5e4-7b5c717ad806)
