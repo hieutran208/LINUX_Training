@@ -33,7 +33,7 @@ b. Lệnh htop
 
 *3. Sử dụng lệnh kill để dừng tiến trình*
 - Thông thường, để kết thúc một tiến trình ta dùng cú pháp: *kill <PID tiến trình>*. Đây là cú pháp mặc định, gọi là sigterm
-- Nguyên lý hoạt động và phân biệt của sigterm và sigkill (kill -9)
+- Nguyên lý hoạt động và phân biệt giữa sigterm và sigkill (kill -9)
   - Sigterm: Gửi tín hiệu yêu cầu tự kết thúc tới tiến trình và tiến trình cha tương ứng. Đây là tín hiệu yêu cầu tiến trình tự kết thúc một cách an toàn, lưu trữ dữ liệu và giải phóng tài nguyên trước khi dừng.
   - Sigkill: Ép buộc tiến trình kết thúc ngay lập tức mà không thông qua tiến trình con hay tiến trình cha. Do vậy tiến trình không có thời gian để xử lý dữ liệu hoặc giải phóng tài nguyên. Thường chỉ dùng khi tiến trình không phản hồi tín hiệu sigterm thông thường
 
