@@ -31,4 +31,9 @@
 ![image](https://github.com/user-attachments/assets/8760b1e6-a4bb-418c-98f5-414d36a77d18)
 ![image](https://github.com/user-attachments/assets/43bbba8c-1748-4d66-9f2c-d64c789f7651)
 
+3. Các thông số khi hiển thị thông tin với lệnh htop
+![image](https://github.com/user-attachments/assets/1892c745-4518-4e8d-89bf-5e9bbef241de)
+- Về cơ bản, các thông tin tiến trình sẽ giống với lệnh top. Tuy nhiên có một số khác biệt về phần thông tin hệ thống
+  - CPU Usage: Hiển thị nhiều thanh ngang màu sắc giúp dễ dàng theo dõi mức độ sử dụng CPU.
+  - Memory Usage: Cung cấp thông tin chi tiết hơn với thanh tiến trình màu sắc cho bộ nhớ RAM và swap.
 
