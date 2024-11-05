@@ -167,5 +167,3 @@ e. Tìm kiếm trong văn bản
 
 f. Thoát khỏi trình soạn thảo 
 - Ở chế độ command mode, để thoát khỏi vim sau khi lưu các thay đổi, gõ :x hoặc :wq. Nếu muốn thoát mà không lưu thay đổi, gõ :q!.
-
-**E. Byobu và các thao tác cơ bản với byobu**
