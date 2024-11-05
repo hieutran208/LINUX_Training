@@ -26,3 +26,5 @@
 **Ý nghĩa các thông số khi hiển thị thông tin, trạng thái tiến trình**
 1. Các thông số khi hiển thị thông tin với lệnh ps
 ![image](https://github.com/user-attachments/assets/f7011a3c-a344-4e69-81d8-2421b5d77459)
+![image](https://github.com/user-attachments/assets/bb90bdb4-8fb0-44ad-9b81-afebfca59d3a)
+
