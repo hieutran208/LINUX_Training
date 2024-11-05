@@ -31,7 +31,7 @@ VÍ DỤ 2: sort -r file.txt => Sắp xếp các dòng theo thứ tự ngược 
 VÍ DỤ 3: cat file1.txt file2.txt | sort => Kết hợp hai tệp, sau đó sắp xếp các dòng và hiển thị ra màn hình
 
 *4. Lệnh split*
-- Mục đích sử dụng: chia tệp thành các phân đoạn có kích thước bằng nhau để xem và thao tác dễ dàng hơn (thường sử dụng trên các tệp tương đối lớn)
+- Mục đích sử dụng: chia tệp thành các phân đoạn (thường sử dụng trên các tệp tương đối lớn)
 - Cách sử dụng: Đây là một số cách thường dùng với lệnh split
 
 CÁCH 1: Chia theo số dòng: split -l [Số dòng cần chia] [file đầu vào] [Tiền tố của các tệp con được chia]n tố của các tệp con được chia]
