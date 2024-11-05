@@ -29,6 +29,6 @@
 
 2. Các thông số khi hiển thị thông tin với lệnh top
 ![image](https://github.com/user-attachments/assets/8760b1e6-a4bb-418c-98f5-414d36a77d18)
-![image](https://github.com/user-attachments/assets/d3e782b0-d563-45f9-9eb2-8fd32af2f290)
+![image](https://github.com/user-attachments/assets/43bbba8c-1748-4d66-9f2c-d64c789f7651)
 
 
