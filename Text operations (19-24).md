@@ -1,4 +1,4 @@
-**THAO TÁC VỚI CÁC LỆNH XỬ LÝ VĂN BẢN**
+**CÁC THAO TÁC VÀ CÁC LỆNH DÙNG ĐỂ XỬ LÝ VĂN BẢN**
 
 **A. Lệnh cat, tac, sort, split, uniq, nl**
 
@@ -142,5 +142,14 @@ b. Chế độ insert mode
 - Chuyển sang chế độ khác: Nhấn 'esc' để trở về chế độ command mode
 
 c. Chế độ ex mode
-- Đây là chế độ để thực hiện các câu lệnh phức tạp hoặc không thực hiện được trong chế độ command mode. Nếu như command mode chủ yếu thực hiện các thao tác với văn bản thi ex mode thực hiện các lệnh toàn cục liên quan đến quản lý tệp, cấu hình Vim và các thao tác nâng cao.
+- Thực hiện các câu lệnh phức tạp hoặc không thực hiện được trong chế độ command mode. Nếu như command mode chủ yếu thực hiện các thao tác với văn bản thi ex mode thực hiện các lệnh toàn cục liên quan đến quản lý tệp, cấu hình Vim và các thao tác nâng cao.
 - Chuyển qua chế độ khác: Nhấn 'esc' để trở lại chế độ command mode
+
+*2. Các thao tác cơ bản khi sử dụng vim*
+
+a. Tạo/mở một file bất kì
+- Sau khi mở Terminal, gõ lệnh vim + [đường dẫn đến file] để mở file. 
+
+b. Chèn văn bản vào file
+- Sau khi mở file, trình soạn thảo sẽ ở chế độ command mode. Để chèn văn bản ta cần nhấn phím “i” để chuyển sang chế độ insert mode. Ở chế độ này, ta có thể gõ chữ vào văn bản từ bàn phím. Khi hoàn thành, nhấn “esc” để quay lại chế độ command mode. Khi muốn thoát hẳn khỏi trình soạn thảo vim ra màn hình terminal,nếu muốn lưu các thay đổi thì gõ :x hoặc :wq, nếu không muốn lưu thay đổi, gõ :q!.
+
