@@ -35,13 +35,17 @@
 **B. Ý nghĩa các thông số khi hiển thị thông tin, trạng thái tiến trình**
 
 *1. Các thông số tiến trình khi hiển thị thông tin với lệnh ps*
-![image](https://github.com/user-attachments/assets/f7011a3c-a344-4e69-81d8-2421b5d77459)
+![image](https://github.com/user-attachments/assets/66a42ee3-7613-474a-a5e4-7b5c717ad806)
 
 *2. Các thông số khi hiển thị thông tin với lệnh top*
-![image](https://github.com/user-attachments/assets/8760b1e6-a4bb-418c-98f5-414d36a77d18)
-![image](https://github.com/user-attachments/assets/43bbba8c-1748-4d66-9f2c-d64c789f7651)
 
-3. Các thông số khi hiển thị thông tin với lệnh htop
+a. Các thông số hệ thống
+![image](https://github.com/user-attachments/assets/d2311744-2f17-4262-87a7-b26bc961fb0d)
+
+b. Các thông số tiến trình
+![image](https://github.com/user-attachments/assets/900f7e26-a522-4ae6-901a-e7d27fe7dd81)
+
+*3. Các thông số khi hiển thị thông tin với lệnh htop*
 ![image](https://github.com/user-attachments/assets/1892c745-4518-4e8d-89bf-5e9bbef241de)
 
 Về cơ bản, các thông tin tiến trình sẽ giống với lệnh top. Tuy nhiên có chút khác biệt khi có một số phần trong thông tin hệ thống (CPU, RAM, SWAP) được hiển thị dưới dạng thanh ngang có màu sắc:
