@@ -1,4 +1,4 @@
-**CÁC LỆNH VÀ CÁC THAO TÁC VỚI TIẾN TRÌNH**
+**THAO TÁC VỚI TIẾN TRÌNH VÀ TRÌNH QUẢN LÝ CỬA SỔ**
 
 *Tiến trình: Tiến trình là các chương trình chạy trên hệ thống. PID là số hiệu tiến trình, dùng để nhận biết các tiến trình*
 
