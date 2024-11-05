@@ -120,7 +120,7 @@ VÍ DỤ 2: sed 's/this/This/g' file.txt => thay thế 'this' thành 'This' tron
 VÍ DỤ 3: sed '/keyword/d' file.txt => Xoá các dòng có chứa từ 'keyword' trong tệp
 
 *3. Lệnh awk*
-- Mục đích sử dụng: xử lý văn bản theo mẫu, chủ yếu dùng trong các tệp dữ liệu có cấu trúc
+- Mục đích sử dụng: xử lý văn bản theo hàng và cột, chủ yếu dùng trong các tệp có cấu trúc
 - Cách sử dụng: Có một số cách sử dụng phổ biến với lệnh awk
 
 CÁCH 1: awk '{print $cột_thứ_1 $cột_thứ_2 }' file.txt => In ra các cột cụ thể
