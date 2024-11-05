@@ -12,8 +12,13 @@
 - Hiển thị các cột cần thiết của tiến trình đang chạy: ps -e -o [tên các cột cần hiển thị]
 - Hiển thị các cột cần thiết và sắp xếp theo cách sử dụng: ps –e -o [tên các cột cần hiển thị] --sort=<tiền tố>[cột cần sắp xếp]
 
+(Đây cũng là câu lệnh có thể sử dụng để hiển thị tiến trình chiếm nhiều CPU và RAM nhất)
+
 (Tiền tố: “+” sắp xếp theo thứ tự tăng dần, “-” sắp xếp theo thứ tự giảm dần) 
 
+- Kiểm tra/tra cứu một tiến trình bất kì dựa trên tên của nó: ps aux | grep <từ khoá>
+
+(Câu lệnh này có thể dùng để tra cứu PID của tiến trình, kiểm tra một tiến trình có hoạt động hay không)
 2. Lệnh top để hiển thị trạng thái tiến trình
 - Giống như ps, top cũng có chức năng hiển thị thông tin tiến trình nhưng nâng cao hơn khi danh sách tiến trình được update liên tục. Ngoài ra có bổ sung thêm nhiều thông số quan trọng như: phân phối CPU, cấp phát bộ nhớ,…giúp dễ dàng theo dõi trạng thái hoạt động của hệ thống, phòng tránh xung đột và bế tắc xảy ra, tối ưu hoá hoạt động của CPU
 - Cú pháp: top (Muốn tắt top để về terminal, ta nhấn Ctrl + Z)
@@ -23,7 +28,7 @@
 - Muốn sử dụng htop ta phải cài về bằng lệnh: sudo apt install htop
 - Cú pháp: htop (Muốn tắt htop để về terminal, ta nhấn Ctrl + Z)
 
-**Ý nghĩa các thông số khi hiển thị thông tin, trạng thái tiến trình**
+**B. Ý nghĩa các thông số khi hiển thị thông tin, trạng thái tiến trình**
 1. Các thông số khi hiển thị thông tin với lệnh ps
 ![image](https://github.com/user-attachments/assets/f7011a3c-a344-4e69-81d8-2421b5d77459)
 
@@ -36,5 +41,6 @@
 - Về cơ bản, các thông tin tiến trình sẽ giống với lệnh top. Tuy nhiên có chút khác biệt nhỏ về phần thông tin hệ thống
   - CPU Usage: Hiển thị nhiều thanh ngang màu sắc giúp dễ dàng theo dõi mức độ sử dụng CPU.
   - Memory Usage: Cung cấp thông tin chi tiết hơn với thanh tiến trình màu sắc cho bộ nhớ RAM và swap.
-  - Tasks: Cung cấp thông tin của tiến trình đang chạy: PID, số threads và kernel threads mà tiến trình này sử dụng
+  - Tasks: Cung cấp thông tin của các tiến trình: số tiến trình, số threads và kernel threads được sử dụng, số tiến trình đang chạy
 
+**C.**
