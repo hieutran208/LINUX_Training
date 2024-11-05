@@ -1,4 +1,4 @@
-**THAO TÁC VỚI TIẾN TRÌNH VÀ TRÌNH QUẢN LÝ CỬA SỔ**
+![image](https://github.com/user-attachments/assets/0375250d-0425-4c64-84e0-f8c9205e73f9)**THAO TÁC VỚI TIẾN TRÌNH VÀ TRÌNH QUẢN LÝ CỬA SỔ**
 
 *Tiến trình: Tiến trình là các chương trình chạy trên hệ thống. PID là số hiệu tiến trình, dùng để nhận biết các tiến trình*
 
@@ -37,6 +37,19 @@
 *1. Các thông số tiến trình khi hiển thị thông tin với lệnh ps*
 ![image](https://github.com/user-attachments/assets/66a42ee3-7613-474a-a5e4-7b5c717ad806)
 
+Ý nghĩa các trường trong bảng hiển thị thông tin tiến trình:
+- USER: Tên chủ sở hữu tác vụ
+- PID: Số hiệu (ID định danh) của tiến trình
+- %CPU: % sử dụng CPU của tiến trình
+- %MEM: % sử dụng bộ nhớ của tiến trình
+- VSZ: Kích thước bộ nhớ ảo sử dụng bởi tiến trình
+- RSS: Kích thước bộ nhớ thực sử dụng bởi tiến trình
+- TYY: Tên thiết bị đầu cuối điều khiển, nếu không có sẽ thấy “?”
+- STAT: Trạng thái của tiến trình 
+- START: Thời gian bắt đầu của tiến trình 
+- TIME: Tổng thời gian sử dụng CPU của tiến trình
+- COMMAND: Tên tiến trình (Câu lệnh thực hiện)
+
 *2. Các thông số khi hiển thị thông tin với lệnh top*
 
 a. Các thông số hệ thống
@@ -48,7 +61,7 @@ b. Các thông số tiến trình
 *3. Các thông số khi hiển thị thông tin với lệnh htop*
 ![image](https://github.com/user-attachments/assets/1892c745-4518-4e8d-89bf-5e9bbef241de)
 
-Về cơ bản, tên các cột hiển thị thông tintiến trình sẽ giống với lệnh top. Tuy nhiên có chút khác biệt khi có một số phần thông tin hệ thống (CPU, RAM, SWAP) được hiển thị dưới dạng thanh ngang có màu sắc:
+Về cơ bản, tên các cột hiển thị thông tin tiến trình sẽ giống với lệnh top. Tuy nhiên có chút khác biệt khi có một số phần thông tin hệ thống (CPU, RAM, SWAP) được hiển thị dưới dạng thanh ngang có màu sắc:
 - CPU Usage: Hiển thị nhiều thanh ngang màu sắc giúp dễ dàng theo dõi mức độ sử dụng CPU (màu xanh là phần CPU đang làm việc với các tác vụ người dùng, màu đỏ là phần CPU đang làm việc với các tác vụ hệ thống, màu xám là phần CPU ở trạng thái rảnh rỗi). Nếu có nhiều nhân CPU thì mỗi nhân sẽ có 1 thanh riêng biệt
 - Memory Usage: Cung cấp thông tin về bộ nhớ RAM và swap (Xanh: Bộ nhớ đang được sử dụng cho các tiến trình bình thường; Đỏ: Bộ nhớ đang sử dụng cho các tiến trình hệ thống; Vàng: Bộ nhớ dùng cho bộ nhớ đệm (buffer) và bộ nhớ cache.)
 
