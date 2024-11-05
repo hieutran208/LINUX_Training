@@ -22,7 +22,7 @@ VÍ DỤ: tac file.txt => đọc file.txt từ cuối lên đầu (hữu ích kh
 
 *3. Lệnh sort*
 
-- Mục đích sử dụng: Sắp xếp nội dung file theo thứ tự tăng hoặc giảm (mặc định sẽ xếp dựa trên các kí tự đầu mỗi dòng theo bảng mã ASCII)
+- Mục đích sử dụng: Sắp xếp nội dung file theo thứ tự tăng hoặc giảm (mặc định sẽ xếp dựa trên các kí tự đầu mỗi dòng theo mã ASCII)
 - Cách sử dụng: Có một số ví dụ về các cách sử dụng phổ biến với lệnh sort
 
 VÍ DỤ 1: sort file.txt => Sắp xếp các dòng trong tệp, theo các ký tự ở đầu mỗi dòng
