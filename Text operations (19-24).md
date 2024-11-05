@@ -1,6 +1,6 @@
 **THAO TÁC VỚI CÁC LỆNH XỬ LÝ VĂN BẢN**
 
-**Lệnh cat, tac, sort, split, uniq, nl**
+**A. Lệnh cat, tac, sort, split, uniq, nl**
 
 *1. Lệnh cat*
 - Mục đích sử dụng: đọc tệp và hiển thị chúng dưới dạng stdout, nghĩa là hiển thị nội dung của tệp trên thiết bị đầu cuối
@@ -53,7 +53,7 @@ VÍ DỤ 2: uniq -c example.txt => Đếm số lần xuất hiện của mỗi d
   
 VÍ DỤ: nl file.txt => Hiển thị nội dung file.txt kèm số dòng lên terminal
 
-**Các lệnh xem tệp: ‘head’, ‘tail’, ‘less’, ‘cut’, ‘wc’**
+**B. Các lệnh xem tệp: ‘head’, ‘tail’, ‘less’, ‘cut’, ‘wc’**
 
 *1. Lệnh head*
 - Mục đích sử dụng: Xem phần đầu của file (mặc định là 10 dòng đầu)
@@ -97,7 +97,7 @@ VÍ DỤ 1: wc file.txt => Hiển thị lần lượt số dòng, số từ và 
 
 VÍ DỤ 2: wc -w file.txt => Chỉ đếm số từ (options -l và -m sẽ chỉ hiển thị số dòng và số kí tự)
 
-**Các lệnh grep, sed, awk**
+**C. Các lệnh grep, sed, awk**
 
 *1.Lệnh grep*
 - Mục đích sử dụng: Dùng để tìm kiếm mẫu văn bản
@@ -129,4 +129,4 @@ CÁCH 2: awk '$số_thứ_tự_cột điều_kiện {print $0}' file.txt => In r
 
 CÁCH 3: awk '{sum += $số_thứ_tự_cột} END {print sum}' file.txt => Tính tổng các giá trị trong một cột cụ thể
 
-
+**D. Trình soạn thảo vim**
