@@ -82,4 +82,17 @@ VÍ DỤ 2: tail -f 20 file.txt => Hiển thị các nội dung gần nhất th�
 - Thoát khỏi giao diện: Ctrl + Z
 
 *4. Lệnh cut*
-- Mục đích sử dụng: 
+- Mục đích sử dụng: Trích xuất các phần cụ thể của văn bản từ file đầu vào
+
+VÍ DỤ 1 (lấy các kí tự cụ thể trong chuỗi): echo "Hello World" | cut -b 1,2,3,5,8,9 => In ra chữ "Heloor" 
+
+VÍ DỤ 2 (Trích xuất cột đầu tiên khi tệp có các trường cách nhau bằng tab): cut -f1 file.txt
+
+VÍ DỤ 3 (Trích xuất các kí tự từ 1->3 trong mỗi dòng): cut -c1-3 file.txt
+
+*5. Lệnh wc*
+- Mục đích sử dụng: đếm số từ, số dòng và ký tự trong tệp
+
+VÍ DỤ 1: wc file.txt => Hiển thị lần lượt số dòng, số từ và số kí tự trong file
+
+VÍ DỤ 2: wc -w file.txt => Chỉ đếm số từ (options -l và -m sẽ chỉ hiển thị số dòng và số kí tự)
