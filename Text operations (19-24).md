@@ -166,4 +166,4 @@ e. Tìm kiếm trong văn bản
 - Để tìm kiếm các từ, ta nhấn câu lệnh “/<từ cần tìm>” rồi nhấn ENTER. Sau khi đã có kết quả, nhấn "n" để con trỏ di chuyển đến kết quả tiếp theo hoặc Shift+n để quay lại kết quả trước
 
 f. Thoát khỏi trình soạn thảo 
-- Ở chế độ command mode, để thoát khỏi file sau khi lưu các thay đổi, gõ :x hoặc :wq. Nếu muốn thoát mà không lưu thay đổi, gõ :q!.
+- Ở chế độ command mode, để thoát khỏi vim sau khi lưu các thay đổi, gõ :x hoặc :wq. Nếu muốn thoát mà không lưu thay đổi, gõ :q!.
