@@ -32,7 +32,7 @@ b. Lệnh htop
 - Cú pháp: htop (Muốn tắt htop để về terminal, ta nhấn Ctrl + Z)
 
 *3. Sử dụng lệnh kill để dừng tiến trình*
-- Thông thường, để kết thúc một tiến trình ta dùng cú pháp: kill <PID tiến trình> (Nếu chưa biết PID thì dùng ps để tra cứu). Đây là cú pháp mặc định, gọi là sigterm
+- Thông thường, để kết thúc một tiến trình ta dùng cú pháp: *kill <PID tiến trình>*. Đây là cú pháp mặc định, gọi là sigterm
 - 
 **B. Ý nghĩa các thông số khi theo dõi tiến trình**
 
