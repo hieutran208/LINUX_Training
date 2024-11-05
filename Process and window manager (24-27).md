@@ -55,6 +55,31 @@
 a. Các thông số hệ thống
 ![image](https://github.com/user-attachments/assets/d2311744-2f17-4262-87a7-b26bc961fb0d)
 
+Ý nghĩa các thông số hệ thống tại các dòng trong phần khoanh đỏ:
+
+- Dòng đầu tiên lần lượt hiển thị các thông số về hệ thống:  
+  - Thời gian hiện tại của hệ thống; 
+  - Thời gian uptime: Thời gian chương trình bắt đầu chạy; 
+  - Số lượng người dùng đã log in
+  - Mức độ tải trung bình của CPU  trong 1 phút, 5 phút và 15 phút qua.
+
+- Dòng thứ 2 lần lượt hiển thị tổng số tác vụ và số tác vụ theo trạng thái: 
+  - Tổng số tác vụ trên máy chủ
+  - Số tác vụ đang chạy
+  - Số tác vụ đang trong trạng thái ngủ
+  - Số tác vụ ở trạng thái dừng
+  - Số tác vụ ở trạng thái zombie (đã dừng nhưng chưa được giải phóng)
+
+- Dòng thứ 3 hiển thị phân phối CPU lần lượt như sau: 
+  - us: Phần trăm phân phối cho tiến trình người dùng
+  - sy: Phần trăm phân phối cho tiến trình hệ thống 
+  - ni: Phần trăm phân phối cho tiến trình có mức độ ưu tiên thấp
+  - id: Phần trăm CPU đang rảnh
+  - wa: Phần trăm CPU để đợi khi các tiến trình I/O đang xử lí (wa)
+  - hi: Phần trăm CPU để xử lí các gián đoạn phần cứng
+  - si: Phần trăm CPU để xử lí các gián đoạn phần mềm
+  - st: Phần trăm CPU do máy ảo sử dụng 
+
 b. Các thông số tiến trình
 ![image](https://github.com/user-attachments/assets/900f7e26-a522-4ae6-901a-e7d27fe7dd81)
 
