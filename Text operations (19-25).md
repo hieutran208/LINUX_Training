@@ -12,7 +12,7 @@ VÍ DỤ 2: cat file1.txt file2.txt file3.txt => Kết hợp đọc cả 3 file 
 
 VÍ DỤ 3: cat file1.txt > file2.txt => Dùng như một cú pháp sao chép nội dung file1.txt sang file2.txt
 
-VÍ DỤ 4: cat file1.txt file2.txt file3.txt > file-all.txt => Kết hợp đọc cả 3 file rồi gửi nội dung vào file-all.txt (Nếu file-all.txt đã có nội dung và bạn không muốn ghi đè lên nội dung đã có, dùng cú pháp '>>')
+VÍ DỤ 4: cat file1.txt file2.txt file3.txt > file-all.txt => Kết hợp đọc cả 3 file rồi gửi nội dung vào file-all.txt (Nếu file-all.txt đã có nội dung và bạn chỉ muốn thêm nội dung vào chứ không muốn ghi đè lên nội dung đã có, dùng cú pháp '>>')
 
 *2. Lệnh tac*
 - Mục đích sử dụng: in từng dòng của tệp bắt đầu từ dòng dưới cùng và kết thúc ở dòng trên cùng
