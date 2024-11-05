@@ -1,6 +1,6 @@
 **SHELL VÀ CÁC THAO TÁC VỚI SHELL**
 
-**Các loại shell có trong Linux**
+**A. Các loại shell có trong Linux**
 
 *Shell là một môi trường trong đó chúng ta có thể chạy các lệnh, các chương trình và Shell script. Linux cung cấp nhiều loại shell khác nhau, mỗi loại có đặc điểm và chức năng riêng. Bash là shell phổ biến do khả năng tùy chỉnh và hỗ trợ mạnh mẽ. Dưới đây là một số shell phổ biến*
 
@@ -26,7 +26,7 @@
 - Mục đích sử dụng: Dash là shell siêu nhẹ và nhanh, thường dùng cho các script hệ thống trong môi trường Debian/Ubuntu, nơi yêu cầu tiết kiệm tài nguyên.
 - Lệnh để khởi chạy: dash
 
-**Xem lịch sủ, thực hiện lại các lệnh đã gõ**
+**B. Xem lịch sủ, thực hiện lại các lệnh đã gõ**
 
 *1. Xem lịch sử*
 
@@ -43,7 +43,7 @@ VÍ DỤ 3: history -c => Xoá lịch sử
 
 => Sau khi sử dụng Ctrl + R hoặc Ctrl + S, gõ một phần câu lệnh để tìm lệnh chứa từ khoá đó
   
-**Thay đổi thư mục làm việc, xem thư mục đang làm việc và tra cứu hướng dẫn/options của các lệnh**
+**C. Thay đổi thư mục làm việc, xem thư mục đang làm việc và tra cứu hướng dẫn/options của các lệnh**
 
 *1. Thay Đổi Thư Mục Làm Việc với lệnh cd: cd [đường dẫn]*
 
