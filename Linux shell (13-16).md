@@ -1,3 +1,5 @@
+**SHELL VÀ CÁC THAO TÁC VỚI SHELL**
+
 **Các loại shell có trong Linux**
 
 *Linux cung cấp nhiều loại shell khác nhau, mỗi loại có đặc điểm và chức năng riêng. Bash và Zsh là hai shell phổ biến cho người dùng thông thường và các lập trình viên do khả năng tùy chỉnh và hỗ trợ mạnh mẽ. Dưới đây là một số shell phổ biến*
