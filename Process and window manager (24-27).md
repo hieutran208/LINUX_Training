@@ -1,4 +1,4 @@
-**THAO TÁC VỚI TIẾN TRÌNH VÀ TRÌNH QUẢN LÝ CỬA SỔ**
+![image](https://github.com/user-attachments/assets/19e1d0fb-4ab2-4ce0-89db-33f5f2d7b67f)**THAO TÁC VỚI TIẾN TRÌNH VÀ TRÌNH QUẢN LÝ CỬA SỔ**
 
 *Tiến trình: Tiến trình là các chương trình chạy trên hệ thống. PID là số hiệu tiến trình, dùng để nhận biết các tiến trình*
 
@@ -71,6 +71,8 @@ b. Các thông số tiến trình
 - %MEM: % sử dụng bộ nhớ của tiến trình
 - TIME+: Thời gian tiến trình đã được chạy
 - COMMAND: Tên tiến trình (Câu lệnh thực hiện)
+
+=> Nếu mục đích sử dụng là để theo dõi trạng thái hoạt động của toàn hệ thống thì sử dụng lệnh top. Nếu mục đích sử dụng là trích xuất các thông tin cụ thể của tiến trình thì sử dụng lệnh ps 
 
 *3. Các thông số khi hiển thị thông tin với lệnh htop*
 ![image](https://github.com/user-attachments/assets/1892c745-4518-4e8d-89bf-5e9bbef241de)
