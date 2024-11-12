@@ -86,5 +86,5 @@ c. Tạo thư mục gán và gán các mảng raid vào hệ thống
 - sudo mount /dev/md1 /mnt/raid1
 - sudo mount /dev/md2 /mnt/raid2
 
-d. Chỉnh sửa trong file cấu hình các thiết bị lưu trữ để các mảng raid tự động mount mỗi khi reboot (làm giống phần 4 LAB 2)
+d. Chỉnh sửa trong file cấu hình các thiết bị lưu trữ để các mảng raid tự động mount mỗi khi reboot
 ![image](https://github.com/user-attachments/assets/b059c243-3bf1-4b7d-9188-e07cc37e5d59)
