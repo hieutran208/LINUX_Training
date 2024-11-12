@@ -51,6 +51,7 @@ b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ
 ![image](https://github.com/user-attachments/assets/51e463d7-dde7-42bf-b1db-517f58a84d2b)
 
 4. Cách phân vùng tự mount mỗi khi reboot
+   
 *Để phân vùng tự mount mỗi khi reboot, ta cần cấu hình trên file /etc/fstab (file cấu hình các thiết bị lưu trữ và cách gán chúng vào hệ thống)*
 - Mở file /etc/fstab để chỉnh sửa: vim /etc/fstab
 - Mỗi dòng trong file đại diện cho 1 thiết bị/phân vùng và cách nó được gán
@@ -64,3 +65,4 @@ b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ
 - Thêm các dòng cho các phân vùng như ảnh sau
 
 ![image](https://github.com/user-attachments/assets/df31e3a9-3caa-4380-9b15-26a2861060fe)
+- Lưu lại tệp và thoát
