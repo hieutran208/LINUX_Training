@@ -66,3 +66,4 @@ b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ
 
 ![image](https://github.com/user-attachments/assets/df31e3a9-3caa-4380-9b15-26a2861060fe)
 - Lưu lại tệp và thoát
+- Kiểm tra lại tệp /etc/fstab ,nếu không báo lỗi tức là tệp cấu hình đã đúng : sudo mount -a
