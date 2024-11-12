@@ -20,7 +20,7 @@ b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ
 2. Gán vào ổ cứng 60GB (làm tương tự với máy ảo thứ 2)
 - Tắt Urbuntu. Trong menu VMWare nhấp chuột phải vào máy cần gán ổ cứng, chọn Setting
 - Trong menu setting, chọn Hard Disk và nhấn Add
-- Chọn Hard Disk, sau đó chọn loại ổ cứng là SATA hoặc SCSI (SATA thích hợp cho mục đích thử nghiệm hơn vì cấu hình đơn giản)
+- Chọn Hard Disk, sau đó chọn loại ổ cứng là SATA hoặc SCSI (SATA thích hợp cho mục đích thử nghiệm vì cấu hình đơn giản hơn)
 - Chọn Create a new virtual disk (Tạo một ổ cứng ảo mới).
 - Chọn dung lượng ổ cứng là 60 GB.
 - Chọn Store virtual disk as a single file (Lưu ổ cứng ảo dưới dạng một file duy nhất).
