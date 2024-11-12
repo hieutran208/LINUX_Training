@@ -4,9 +4,9 @@
 
 a. Cài đặt VMWare và download file ISO Urbuntu về máy 
 
-b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ 2)
+b. Tạo một máy ảo Urbuntu trên VMWare (tương tự với máy ảo thứ 2)
 
-2. Gán vào ổ cứng 60GB (làm tương tự với máy ảo thứ 2)
+2. Gán vào ổ cứng 60GB (tương tự với máy ảo thứ 2)
 
 a. Disk và ổ đĩa
 - Disk chỉ đơn giản là đĩa lưu trữ vật lý (ví dụ: HDD, SSD).
