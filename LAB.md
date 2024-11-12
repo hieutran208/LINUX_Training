@@ -36,6 +36,18 @@ b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ
   - Chọn loại (p: primary; e:extend (nếu muốn tạo thêm phân vùng con))
   - Chọn kích thước: Chọn sector bắt đầu và sector kết thúc của phân vùng để tính kích thước (1 sector = 512 bytes)
   - Ghi thay đổi và thoát fdisk: nhấn w + ENTER (không muốn ghi thay đổi nhấn q)
-  - Làm tương tự với 2 phân vùng còn lại, ta có 3 phân vùng của ổ đĩa /dev/sdb
+  - Làm tương tự với 2 phân vùng còn lại, ta chia được 3 phân vùng của ổ đĩa như sau:
 ![image](https://github.com/user-attachments/assets/016cce58-4d70-4543-b93e-b167732dced4)
-- Định dạng phân vùng: 
+- Định dạng phân vùng:
+  - sudo mkfs.ext4 /dev/sdb1
+  - sudo mkfs.xfs /dev/sdb2 (cài thêm xfsprogs)
+  - sudo mkfs.ext3 /dev/sdb3
+- Tạo thư mục gán và gán các phân vùng vào thư mục tương ứng:
+  - sudo mkdir /data1 /data2 /data3
+  - sudo mount /dev/sdb1 /data1
+  - sudo mount /dev/sdb2 /data2
+  - sudo mount /dev/sdb3 /data3
+- Kiểm tra lại cấu hình phân vùng bằng lệnh df -T (-T hiển thị thêm loại file system của mỗi phân vùng), ta có kết quả như sau:
+
+
+
