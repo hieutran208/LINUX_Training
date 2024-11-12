@@ -18,6 +18,12 @@ b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ
 - Bật Urbuntu và làm theo hướng dẫn để hoàn tất cài đặt
 
 2. Gán vào ổ cứng 60GB (làm tương tự với máy ảo thứ 2)
+
+a. Disk và ổ đĩa
+- Disk chỉ đơn giản là đĩa lưu trữ vật lý (ví dụ: HDD, SSD).
+- Ổ đĩa là thiết bị dùng để chứa, đọc và ghi dữ liệu vào disk, nó có thể chứa một hoặc nhiều disk.
+
+b. Các bước gán ổ cứng
 - Tắt Urbuntu. Trong menu VMWare nhấp chuột phải vào máy cần gán ổ cứng, chọn Setting
 - Trong menu setting, chọn Hard Disk và nhấn Add
 - Chọn Hard Disk, sau đó chọn loại ổ cứng là SATA hoặc SCSI (SATA thích hợp cho mục đích thử nghiệm vì cấu hình đơn giản hơn)
@@ -67,3 +73,6 @@ b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ
 ![image](https://github.com/user-attachments/assets/df31e3a9-3caa-4380-9b15-26a2861060fe)
 - Lưu lại tệp và thoát
 - Kiểm tra lại tệp /etc/fstab ,nếu không báo lỗi tức là tệp cấu hình đã đúng : sudo mount -a
+
+
+**LAB 3**
