@@ -26,7 +26,19 @@ b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ
 - Chọn Store virtual disk as a single file (Lưu ổ cứng ảo dưới dạng một file duy nhất).
 - Nhấn Next, sau đó chọn nơi lưu trữ tệp ổ cứng ảo (thường là thư mục mặc định).
 - Nhấn Finish để hoàn thành việc thêm ổ cứng mới.
-- Mở lại Urbuntu và kiểm tra, ta có thông tin ổ cứng 60 GB vừa gán
+- Mở lại Urbuntu và kiểm tra bằng lệnh fdisk -l, ta có thông tin ổ cứng 60 GB vừa gán
 ![image](https://github.com/user-attachments/assets/5e4619c7-84ee-4575-a801-3ef1e6d4e76d)
 
 3. Phân vùng ổ cứng (làm tương tự với máy ảo thứ 2)
+- Khởi động fdisk: sudo fdisk /dev/sdb
+- Phân vùng ổ cứng /dev/sdb: Diễn giải cách chia phân vùng 1 10GB, 2 phân vùng còn lại làm tương tự
+  - Tạo phân vùng mới bằng cách nhấn n + ENTER
+  - Chọn loại (p: primary; e:extend (nếu muốn tạo thêm phân vùng con))
+  - Chọn kích thước: Chọn sector bắt đầu và sector kết thúc của phân vùng để tính kích thước (1 sector = 512 bytes)
+  - Ghi thay đổi và thoát fdisk: nhấn w + ENTER (không muốn ghi thay đổi nhấn q)
+  - Làm tương tự với 2 phân vùng còn lại, ta có 3 phân vùng của ổ đĩa /dev/sdb
+file:///home/pc1143/Pictures/Screenshots/Screenshot%20from%202024-11-12%2014-03-52.png
+
+
+
+- Định dạng phân vùng: 
