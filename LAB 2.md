@@ -50,7 +50,6 @@ b. Các bước gán ổ cứng
 *Để phân vùng tự mount mỗi khi reboot, ta cần cấu hình trên file /etc/fstab (file cấu hình các thiết bị lưu trữ và cách gán chúng vào hệ thống)*
 - Mở file /etc/fstab để chỉnh sửa: vim /etc/fstab
 - Mỗi dòng trong file đại diện cho 1 thiết bị/phân vùng và cách nó được gán
-  - <device>   <mount_point>   <filesystem_type>   <options>   <dump>   <pass>
   - <device>: Tên thiết bị hoặc phân vùng (ví dụ: /dev/sda1 hoặc UUID).
   - <mount_point>: Thư mục nơi phân vùng sẽ được mount (ví dụ: /data1).
   - <filesystem_type>: Loại hệ thống file (ví dụ: ext4, xfs, ext3).
