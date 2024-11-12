@@ -37,8 +37,5 @@ b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ
   - Chọn kích thước: Chọn sector bắt đầu và sector kết thúc của phân vùng để tính kích thước (1 sector = 512 bytes)
   - Ghi thay đổi và thoát fdisk: nhấn w + ENTER (không muốn ghi thay đổi nhấn q)
   - Làm tương tự với 2 phân vùng còn lại, ta có 3 phân vùng của ổ đĩa /dev/sdb
-file:///home/pc1143/Pictures/Screenshots/Screenshot%20from%202024-11-12%2014-03-52.png
-
-
-
+![image](https://github.com/user-attachments/assets/016cce58-4d70-4543-b93e-b167732dced4)
 - Định dạng phân vùng: 
