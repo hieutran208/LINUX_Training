@@ -2,7 +2,7 @@
 
 1. Tạo 2 máy ảo Urbuntu trong VMWare
 
-a. Cài đặt VMWare và download file ISO Urbuntu về máy (đã đề cập ở file 1)
+a. Cài đặt VMWare và download file ISO Urbuntu về máy (như trình bày ở file 1)
 
 b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ 2)
 - Mở VMware Workstation/Player.
