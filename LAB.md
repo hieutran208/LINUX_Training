@@ -25,5 +25,7 @@ b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ
 - Chọn Store virtual disk as a single file (Lưu ổ cứng ảo dưới dạng một file duy nhất).
 - Nhấn Next, sau đó chọn nơi lưu trữ tệp ổ cứng ảo (thường là thư mục mặc định).
 - Nhấn Finish để hoàn thành việc thêm ổ cứng mới.
+- Mở lại Urbuntu và kiểm tra, ta có thông tin ổ cứng vừa tạo
+![image](https://github.com/user-attachments/assets/5e4619c7-84ee-4575-a801-3ef1e6d4e76d)
 
 3. Phân vùng ổ cứng (làm tương tự với máy ảo thứ 2)
