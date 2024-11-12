@@ -48,6 +48,18 @@ b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ
   - sudo mount /dev/sdb2 /data2
   - sudo mount /dev/sdb3 /data3
 - Kiểm tra lại cấu hình phân vùng bằng lệnh df -T (-T hiển thị thêm loại file system của mỗi phân vùng), ta có kết quả như sau:
+![image](https://github.com/user-attachments/assets/51e463d7-dde7-42bf-b1db-517f58a84d2b)
 
-
-
+4. Cách phân vùng tự mount mỗi khi reboot
+*Để phân vùng tự mount mỗi khi reboot, ta cần cấu hình trên file /etc/fstab (file cấu hình các thiết bị lưu trữ và cách gán chúng vào hệ thống)*
+- Mở file /etc/fstab để chỉnh sửa: vim /etc/fstab
+- Mỗi dòng trong file đại diện cho 1 thiết bị/phân vùng và cách nó được gán
+  - <device>   <mount_point>   <filesystem_type>   <options>   <dump>   <pass>
+  - <device>: Tên thiết bị hoặc phân vùng (ví dụ: /dev/sda1 hoặc UUID).
+  - <mount_point>: Thư mục nơi phân vùng sẽ được mount (ví dụ: /data1).
+  - <filesystem_type>: Loại hệ thống file (ví dụ: ext4, xfs, ext3).
+  - <options>: Các tùy chọn mount (mặc định có thể là defaults).
+  - <dump>: Thường là 0 (tùy chọn sao lưu, thường không cần thay đổi).
+  - <pass>: Thứ tự kiểm tra hệ thống file khi boot (thường là 0 hoặc 1).
+- Thêm các dòng cho các phân vùng như ảnh sau
+![image](https://github.com/user-attachments/assets/df31e3a9-3caa-4380-9b15-26a2861060fe)
