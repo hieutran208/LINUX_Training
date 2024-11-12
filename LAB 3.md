@@ -21,4 +21,13 @@ c. Tạo thư mục gán và gán các mảng raid vào hệ thống
 - sudo mount /dev/md2 /mnt/raid2
 
 d. Chỉnh sửa trong file cấu hình các thiết bị lưu trữ để các mảng raid tự động mount mỗi khi reboot
+- Vào file cấu hình /etc/fstab và thêm các dòng như sau:
+
 ![image](https://github.com/user-attachments/assets/b059c243-3bf1-4b7d-9188-e07cc37e5d59)
+- Cập nhật file cấu hình mdadm:
+  - sudo mdadm --detail --scan >> /etc/mdadm/mdadm.conf
+- Cập nhật initramfs (đảm bảo hệ thống nhận diện được RAID trong quá trình khởi động)
+  - sudo update-initramfs -u
+
+3. Cài HĐH vào mảng RAID chứa 2 ổ cứng đầu tiên
+   
