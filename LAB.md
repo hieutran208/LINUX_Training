@@ -62,4 +62,5 @@ b. Tạo máy ảo Urbuntu trên VMWare (làm tương tự với máy ảo thứ
   - <dump>: Thường là 0 (tùy chọn sao lưu, thường không cần thay đổi).
   - <pass>: Thứ tự kiểm tra hệ thống file khi boot (thường là 0 hoặc 1).
 - Thêm các dòng cho các phân vùng như ảnh sau
+
 ![image](https://github.com/user-attachments/assets/df31e3a9-3caa-4380-9b15-26a2861060fe)
