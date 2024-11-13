@@ -58,6 +58,6 @@ b. Các bước gán ổ cứng
   -  Thứ tự kiểm tra hệ thống file khi boot (thường là 0 hoặc 1).
 - Thêm các dòng cho từng phân vùng như ảnh sau
 
-![image](https://github.com/user-attachments/assets/df31e3a9-3caa-4380-9b15-26a2861060fe)
+![image](https://github.com/user-attachments/assets/93fc3d56-a7e4-4be5-856d-a70035c4b420)
 - Lưu lại tệp và thoát
 - Kiểm tra lại tệp /etc/fstab ,nếu không báo lỗi tức là tệp cấu hình đã đúng : sudo mount -a
