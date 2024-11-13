@@ -9,8 +9,8 @@ b. Tạo một máy ảo Urbuntu trên VMWare (tương tự với máy ảo th�
 **2. Gán vào ổ cứng 60GB (tương tự với máy ảo thứ 2)**
 
 a. Disk và ổ đĩa
-- Disk chỉ đơn giản là đĩa lưu trữ vật lý (ví dụ: HDD, SSD).
-- Ổ đĩa là thiết bị dùng để chứa, đọc và ghi dữ liệu vào disk, nó có thể chứa một hoặc nhiều disk.
+- Disk là thiết bị lưu trữ vật lý (HDD, SSD,CD,...).
+- Ổ đĩa là thiết bị sử dụng disk để lưu trữ và truy xuất dữ liệu, bao gồm một/nhiều đĩa và cơ chế đọc/ghi dữ liệu từ đĩa
 
 b. Các bước gán ổ cứng
 - Tắt Urbuntu. Trong menu VMWare nhấp chuột phải vào máy cần gán ổ cứng, chọn Setting
