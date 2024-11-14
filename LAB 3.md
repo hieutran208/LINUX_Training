@@ -63,6 +63,8 @@ d. Chỉnh sửa trong file cấu hình các thiết bị lưu trữ để các 
   - sudo update-initramfs -u
 
 *4. Dùng sysbench đánh giá tốc độ của RAID 0 và RAID 1 so với 1 đĩa đơn*
+
+a. Các bước thực hiện
 - B1: Chuẩn bị thư mục kiểm tra:
   - Thao tác tương tự với ổ đĩa còn lại như với 2 mảng RAID. Sau đó chạy lệnh lsblk ta có kết quả sau:
     
@@ -98,3 +100,5 @@ d. Chỉnh sửa trong file cấu hình các thiết bị lưu trữ để các 
       - randrd: Đọc ngẫu nhiên (random read).
     - --time: thời gian chạy của bài test
     - --max-requests=0: Xác định số lượng yêu cầu I/O tối đa mà sysbench sẽ thực hiện. Nếu đặt giá trị này là 0, bài kiểm tra sẽ không giới hạn số lượng yêu cầu và sẽ chạy trong suốt thời gian đã chỉ định    
+
+b. Đánh giá kết quả
