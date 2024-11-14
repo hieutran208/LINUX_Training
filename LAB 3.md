@@ -35,7 +35,7 @@ b. Thêm ổ đĩa (tương tự với các ổ còn lại)
   - Định dạng file system phù hợp (ext4)
   - Đặt điểm gắn kết của mảng RAID trong hệ thống (/ nếu mảng RAID dùng để chứa HĐH)
   - Nhấn "Create" để xác nhận
-- Tạo và cấu hình 2 mảng RAID dùng để chứa HĐH (/dev/md0) và RAID dành cho boot (/dev/md1), sau đó nhấn Done
+- Tạo và cấu hình mảng RAID dùng để chứa HĐH (/dev/md0) và RAID dành cho boot (/dev/md1) theo các bước như trên, sau đó nhấn Done
 - Các bước tiếp theo làm như hướng dẫn để hoàn thành cài đặt
 
 *3. Cấu hình RAID cho 2 ổ dùng RAID 0 và 2 ổ dùng RAID 1*
