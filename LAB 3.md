@@ -65,6 +65,7 @@ d. Chỉnh sửa trong file cấu hình các thiết bị lưu trữ để các 
 *4. Dùng sysbench đánh giá tốc độ của RAID 0 và RAID 1 so với 1 đĩa đơn*
 - Đầu tiên, ta cần tạo file system, gán ổ đĩa còn lại vào hệ thống và chỉnh sửa cấu hình
 - Chạy lệnh lsblk ta có kết quả sau:
+  
   ![image](https://github.com/user-attachments/assets/e0c80542-9c63-4d38-85d7-c3d3dc7cbfc5)
 
 a. 
