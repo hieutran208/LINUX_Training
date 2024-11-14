@@ -105,9 +105,14 @@ a. Các bước thực hiện
 b. Đánh giá kết quả
 - Kết quả ghi dữ liệu:
   - RAID 0:
+
+![image](https://github.com/user-attachments/assets/39e4839d-042e-43a6-80ed-97c36e5fb3a4)
+
   - RAID 1:
-  ![image](https://github.com/user-attachments/assets/dbd1fd68-ffed-4ebe-8db0-e69bfef0da96)
+
+![image](https://github.com/user-attachments/assets/dbd1fd68-ffed-4ebe-8db0-e69bfef0da96)
   - 1 đĩa đơn:
-  ![image](https://github.com/user-attachments/assets/e5b98eca-5bc4-4a6c-a558-8d3eb5ecbd9d)
+
+![image](https://github.com/user-attachments/assets/e5b98eca-5bc4-4a6c-a558-8d3eb5ecbd9d)
 
 - Kết quả đọc dữ liệu:
