@@ -1,6 +1,6 @@
 **LAB 3**
 
-*1. Tạo 1 máy ảo và gán vào 7 đĩa cùng dung lượng (tương tự LAB 2)*
+*1. Tạo 1 máy ảo và gán vào 7 đĩa cùng dung lượng*
 
 a. Tạo máy ảo Urbuntu server
 - Mở VMware Workstation/Player.
@@ -15,8 +15,28 @@ a. Tạo máy ảo Urbuntu server
 - Hoàn thành và tạo máy ảo: Nhấn Finish để hoàn thành quá trình tạo máy ảo.
 
 b. Thêm ổ đĩa (tương tự với các ổ còn lại)
+- Tắt Urbuntu. Trong menu VMWare nhấp chuột phải vào máy cần gán ổ cứng, chọn Setting
+- Trong menu setting, chọn Hard Disk và nhấn Add
+- Chọn Hard Disk, sau đó chọn loại ổ cứng là SATA hoặc SCSI (SATA thích hợp cho mục đích thử nghiệm vì cấu hình đơn giản hơn)
+- Chọn Create a new virtual disk (Tạo một ổ cứng ảo mới).
+- Chọn dung lượng ổ cứng.
+- Chọn Store virtual disk as a single file (Lưu ổ cứng ảo dưới dạng một file duy nhất).
+- Nhấn Next, sau đó chọn nơi lưu trữ tệp ổ cứng ảo (thường là thư mục mặc định).
+- Nhấn Finish để hoàn thành việc thêm ổ cứng mới.
 
 *2. Cài HĐH vào 2 ổ cứng đầu tiên cấu hình softraid1*
+- Khởi động máy ảo Urbuntu server, để vào trình cài đặt ta chọn "Try or Install Urbuntu" trong màn hình tùy chọn
+- Tiến hành cài đặt: Chọn mặc định các tùy chọn trong trình cài đặt (ngôn ngữ, mạng, loại caì đặt), đến phần "Guide storage configuration" chọn "Custom storage layout" (tùy chỉnh cấu hình lưu trữ) để cấu hình RAID 1
+- Tạo phân vùng có dung lượng tầm 1GB trên mỗi ổ dành cho /boot, phần còn lại dành để chứa HĐH. Việc tạo phân vùng cho /boot giúp đảm bảo khả năng khởi động của hệ thống ngay cả khi một trong 2 ổ đĩa gặp sự cố, ngoài ra nếu không tạo phân vùng, công cụ có thể không xem ổ đĩa là một thiết bị hợp lệ để tham gia vào mảng RAID
+- Cấu hình RAID 1: nhấn vào "Create software RAID", ta có các tùy chọn để tạo RAID
+  - Chọn RAID level là RAID 1.
+  - Chọn các ổ đĩa/phân vùng muốn tạo RAID
+  - Sau khi mảng RAID 1 được tạo, nó sẽ xuất hiện dưới dạng một thiết bị mới (/dev/md0).
+  - Định dạng file system phù hợp (ext4)
+  - Đặt điểm gắn kết của mảng RAID trong hệ thống (/ nếu mảng RAID dùng để chứa HĐH)
+  - Nhấn "Create" để xác nhận
+- Tạo và cấu hình 2 mảng RAID dùng để chứa HĐH (/dev/md0) và RAID dành cho boot (/dev/md1), sau đó nhấn Done
+- Các bước tiếp theo làm như hướng dẫn để hoàn thành cài đặt
 
 *3. Cấu hình RAID cho 2 ổ dùng RAID 0 và 2 ổ dùng RAID 1*
 
