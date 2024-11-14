@@ -106,7 +106,8 @@ b. Đánh giá kết quả
 - Kết quả ghi dữ liệu:
   - RAID 0:
   - RAID 1:
-  ![image](https://github.com/user-attachments/assets/2d0395d7-6e84-49ed-911c-6d17479abf00)
+  ![image](https://github.com/user-attachments/assets/dbd1fd68-ffed-4ebe-8db0-e69bfef0da96)
   - 1 đĩa đơn:
-  
+  ![image](https://github.com/user-attachments/assets/e5b98eca-5bc4-4a6c-a558-8d3eb5ecbd9d)
+
 - Kết quả đọc dữ liệu:
