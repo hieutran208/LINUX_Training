@@ -64,10 +64,22 @@ d. Chỉnh sửa trong file cấu hình các thiết bị lưu trữ để các 
 
 *4. Dùng sysbench đánh giá tốc độ của RAID 0 và RAID 1 so với 1 đĩa đơn*
 - B1: Chuẩn bị thư mục kiểm tra:
-  - Ngoài các thao tác với 2 mảng RAID ta còn cần làm những thao tác tương tự với ổ đĩa còn lại. Sau đó chạy lệnh lsblk ta có kết quả sau:
+  - Thao tác tương tự với ổ đĩa còn lại như với 2 mảng RAID. Sau đó chạy lệnh lsblk ta có kết quả sau:
     
   ![image](https://github.com/user-attachments/assets/e0c80542-9c63-4d38-85d7-c3d3dc7cbfc5)
 - B2: Tạo file thử nghiệm trên 2 mảng RAID và ổ đĩa đơn
+  - RAID 0:
+    - cd /mnt/raid1
+    - sysbench fileio --file-total-size=10G prepare
+  - RAID 1:
+    - cd /mnt/raid2
+    - sysbench fileio --file-total-size=10G prepare
+  - Ổ đĩa đơn
+    - cd /mnt/sdg
+    - sysbench fileio --file-total-size=10G prepare
+  - Giải thích câu lệnh:
+    - --file-total-size: Tổng dung lượng file được sử dụng trong bài kiểm tra
+- B3: Chạy file thử nghiệm trên 2 mảng RAID và ổ đĩa đơn
   - RAID 0:
     - cd /mnt/raid1
     - sysbench fileio --file-total-size=10G --file-test-mode=seqwr --time=60 --max-requests=0 run
@@ -85,5 +97,4 @@ d. Chỉnh sửa trong file cấu hình các thiết bị lưu trữ để các 
       - randwr: Ghi ngẫu nhiên (random write).
       - randrd: Đọc ngẫu nhiên (random read).
     - --time: thời gian chạy của bài test
-    - --max-requests=0: Xác định số lượng yêu cầu I/O tối đa mà sysbench sẽ thực hiện. Nếu đặt giá trị này là 0, bài kiểm tra sẽ không giới hạn số lượng yêu cầu và sẽ chạy trong suốt thời gian đã chỉ định
-    
+    - --max-requests=0: Xác định số lượng yêu cầu I/O tối đa mà sysbench sẽ thực hiện. Nếu đặt giá trị này là 0, bài kiểm tra sẽ không giới hạn số lượng yêu cầu và sẽ chạy trong suốt thời gian đã chỉ định    
