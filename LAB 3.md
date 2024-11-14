@@ -63,7 +63,27 @@ d. Chỉnh sửa trong file cấu hình các thiết bị lưu trữ để các 
   - sudo update-initramfs -u
 
 *4. Dùng sysbench đánh giá tốc độ của RAID 0 và RAID 1 so với 1 đĩa đơn*
-- B1: Chuẩn bị thư mục kiểm tra: Ngoài các thao tác với 2 mảng RAID ta còn cần làm những thao tác tương tự với ổ đĩa còn lại. Sau đó chạy lệnh lsblk ta có kết quả sau:
-  
+- B1: Chuẩn bị thư mục kiểm tra:
+  - Ngoài các thao tác với 2 mảng RAID ta còn cần làm những thao tác tương tự với ổ đĩa còn lại. Sau đó chạy lệnh lsblk ta có kết quả sau:
+    
   ![image](https://github.com/user-attachments/assets/e0c80542-9c63-4d38-85d7-c3d3dc7cbfc5)
-- B2: 
+- B2: Tạo file thử nghiệm trên 2 mảng RAID và ổ đĩa đơn
+  - RAID 0:
+    - cd /mnt/raid1
+    - sysbench fileio --file-total-size=10G --file-test-mode=seqwr --time=60 --max-requests=0 run
+  - RAID 1:
+    - cd /mnt/raid2
+    - sysbench fileio --file-total-size=10G --file-test-mode=seqwr --time=60 --max-requests=0 run
+  - Ổ đĩa đơn
+    - cd /mnt/sdg
+    - sysbench fileio --file-total-size=10G --file-test-mode=seqwr --time=60 --max-requests=0 run
+  - Giải thích câu lệnh:
+    - --file-total-size: Tổng dung lượng file được sử dụng trong bài kiểm tra
+    - --file-test-mode: Xác định kiểu kiểm tra đọc/ghi dữ liệu sẽ được thực hiện
+      - seqwr: Ghi tuần tự (sequential write) — sysbench sẽ ghi dữ liệu tuần tự vào các file, nghĩa là các thao tác ghi sẽ diễn ra từ đầu đến cuối file mà không có sự ngắt quãng.
+      - seqrd: Đọc tuần tự (sequential read).
+      - randwr: Ghi ngẫu nhiên (random write).
+      - randrd: Đọc ngẫu nhiên (random read).
+    - --time: thời gian chạy của bài test
+    - --max-requests=0: Xác định số lượng yêu cầu I/O tối đa mà sysbench sẽ thực hiện. Nếu đặt giá trị này là 0, bài kiểm tra sẽ không giới hạn số lượng yêu cầu và sẽ chạy trong suốt thời gian đã chỉ định
+    
