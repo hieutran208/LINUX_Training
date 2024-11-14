@@ -28,7 +28,7 @@ b. Thêm ổ đĩa (tương tự với các ổ còn lại)
 - Khởi động máy ảo Urbuntu server, để vào trình cài đặt ta chọn "Try or Install Urbuntu" trong màn hình tùy chọn
 - Tiến hành cài đặt: Chọn mặc định các tùy chọn trong trình cài đặt (ngôn ngữ, mạng, loại caì đặt), đến phần "Guide storage configuration" chọn "Custom storage layout" (tùy chỉnh cấu hình lưu trữ) để cấu hình RAID 1
 - Tạo phân vùng có dung lượng tầm 1GB trên mỗi ổ dành cho /boot, phần còn lại dành để chứa HĐH. Việc tạo phân vùng cho /boot giúp đảm bảo khả năng khởi động của hệ thống ngay cả khi một trong 2 ổ đĩa gặp sự cố, ngoài ra nếu không tạo phân vùng, công cụ có thể không xem ổ đĩa là một thiết bị hợp lệ để tham gia vào mảng RAID
-- Cấu hình RAID 1: nhấn vào "Create software RAID", ta có các tùy chọn để tạo RAID
+- **Cấu hình RAID 1:** nhấn vào "Create software RAID", ta có các tùy chọn để tạo RAID
   - Chọn RAID level là RAID 1.
   - Chọn các ổ đĩa/phân vùng muốn tạo RAID
   - Sau khi mảng RAID 1 được tạo, nó sẽ xuất hiện dưới dạng một thiết bị mới (/dev/md0).
@@ -61,4 +61,7 @@ d. Chỉnh sửa trong file cấu hình các thiết bị lưu trữ để các 
   - sudo mdadm --detail --scan >> /etc/mdadm/mdadm.conf
 - Cập nhật initramfs (đảm bảo hệ thống nhận diện được RAID trong quá trình khởi động)
   - sudo update-initramfs -u
-   
+
+*4. Dùng sysbench đánh giá tốc độ đọc/ghi của RAID 0 và RAID 1 so với 1 đĩa đơn*
+
+a. 
