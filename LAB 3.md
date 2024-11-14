@@ -62,6 +62,6 @@ d. Chỉnh sửa trong file cấu hình các thiết bị lưu trữ để các 
 - Cập nhật initramfs (đảm bảo hệ thống nhận diện được RAID trong quá trình khởi động)
   - sudo update-initramfs -u
 
-*4. Dùng sysbench đánh giá tốc độ đọc/ghi của RAID 0 và RAID 1 so với 1 đĩa đơn*
+*4. Dùng sysbench đánh giá tốc độ của RAID 0 và RAID 1 so với 1 đĩa đơn*
 
 a. 
