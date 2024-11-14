@@ -1,8 +1,22 @@
 **LAB 3**
 
-*1. Tạo 1 máy ảo và gán vào 7 đĩa cùng dung lượng (thực hiện tương tự như LAB 2)*
+*1. Tạo 1 máy ảo và gán vào 7 đĩa cùng dung lượng (tương tự LAB 2)*
 
-*2. Cài HĐH vào mảng RAID chứa 2 ổ cứng đầu tiên*
+a. Tạo máy ảo Urbuntu server
+- Mở VMware Workstation/Player.
+- Chọn "Create a New Virtual Machine" (Tạo máy ảo mới).
+- Chọn "Typical (recommended)" và nhấn Next.
+- Chọn file ISO: Chọn "Installer disc image file (iso)" và duyệt tới file ISO Urbuntu server đã tải.
+- Đặt tên cho máy ảo và chọn vị trí lưu trữ: Đặt tên như "Ubuntu_1" và chọn thư mục lưu.
+- Cấu hình phần cứng:
+  - Processor: Chọn số lượng lõi CPU mà bạn muốn cấp cho máy ảo (ít nhất 1 lõi).
+  - Memory: Chọn dung lượng RAM (ví dụ 2 GB).
+  - Hard Disk: Để mặc định hoặc điều chỉnh dung lượng ổ cứng ảo (ít nhất 20 GB).
+- Hoàn thành và tạo máy ảo: Nhấn Finish để hoàn thành quá trình tạo máy ảo.
+
+b. Thêm ổ đĩa (tương tự với các ổ còn lại)
+
+*2. Cài HĐH vào 2 ổ cứng đầu tiên cấu hình softraid1*
 
 *3. Cấu hình RAID cho 2 ổ dùng RAID 0 và 2 ổ dùng RAID 1*
 
