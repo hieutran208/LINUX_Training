@@ -109,16 +109,18 @@ b. Đánh giá kết quả
     ![image](https://github.com/user-attachments/assets/749e1230-9f72-4414-84de-a4506dab8c15)
   - Kết quả ghi dữ liệu
 
-    ![image](https://github.com/user-attachments/assets/749e1230-9f72-4414-84de-a4506dab8c1
+    ![image](https://github.com/user-attachments/assets/2f75e1c5-043b-4582-ae3c-067a4d6f2e16)
 - RAID 1:
   - Kết quả đọc dữ liệu
     
-    ![image](https://github.com/user-attachments/assets/dbd1fd68-ffed-4ebe-8db0-e69bfef0da96)
+    ![image](https://github.com/user-attachments/assets/d291e055-a8da-4b90-9c0d-dcd2f583d723)
   - Kết quả ghi dữ liệu
 
-    ![image](https://github.com/user-attachments/assets/749e1230-9f72-4414-84de-a4506dab8c1
+    ![image](https://github.com/user-attachments/assets/556a5308-d914-446e-868d-83ee1f91453c)
 - 1 đĩa đơn:
   - Kết quả đọc dữ liệu:
     
-  ![image](https://github.com/user-attachments/assets/786a5f80-4153-49dc-b6c9-0a791ad67b78)
+    ![image](https://github.com/user-attachments/assets/786a5f80-4153-49dc-b6c9-0a791ad67b78)
   - Kết quả ghi dữ liệu:
+    
+    ![image](https://github.com/user-attachments/assets/121dd48b-67b8-483d-b4ad-924618379228)
