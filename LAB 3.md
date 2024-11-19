@@ -103,16 +103,22 @@ a. Các bước thực hiện
     - --max-requests=0: Xác định số lượng yêu cầu I/O tối đa mà sysbench sẽ thực hiện. Nếu đặt giá trị này là 0, bài kiểm tra sẽ không giới hạn số lượng yêu cầu và sẽ chạy trong suốt thời gian đã chỉ định    
 
 b. Đánh giá kết quả
-- Kết quả ghi dữ liệu:
-  - RAID 0:
+- RAID 0:
+  - Kết quả đọc dữ liệu
 
-![image](https://github.com/user-attachments/assets/39e4839d-042e-43a6-80ed-97c36e5fb3a4)
+    ![image](https://github.com/user-attachments/assets/749e1230-9f72-4414-84de-a4506dab8c15)
+  - Kết quả ghi dữ liệu
 
-  - RAID 1:
+    ![image](https://github.com/user-attachments/assets/749e1230-9f72-4414-84de-a4506dab8c1
+- RAID 1:
+  - Kết quả đọc dữ liệu
+    
+    ![image](https://github.com/user-attachments/assets/dbd1fd68-ffed-4ebe-8db0-e69bfef0da96)
+  - Kết quả ghi dữ liệu
 
-![image](https://github.com/user-attachments/assets/dbd1fd68-ffed-4ebe-8db0-e69bfef0da96)
-  - 1 đĩa đơn:
-
-![image](https://github.com/user-attachments/assets/e5b98eca-5bc4-4a6c-a558-8d3eb5ecbd9d)
-
-- Kết quả đọc dữ liệu:
+    ![image](https://github.com/user-attachments/assets/749e1230-9f72-4414-84de-a4506dab8c1
+- 1 đĩa đơn:
+  - Kết quả đọc dữ liệu:
+    
+  ![image](https://github.com/user-attachments/assets/786a5f80-4153-49dc-b6c9-0a791ad67b78)
+  - Kết quả ghi dữ liệu:
