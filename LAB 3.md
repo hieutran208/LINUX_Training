@@ -124,3 +124,27 @@ b. Đánh giá kết quả
   - Kết quả ghi dữ liệu:
     
     ![image](https://github.com/user-attachments/assets/121dd48b-67b8-483d-b4ad-924618379228)
+
+*5. Đánh giá mảng RAID 0 và RAID 1 khi mất 1 ổ đĩa*
+
+a. Các bước thực hiện
+- Tạo file dữ liệu giả lập 1GB trên raid 0 ở thư mục /mnt/raid_0 và raid 1 ở thư mục /mnt/raid_1:
+  - RAID 0: dd if=/dev/zero of=/mnt/raid_0/testfile bs=1M count=1024
+  - RAID 1: dd if=/dev/zero of=/mnt/raid_1/testfile bs=1M count=1024
+- Tháo ổ /dev/sdd trong RAID 0 và ổ /dev/sdf trong RAID 1:
+  - RAID 0: sudo mdadm --remove /dev/md2 /dev/sdd
+  - RAID 1: sudo mdadm --remove /dev/md3 /dev/sdf
+- Kiểm tra trạng thái 2 ổ: cat /proc/mdstat
+a. Ổ /dev/md2 dùng RAID 0
+- Trước khi nhổ một ổ đĩa
+
+  ![image](https://github.com/user-attachments/assets/de7c62a5-f98b-4678-8801-03dac318a520)
+- Sau khi nhổ một ổ đĩa
+
+
+b. Ổ /dev/md3 dùng RAID 1
+- Trước khi nhổ 1 ổ đĩa
+
+  ![image](https://github.com/user-attachments/assets/044fc09e-d39a-4617-acfb-772feaebcfe2)
+- Sau khi nhổ 1 ổ đĩa
+
