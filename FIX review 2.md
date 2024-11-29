@@ -13,7 +13,7 @@
 - *Partition:*
   - Phân vùng: là một đơn vị logic được chia ra từ ổ đĩa vật lý. Mỗi phân vùng hoạt động, xử lý dữ liệu như một ổ cứng độc lập
   - Tác dụng:
-    - Bảo vệ dữ liệu: Khi tạo các phân vùng riêng biệt cho hệ điều hành, các ứng dụng và dữ liệu quan trọng. Nếu hệ điều hành bị lỗi hoặc cần cài đặt lại, các dữ liệu quan trọng nằm trong các phân vùng riêng biệt sẽ không bị ảnh hưởng. Nếu không tạo phân vùng thì khi cài lại HĐH hoặc ổ đĩa bị lỗi thì các dữ liệu quan trọng sẽ bị mất
+    - Bảo vệ dữ liệu: Khi tạo các phân vùng riêng biệt cho hệ điều hành, các ứng dụng và dữ liệu quan trọng. Nếu hệ điều hành gặp sự cố (bị lỗi, gặp virus hoặc cần cài đặt lại) các dữ liệu quan trọng nằm trong các phân vùng riêng biệt sẽ không bị ảnh hưởng. Nếu không tạo phân vùng thì khi HĐH gặp sự cố thì dữ liệu ở toàn bộ ổ đĩa đều sẽ bị ảnh hưởng
     - Cài đặt nhiều HĐH trên cùng 1 máy: Nếu muốn sử dụng nhiều hệ điều hành trên cùng một máy tính, tách biệt từng hệ điều hành vào các phân vùng riêng biệt giúp chuyển đổi giữa các hệ điều hành mà không gây xung đột hoặc ảnh hưởng đến dữ liệu của hệ điều hành khác.
 - *Rotate log:*
   - Xoay log là tạo một file log mới và xử lý file log cũ (nén/xóa) theo quy trình có sẵn khi chúng trở nên quá lớn hoặc quá cũ.
