@@ -10,9 +10,14 @@
   - Mặc định, các file log sẽ để trong thư mục /var/log. Tuy nhiên có thể thay đổi vị trí file log của một ứng dụng bằng cách thay đổi đường dẫn log của file cấu hình liên quan đến dịch vụ/ứng dụng, sau đó restart lại dịch vụ/ứng dụng này
   - VÍ DỤ: Với Apache hoặc Nginx, có thể thay đổi đường dẫn log trong các file cấu hình /etc/apache2/apache2.conf hoặc /etc/nginx/nginx.conf
   - Có thể thay đổi thư mục log của rsyslog bằng cách thay đổi đường dẫn log trong file cấu hình /etc/rsyslog.conf
+- *Partition:*
+  - Phân vùng: là một đơn vị logic được chia ra từ ổ đĩa vật lý. Mỗi phân vùng hoạt động, xử lý dữ liệu như một ổ cứng độc lập
+  - Tác dụng:
+    - Bảo vệ dữ liệu: Khi tạo các phân vùng riêng biệt cho hệ điều hành, các ứng dụng và dữ liệu quan trọng. Nếu hệ điều hành bị lỗi hoặc cần cài đặt lại, các dữ liệu quan trọng nằm trong các phân vùng riêng biệt sẽ không bị ảnh hưởng. Nếu không tạo phân vùng thì khi cài lại HĐH hoặc ổ đĩa bị lỗi thì các dữ liệu quan trọng sẽ bị mất
+    - Cài đặt nhiều HĐH trên cùng 1 máy: Nếu muốn sử dụng nhiều hệ điều hành trên cùng một máy tính, tách biệt từng hệ điều hành vào các phân vùng riêng biệt giúp chuyển đổi giữa các hệ điều hành mà không gây xung đột hoặc ảnh hưởng đến dữ liệu của hệ điều hành khác.
 - *Rotate log:*
   - Xoay log là tạo một file log mới và xử lý file log cũ (nén/xóa) theo quy trình có sẵn khi chúng trở nên quá lớn hoặc quá cũ.
-  - Sau khi xoay log, hệ thống tiếp tục ghi log vào file mới mà không cần can thiệp thủ công, vì các ứng dụng sẽ tiếp tục ghi vào cùng một vị trí file log mà không cần biết rằng file log đó đã bị xoay (VÍ DỤ: Một file log /var/log/myapp.log sau khi thành log cũ có thể trở thành /var/log/myapp.log.1 và một file log mới sẽ được tạo lại với tên /var/log/myapp.log)
+  - Sau khi xoay log, hệ thống tiếp tục ghi log vào file mới mà không cần can thiệp thủ công, vì file log mới và file log cũ trước khi xoay đều ở cùng một vị trí (VÍ DỤ: Một file log /var/log/myapp.log sau khi thành log cũ có thể trở thành /var/log/myapp.log.1 và một file log mới sẽ được tạo lại với tên /var/log/myapp.log)
   - Sử dụng log rotation giúp tiết kiệm dung lượng đĩa bằng cách:
     - Giới hạn số lượng file log cũ (khi đạt số lượng tối đa thì file log cũ nhất sẽ được xóa đi)
     - Xóa các file log cũ sau một khoảng thời gian nhất định
