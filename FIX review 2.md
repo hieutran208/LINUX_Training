@@ -22,7 +22,7 @@
     - Giới hạn số lượng file log cũ (khi đạt số lượng tối đa thì file log cũ nhất sẽ được xóa đi)
     - Xóa các file log cũ sau một khoảng thời gian nhất định
 - *Cron*
-  - Tính chất lặp lại của cronjob: cronjob trong crontab được cấu hình để lặp lại công việc theo 1 chu kì xác định (hằng ngày, hàng tuần, hàng tháng hay một thời điểm nhất định trong ngày,....)
+  - Tính chất lặp lại của cronjob: cronjob dùng để lên lịch thực thi tác vụ theo 1 chu kì xác định (hằng ngày, hàng tuần, hàng tháng hay một thời điểm nhất định trong ngày,....)
 - *Lệnh at*: Lên lịch tự động thực thi tác vụ 1 lần tại 1 thời điểm xác định
   - Cài 1 lệnh chạy vào lúc 10h sáng nay: echo "command_to_execute" | at 10:00 AM
   - Cài 1 công việc chạy vào đúng 1 thời điểm trong tương lai: echo "bash path/to/script.sh" | at 09:00 2025-12-01 
