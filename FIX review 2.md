@@ -6,9 +6,14 @@
     - là kết quả trả về sau khi thực hiện câu lệnh thành công. Stdout thường xuất ra terminal, hoặc xuất ra một tệp/chương trình khác
     - Có thể thay đổi đích của stdout bằng cú pháp redirect output (>) thay vì xuất ra terminal như mặc định
   - stderr: là lỗi trả về khi thực hiện câu lệnh không thành công. Stderr thường xuất ra terminal, hoặc xuất ra tệp/chương trình khác
-
 - Log có thể để ở thư mục khác hay không?
   - Mặc định, các file log sẽ để trong thư mục /var/log. Tuy nhiên có thể thay đổi vị trí file log của một ứng dụng bằng cách thay đổi đường dẫn log của file cấu hình liên quan đến dịch vụ/ứng dụng, sau đó restart lại dịch vụ/ứng dụng này
   - VÍ DỤ: Với Apache hoặc Nginx, có thể thay đổi đường dẫn log trong các file cấu hình /etc/apache2/apache2.conf hoặc /etc/nginx/nginx.conf
-  - Có thể thay đổi thư mục log của rsyslog bằng cách thay đổi đường dẫn log trong file cấu hình /etc/rsyslog.conf  ( **.* /new/log/directory/syslog*)
-  
+  - Có thể thay đổi thư mục log của rsyslog bằng cách thay đổi đường dẫn log trong file cấu hình /etc/rsyslog.conf
+- Rotate log:
+  - Xoay log là tạo một file log mới và xử lý file log cũ (nén/xóa) theo quy trình có sẵn khi chúng trở nên quá lớn hoặc quá cũ.
+  - Sau khi xoay log, hệ thống tiếp tục ghi log vào file mới mà không cần can thiệp thủ công, vì các ứng dụng sẽ tiếp tục ghi vào cùng một vị trí file log mà không cần biết rằng file log đó đã bị xoay (VÍ DỤ: Một file log /var/log/myapp.log sau khi thành log cũ có thể trở thành /var/log/myapp.log.1 và một file log mới sẽ được tạo lại với tên /var/log/myapp.log)
+  - Sử dụng log rotation giúp tiết kiệm dung lượng đĩa bằng cách:
+    - Giới hạn số lượng file log cũ (khi đạt số lượng tối đa thì file log cũ nhất sẽ được xóa đi)
+    - Xóa các file log cũ sau một khoảng thời gian nhất định
+
