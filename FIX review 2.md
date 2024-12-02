@@ -11,11 +11,11 @@
 
 - *Phân biệt kill và kill -9*
   - Kill: Khi sử dụng lệnh kill mà không chỉ định thêm tham số, lệnh này sẽ yêu cầu kernel gửi tín tiệu SIGTERM đến tiến trình. SIGTERM là tín hiệu yêu cầu dừng tiến trình và cho phép tiến trình thực hiện một số thao tác trước khi kết thúc (lưu trữ dữ liệu, giải phóng tài nguyên,....).
-  - Kill -9: Khi sử dụng lệnh kill -9, lệnh này sẽ yêu cầu Kernel gửi tín hiệu SIGKILL đến tiến trình. Khi tiến trình nhận được tín hiệu SIGKILL, tiến trình sẽ bị dừng ngay lập tức mà không có cơ hội để thực hiện các thao tác như lưu trữ dữ liệu hay giải phóng tài nguyên
+  - Kill -9: Khi sử dụng lệnh kill -9, lệnh này sẽ yêu cầu Kernel gửi tín hiệu SIGKILL đến tiến trình. Khi tiến trình nhận được tín hiệu SIGKILL, nó sẽ bị dừng ngay lập tức mà không có cơ hội để thực hiện các thao tác như lưu trữ dữ liệu hay giải phóng tài nguyên
  
   => SIGTERM là tín hiệu dừng tiến trình đúng đắn, cho phép tiến trình thực hiện các thao tác cần thiết trước khi kết thúc, như lưu trữ dữ liệu và giải phóng tài nguyên. SIGKILL chỉ nên được sử dụng khi SIGTERM không phản hồi hoặc khi tiến trình treo và không thể dừng bằng cách thông thường.
   - Lợi ích khi sử dụng kill so với kill -9:
-    - Đóng file: Nếu một tiến trình đang ghi dữ liệu vào tệp, sử dụng kill giúp cho tệp này được đóng trước khi tiến trình kết thúc. Điều này giúp lưu trữ an toàn các dữ liệu đã được ghi, đảm bảo không có dữ liệu nào bị mất.
+    - Lưu trữ dữ liệu: Nếu một tiến trình đang ghi dữ liệu vào tệp, sử dụng kill giúp cho tệp này được đóng trước khi tiến trình kết thúc. Điều này giúp lưu trữ an toàn các dữ liệu đã được ghi, đảm bảo không có dữ liệu nào bị mất.
     - Giải phóng tài nguyên: Khi một tiến trình đang chạy, nó sẽ "mượn" một phần RAM từ hệ thống. Nếu tiến trình không giải phóng bộ nhớ này khi kết thúc, hệ thống sẽ không thể tái sử dụng bộ nhớ đó, dẫn đến rò rỉ bộ nhớ. Khi hết dung lượng RAM, hệ thống sẽ phải bắt đầu sử dụng ổ cứng làm bộ nhớ ảo, làm giảm hiệu suất.
 - *Partition:*
   - Phân vùng: là một đơn vị logic được chia ra từ ổ đĩa vật lý. Mỗi phân vùng hoạt động, xử lý dữ liệu như một ổ cứng độc lập
