@@ -48,6 +48,10 @@
   - Tổng swap đã sử dụng
   - Bộ nhớ khả dụng
 
+- Kiểm tra cấu hình repo hiện tại: Dùng lệnh *cat /etc/apt/sources.list*
+
+  ![image](https://github.com/user-attachments/assets/121c3ece-103d-41ec-bdde-6d3fc4fa9413)
+  
 - *Phân biệt kill và kill -9*
   - Kill: Khi sử dụng lệnh kill mà không chỉ định thêm tham số, lệnh này sẽ yêu cầu kernel gửi tín tiệu SIGTERM đến tiến trình. SIGTERM là tín hiệu yêu cầu dừng tiến trình và cho phép tiến trình thực hiện một số thao tác trước khi kết thúc (lưu trữ dữ liệu, giải phóng tài nguyên,....).
   - Kill -9: Khi sử dụng lệnh kill -9, lệnh này sẽ yêu cầu Kernel gửi tín hiệu SIGKILL đến tiến trình. Khi tiến trình nhận được tín hiệu SIGKILL, nó sẽ bị dừng ngay lập tức mà không có cơ hội để thực hiện các thao tác như lưu trữ dữ liệu hay giải phóng tài nguyên
