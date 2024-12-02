@@ -60,7 +60,7 @@
   ![image](https://github.com/user-attachments/assets/3665a1e2-d471-4e91-ae0f-ca47f0d0a8af)
 - *Dùng apt-upgrade trong tình huống:*
   - Cách hoạt động của apt-upgrade: Hệ thống sẽ kiểm tra danh sách các gói phần mềm đã cài đặt, so sánh với bản cập nhật mới nhất trong repository. Nếu có phiên bản mới, hệ thống sẽ tải về bản cập nhật và thay thế phiên bản hiện có mà không gỡ bỏ các gói phần mềm hiện có
-  - Dùng trong TH: chỉ muốn nâng cấp gói phần mềm hiện có mà không muốn làm thay đổi cấu hình và dữ liệu của các gói phần mềm
+  - Dùng trong TH: chỉ muốn nâng cấp gói phần mềm hiện có mà không muốn làm thay đổi cấu hình và dữ liệu của gói
 - *Output lệnh gỡ gói:*
 - *Cài đặt startup script:* Lần trước chưa cài đặt được vì chưa cấp quyền thực thi cho script
 
