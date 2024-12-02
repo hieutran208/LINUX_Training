@@ -7,7 +7,7 @@
   - stdout:
     - là kết quả trả về sau khi thực hiện câu lệnh thành công. Stdout thường xuất ra terminal, hoặc xuất ra một tệp/chương trình khác
     - Có thể thay đổi đích của stdout bằng cú pháp redirect output thay vì xuất ra terminal như mặc định
-  - stderr: là lỗi trả về khi thực hiện câu lệnh không thành công. Stderr thường xuất ra terminal, hoặc xuất ra tệp/chương trình khác
+  - stderr: lỗi trả về khi thực hiện câu lệnh không thành công. Stderr thường xuất ra terminal, hoặc xuất ra tệp/chương trình khác
 
 - *Đọc lệnh top*:
   
