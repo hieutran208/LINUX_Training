@@ -19,7 +19,7 @@
   - Loadavg của CPU trong 1 phút, 5 phút và 15 phút qua: Số tiến trình trung bình mà CPU cần phải xử lý trong mỗi khoảng thời gian
     - Loadavg < số nhân CPU: Hệ thống đang chạy với tải thấp và có khả năng chạy nhiều tiến trình hơn
     - Loadavg = số nhân CPU: Tất cả nhân CPU đều đang bận với các tiến trình đang chạy. Tuy nhiên, vì có đủ CPU cho các tiến trình nên hệ thống không bị quá tải và không có độ trễ
-    - Loadavg > số nhân CPU: Các tiến trình không thể sử dụng CPU một cách độc lập mà sẽ phải chia sẻ tài nguyên CPU, dẫn đến giảm hiệu suất (VD: Nếu loadavg gấp đôi số nhân CPU thì mỗi process chỉ còn sử dụng được 50% CPU. Kết quả là, nếu một tiến trình muốn sử dụng 100% CPU nhưng chỉ nhận được 50% CPU, thời gian cần thiết để hoàn thành tác vụ sẽ gấp đôi)
+    - Loadavg > số nhân CPU: Các tiến trình không thể sử dụng CPU một cách độc lập mà sẽ phải chia sẻ tài nguyên CPU, dẫn đến giảm hiệu suất (VD: Nếu loadavg gấp đôi số nhân CPU thì mỗi process chỉ còn sử dụng được 50% CPU. Kết quả là, nếu một tiến trình muốn sử dụng 100% CPU nhưng chỉ nhận được 50% CPU, thời gian hoàn thành tác vụ sẽ gấp đôi)
 - Dòng thứ 2 lần lượt hiển thị tổng số tác vụ và số tác vụ theo trạng thái: 
   - Tổng số tác vụ mà hệ thống đang theo dõi và quản lý
   - Số tác vụ đang chạy: Tiến trình đang sử dụng CPU để thực thi công việc
