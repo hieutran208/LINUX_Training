@@ -13,7 +13,7 @@
   
   ![image](https://github.com/user-attachments/assets/d2311744-2f17-4262-87a7-b26bc961fb0d)
 - Dòng đầu tiên lần lượt hiển thị các thông số về hệ thống:  
-  - Thời gian hiện tại của hệ thống: là thời gian thực tế mà máy chủ đang sử dụng để tính toán và đo lường các sự kiện
+  - Thời gian của hệ thống: là thời gian thực tế mà máy chủ đang sử dụng để tính toán và đo lường các sự kiện
   - Thời gian uptime: Thời gian hệ thống hoạt động kể từ lần khởi động cuối cùng
   - Số lượng người dùng đã log in
   - Loadavg trong 1 phút, 5 phút và 15 phút qua: Số tiến trình trung bình mà CPU cần phải xử lý trong mỗi khoảng thời gian
