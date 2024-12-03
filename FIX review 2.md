@@ -27,25 +27,37 @@
   - Số tác vụ ở trạng thái dừng: Tiến trình bị dừng hoạt động bởi một tín hiệu từ hệ thống hoặc người dùng (VD: SIGTERM), cần nhận tín hiệu từ hệ thống và người dùng để tiếp tục hoạt động. Tiến trình này không sử dụng CPU nhưng vẫn chiếm dụng RAM mà hệ thống cấp phát
   - Số tác vụ ở trạng thái zombie: Tiến trình đã hoàn thành công việc và không còn chiếm dụng CPU hay RAM, nhưng vẫn tồn tại trong bảng tiến trình
 - Dòng thứ 3 hiển thị phân phối CPU lần lượt như sau: 
-  - us: Phần trăm CPU dùng để thực thi các tác vụ do người dùng chạy (trình duyệt, game,...) 
-  - sy: Phần trăm phân phối cho tiến trình hệ thống 
-  - ni: Phần trăm phân phối cho tiến trình có mức độ ưu tiên thấp
-  - id: Phần trăm CPU đang rảnh
-  - wa: Phần trăm CPU để đợi khi các tiến trình I/O đang xử lí
+  - us: Phần trăm CPU dùng để thực thi các tác vụ do người dùng chạy (trình duyệt, game,...). Khi us ở mức từ 50%, một hoặc một số ứng dụng đang sử dụng rất nhiều tài nguyên CPU, có thể khiến hệ thống trở nên chậm và không phản hồi các tác vụ khác.
+  - sy: Phần trăm CPU dùng để thực thi các tác vụ hệ thống. sy ở mức từ 30% chỉ ra đã có vấn đề với các tác vụ nền (quét virus, quản lý bộ nhớ, bảo trì hệ thống,...), điều này có thể gây ảnh hưởng đến hiệu suất các ứng dụng người dùng
+  - ni: Phần trăm CPU để thực thi các tiến trình có mức độ ưu tiên thấp
+  - id: Phần trăm thời gian CPU ở trạng thái nghỉ
+  - wa: Phần trăm thời gian CPU ở trạng thái chờ đợi dữ liệu khi yêu cầu dữ liệu từ các thiết bị I/O (như ổ đĩa, mạng). Từ 20% là mức cần chú ý khi cho thấy hệ thống đang gặp phải tắc nghẽn I/O (ổ đĩa cứng chậm, SSD đầy, có quá nhiều thao tác đọc/ghi đồng thời hoặc vấn đề về đến mạng)
   - hi: Phần trăm CPU để xử lí các gián đoạn phần cứng
   - si: Phần trăm CPU để xử lí các gián đoạn phần mềm
-  - st: Phần trăm CPU do máy ảo sử dụng 
+  - st: Phần trăm CPU dành để chạy các tác vụ liên quan đến máy ảo (Virtual Box, VMWare,...). Nếu st từ 10% chỉ ra có những vấn đề trong môi trường ảo hóa, có thể làm giảm hiệu suất các ứng dụng trên máy thực
 - Dòng thứ 4 lần lượt hiển thị các thông số về bộ nhớ vật lý (RAM) :
   - Tổng dung lượng RAM cài đặt trên hệ thống
   - Bộ nhớ trống
   - Bộ nhớ đã sử dụng
   - Dung lượng đang được dùng làm bộ đệm (buffer) và bộ nhớ cache
-- Dòng thứ 5 lần lượt hiển thị các thông số về swap space (Swap là RAM ảo, được sử dụng khi bộ nhớ vật lý (RAM) bị đầy):
+- Dòng thứ 5 lần lượt hiển thị các thông số về swap space:
   - Tổng swap có sẵn (kB)
   - Tổng swap còn trống
   - Tổng swap đã sử dụng
-  - Bộ nhớ khả dụng
-
+  - Tổng swap khả dụng
+- Ý nghĩa các trường thông số tiến trình ở phần dưới
+  - PID: Process ID
+  - User: User thực hiện Process trên.
+  - PR: Độ ưu tiên của Process.
+  - NI: Giá trị nice value của tiến trình, giá trị âm tăng độ ưu tiên của Process, giá trị dương giảm độ ưu tiên của Process.
+  - VIRT: Tổng bộ nhớ ảo mà tiến trình có quyền truy cập, bao gồm cả bộ nhớ RAM và bộ nhớ Swap
+  - RES: Dung lượng RAM thực chạy Process. Đây là bộ nhớ mà tiến trình thực sự cần và đang sử dụng trực tiếp.
+  - SHR: Bộ nhớ mà nhiều tiến trình có thể sử dụng chung
+  - S : Trạng thái Process đang hoạt động.
+  - %CPU: %CPU được sử dụng cho Process.
+  - %RAM: %RAM được dùng cho Process.
+  - TIME+: Tổng thời gian thực hiện 1 Process.
+  - COMMAND: Tên của Process.
 - *Phân biệt kill và kill -9*
   - Kill: Khi sử dụng lệnh kill mà không chỉ định thêm tham số, lệnh này sẽ yêu cầu kernel gửi tín tiệu SIGTERM đến tiến trình. SIGTERM là tín hiệu yêu cầu dừng tiến trình và cho phép tiến trình thực hiện một số thao tác trước khi kết thúc (lưu trữ dữ liệu, giải phóng tài nguyên,....).
   - Kill -9: Khi sử dụng lệnh kill -9, lệnh này sẽ yêu cầu Kernel gửi tín hiệu SIGKILL đến tiến trình. Khi tiến trình nhận được tín hiệu SIGKILL, nó sẽ bị dừng ngay lập tức mà không có cơ hội để thực hiện các thao tác như lưu trữ dữ liệu hay giải phóng tài nguyên
