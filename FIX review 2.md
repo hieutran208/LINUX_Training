@@ -75,7 +75,7 @@
 
   ![image](https://github.com/user-attachments/assets/1e4e4bd9-1d9c-42d9-b358-19c44a6b2047)
   - Reading package lists... -> Đọc danh sách gói phần mềm có sẵn trong repository
-  - Building dependency tree... -> Kiểm tra các gói phụ thuộc (để xem gói sắp gỡ có ảnh hưởng đến phụ thuộc của gói khác hay không)
+  - Building dependency tree... -> Kiểm tra các gói phụ thuộc (xem gói sắp gỡ có ảnh hưởng đến phụ thuộc của gói khác không)
   - Reading state information...-> kiểm tra trạng thái hiện tại của các gói trên hệ thống (để xác nhận xem gói cần gỡ bỏ có thực sự tồn tại)
   - The following packages will be REMOVED: -> Các gói phần mêmf sẽ được gỡ bỏ (2 gói)
   - 0 upgraded, 0 newly installed, 2 to remove and 3 not upgraded.
