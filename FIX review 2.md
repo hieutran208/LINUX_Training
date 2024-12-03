@@ -68,14 +68,25 @@
     - Giải phóng tài nguyên: Khi một tiến trình đang chạy, nó sẽ "mượn" một phần RAM từ hệ thống. Nếu tiến trình không giải phóng bộ nhớ này khi kết thúc, hệ thống sẽ không thể tái sử dụng bộ nhớ đó, dẫn đến rò rỉ bộ nhớ. Khi hết dung lượng RAM, hệ thống sẽ phải bắt đầu sử dụng ổ cứng làm bộ nhớ ảo, làm giảm hiệu suất.
 - Đơn vị đo của RAM: Lần trước đọc sai đơn vị đo dung lượng RAM
 - Kiểm tra cấu hình repo hiện tại: Dùng lệnh *cat /etc/apt/sources.list*
-
-  ![image](https://github.com/user-attachments/assets/3665a1e2-d471-4e91-ae0f-ca47f0d0a8af)
 - *Dùng apt-upgrade trong tình huống:*
   - Cách hoạt động của apt-upgrade: Hệ thống sẽ kiểm tra danh sách các gói phần mềm đã cài đặt, so sánh với bản cập nhật mới nhất trong repository. Nếu có phiên bản mới, hệ thống sẽ tải về bản cập nhật và thay thế phiên bản hiện có mà không gỡ bỏ các gói phần mềm hiện có
   - Dùng trong TH: chỉ muốn nâng cấp gói phần mềm hiện có mà không muốn làm thay đổi cấu hình và dữ liệu của gói
 - *Output lệnh gỡ gói:*
-- *Cài đặt startup script:* Lần trước chưa cài đặt được vì chưa cấp quyền thực thi cho script
 
+  ![image](https://github.com/user-attachments/assets/1e4e4bd9-1d9c-42d9-b358-19c44a6b2047)
+  - Reading package lists... -> Đọc danh sách gói phần mềm có sẵn trong repository
+  - Building dependency tree... -> Kiểm tra các gói phụ thuộc (để xem gói sắp gỡ có ảnh hưởng đến phụ thuộc của gói khác hay không)
+  - Reading state information...-> kiểm tra trạng thái hiện tại của các gói trên hệ thống (để xác nhận xem gói cần gỡ bỏ có thực sự tồn tại)
+  - The following packages will be REMOVED: -> Các gói phần mêmf sẽ được gỡ bỏ (2 gói)
+  - 0 upgraded, 0 newly installed, 2 to remove and 3 not upgraded.
+    - 0 upgraded: Không có gói nào sẽ được nâng cấp.
+    - 0 newly installed: Không có gói nào mới được cài đặt.
+    - 2 to remove: 2 gói sẽ bị gỡ bỏ (nginx và nginx-common).
+    - 3 not upgraded: 3 gói đã có bản cập nhật mới nhưng không được nâng cấp trong lần này.
+  - After this operation, 1,596 kB disk space will be freed. -> Sau khi gỡ, hệ thống giải phóng 1,596 kB dung lượng ổ đĩa
+  - Sau đó là các bước: Đọc CSDL, gỡ gói, xử lý các strigger
+
+- *Cài đặt startup script:* Lần trước chưa cài đặt được vì chưa cấp quyền thực thi cho script
 - *Partition:*
   - Phân vùng: là một đơn vị logic được chia ra từ ổ đĩa vật lý. Mỗi phân vùng hoạt động, xử lý dữ liệu như một ổ cứng độc lập
   - Tác dụng của phân vùng:
