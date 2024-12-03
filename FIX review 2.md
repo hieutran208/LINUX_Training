@@ -84,7 +84,7 @@
     - 2 to remove: 2 gói sẽ bị gỡ bỏ (nginx và nginx-common).
     - 3 not upgraded: 3 gói đã có bản cập nhật mới nhưng không được nâng cấp trong lần này.
   - After this operation, 1,596 kB disk space will be freed. -> Sau khi gỡ, hệ thống giải phóng 1,596 kB dung lượng ổ đĩa
-  - Sau đó là các bước: Đọc CSDL, gỡ gói, xử lý các strigger
+  - Sau đó là các bước: Đọc CSDL, gỡ gói, xử lý các trigger
 
 - *Cài đặt startup script:* Lần trước chưa cài đặt được vì chưa cấp quyền thực thi cho script
 - *Partition:*
