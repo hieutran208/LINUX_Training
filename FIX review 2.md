@@ -66,7 +66,7 @@
   - Lợi ích khi sử dụng kill so với kill -9:
     - Lưu trữ dữ liệu: Nếu một tiến trình đang ghi dữ liệu vào tệp, sử dụng kill giúp cho tệp này được đóng trước khi tiến trình kết thúc. Điều này giúp lưu trữ an toàn các dữ liệu đã được ghi, đảm bảo không có dữ liệu nào bị mất.
     - Giải phóng tài nguyên: Khi một tiến trình đang chạy, nó sẽ "mượn" một phần RAM từ hệ thống. Nếu tiến trình không giải phóng bộ nhớ này khi kết thúc, hệ thống sẽ không thể tái sử dụng bộ nhớ đó, dẫn đến rò rỉ bộ nhớ. Khi hết dung lượng RAM, hệ thống sẽ phải bắt đầu sử dụng ổ cứng làm bộ nhớ ảo, làm giảm hiệu suất.
-- Đơn vị đo của RAM: Lần trước đọc sai đơn vị đo dung lượng RAM do quen miệng
+- Đơn vị đo của RAM: Lần trước đọc sai đơn vị đo dung lượng RAM
 - Kiểm tra cấu hình repo hiện tại: Dùng lệnh *cat /etc/apt/sources.list*
 
   ![image](https://github.com/user-attachments/assets/3665a1e2-d471-4e91-ae0f-ca47f0d0a8af)
@@ -82,7 +82,7 @@
     - Bảo vệ dữ liệu: Khi tạo các phân vùng riêng biệt cho hệ điều hành và các dữ liệu quan trọng. Nếu hệ điều hành gặp sự cố (bị lỗi, gặp virus hoặc cần cài đặt lại) các dữ liệu quan trọng nằm trong các phân vùng riêng biệt sẽ không bị ảnh hưởng. Nếu không tạo phân vùng thì khi HĐH gặp sự cố thì dữ liệu ở toàn bộ ổ đĩa đều sẽ bị ảnh hưởng
     - Cài đặt nhiều HĐH trên cùng 1 máy: Nếu muốn sử dụng nhiều hệ điều hành trên cùng một máy tính, tách biệt từng hệ điều hành vào các phân vùng riêng biệt giúp chuyển đổi giữa các hệ điều hành mà không gây xung đột hoặc ảnh hưởng đến dữ liệu của hệ điều hành khác.
 
-- *Check cấu hình fstab:* Dùng lệnh *sudo mount -a*, nếu có bất kì lỗi cú pháp nào sẽ hiển thị ra màn hình, không có thông báo nào tức là file cấu hình đã đúng
+- *Check cấu hình fstab:* Dùng lệnh *sudo mount -a*, nếu có bất kì lỗi cú pháp nào sẽ hiển thị ra màn hình, không có tức là file cấu hình đã đúng
 
 - *RAID:*
   
