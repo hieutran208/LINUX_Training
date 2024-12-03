@@ -93,10 +93,29 @@
     - Bảo vệ dữ liệu: Khi tạo các phân vùng riêng biệt cho hệ điều hành và các dữ liệu quan trọng. Nếu hệ điều hành gặp sự cố (bị lỗi, gặp virus hoặc cần cài đặt lại) các dữ liệu quan trọng nằm trong các phân vùng riêng biệt sẽ không bị ảnh hưởng. Nếu không tạo phân vùng thì khi HĐH gặp sự cố thì dữ liệu ở toàn bộ ổ đĩa đều sẽ bị ảnh hưởng
     - Cài đặt nhiều HĐH trên cùng 1 máy: Nếu muốn sử dụng nhiều hệ điều hành trên cùng một máy tính, tách biệt từng hệ điều hành vào các phân vùng riêng biệt giúp chuyển đổi giữa các hệ điều hành mà không gây xung đột hoặc ảnh hưởng đến dữ liệu của hệ điều hành khác.
 
-- *Check cấu hình fstab:* Dùng lệnh *sudo mount -a*, nếu có bất kì lỗi cú pháp nào sẽ hiển thị ra màn hình, không có tức là file cấu hình đã đúng
+- *Check cấu hình fstab:* Dùng lệnh *sudo mount -a*, không có gì tức là file cấu hình đã đúng
 
 - *RAID:*
-  
+  - RAID 0:
+
+    ![image](https://github.com/user-attachments/assets/0823293b-c554-4fd9-bbbf-41e32306b709)
+    - Ghi dữ liệu: Dữ liệu được chia thành các khối và ghi các khối xen kẽ, đồng thời lên mỗi ổ đĩa trong mảng. Hiệu suất đọc/ghi sẽ cao hơn ghi vào 1 đĩa đơn vì dữ liệu được chia thành các khối nhỏ được đọc/ghi đồng thời
+    - Đọc dữ liệu: Khi đọc dữ liệu, các khối dữ liệu nằm trong các ổ đĩa được truy xuất đồng thời.
+    - An toàn: Độ an toàn không cải thiện so với 1 đĩa đơn. Nếu 1 ổ trong mảng gặp sự cố, toàn bộ dữ liệu sẽ bị mất
+  - RAID 1:
+ 
+    ![image](https://github.com/user-attachments/assets/8875dc38-95cc-4d88-8686-f4240424734f)
+    - Ghi dữ liệu: Dữ liệu được chia thành các khối, và ghi đồng thời vào tất cả các đĩa trong mảng. Vì vậy hiệu suất ghi dữ liệu không cải thiện so với 1 đĩa đơn
+    - Đọc dữ liệu: Các khối dữ liệu có thể được truy xuất từ bất kì ổ đĩa nào trong mảng mà không cần phụ thuộc vào 1 ổ đĩa duy nhất nên hiệu suất đọc sẽ cao hơn đĩa đơn (giống như tìm 1 chương trong cuốn sách. Ổ đĩa đơn chỉ có 1 người tìm, còn RAID 1 giống như có hai người cùng tìm trong 2 cuốn sách giống nhau ở hai vị trí khác nhau)
+    - An toàn: Tốt hơn so với đĩa đơn vì khi 1 đĩa trong mảng gặp sự cố thì bản sao dữ liệu vẫn còn nguyên trên đĩa còn lại
+    - Dung lượng lưu trữ: Giả sử nếu có 2 ổ RAID 1 với dung lượng bằng nhau thì dung lượng lưu trữ chỉ bằng 1/2 tổng dung lượng 2 đĩa vì dữ liệu được ghi 2 lần
+  - RAID 5:
+
+    ![image](https://github.com/user-attachments/assets/b19fab36-67d9-42d2-92e9-760852074399)
+    - Ghi dữ liệu: Chia dữ liệu thành các khối và ghi theo chu trình (Với mảng RAID 5 có N đĩa: mỗi chu trình sẽ ghi N-1 khối dữ liệu + 1 parity được tính toán từ N-1 khối trên, N khối này được ghi xen kẽ vào N ổ trong mảng theo vòng tròn). Các chu trình này lặp lại đến khi mỗi block dữ liệu được ghi đầy đủ vào một ổ đĩa duy nhất. Hiệu suất ghi sẽ chậm hơn ghi vào đĩa đơn do phải tính toán parity
+    - Đọc dữ liệu: Các khối dữ liệu được truy xuất đồng thời từ các ổ đĩa trong mảng nên hiệu suất đọc sẽ nhanh hơn đĩa đơn
+    - An toàn: RAID 5 có thể chịu được 1 ổ đĩa bị hỏng và có thể khôi phục dữ liệu từ thông tin parity của các ổ còn lại. Nhưng nếu 2 ổ bị hỏng thì toàn bộ dữ liệu sẽ bị mất. Độ an toàn dữ liệu sẽ cao hơn 1 đĩa đơn nhưng thấp hơn RAID 1
+     
 - *Log có thể để ở thư mục khác hay không?*
   - Mặc định, các file log sẽ để trong thư mục /var/log. Tuy nhiên có thể thay đổi vị trí file log của một ứng dụng bằng cách thay đổi đường dẫn log của file cấu hình liên quan đến dịch vụ/ứng dụng, sau đó restart lại dịch vụ/ứng dụng này để áp dụng cấu hình vừa thay đổi
   - VÍ DỤ: Với Nginx, có thể thay đổi đường dẫn log trong các file cấu hình /etc/nginx/nginx.conf
