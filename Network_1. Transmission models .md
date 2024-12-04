@@ -16,7 +16,7 @@ Mô hình OSI chia quá trình truyền tải dữ liệu qua mạng thành 7 t�
   - Vai trò của tầng ứng dụng:
     - Cung cấp giao diện giúp người dùng tương tác với các dịch vụ mạng
     - Cung cấp các giao thức cho phép phần mềm gửi, nhận thông tin và trình bày dữ liệu có ý nghĩa cho người dùng.
-  - VÍ DU: Trình duyệt web (Chrome, Firefox) giúp người dùng gửi yêu cầu truy cập và nhận về thông tin từ các trang web qua giao thức HTTP/HTTPS; Ứng dụng email (Outlook, Gmail) sử dụng giao thức SMTP để gửi và POP3 hoặc IMAP để nhận email.
+  - VÍ DU: Trình duyệt web (Chrome, Firefox) giúp người dùng gửi yêu cầu truy cập và nhận về thông tin từ các trang web qua giao thức HTTP/HTTPS; Ứng dụng email (Outlook, Gmail) sử dụng giao thức SMTP để gửi và POP để nhận email.
 - Tầng Biểu diễn (Presentation): Là tầng kế tiếp tầng biểu diễn, giúp dịch dữ liệu sang định dạng chung hoặc định dạng tầng ứng dụng có thể sử dụng:
   - Tại máy gửi: tầng biểu diễn gửi dịch dữ liệu được gửi từ tầng ứng dụng sang định dạng chung mà hệ thống mạng có thể hiểu
   - Tại máy nhận: Khi dữ liệu này được gửi qua mạng đến máy tính nhận, tầng biểu diễn ở máy nhận dịch dữ liệu từ định dạng chung (VD: HTTP/HTTPS) trở lại thành định dạng tầng ứng dụng có thể sử dụng (VD: hình ảnh, văn bản).
@@ -26,6 +26,13 @@ Mô hình OSI chia quá trình truyền tải dữ liệu qua mạng thành 7 t�
   - Kết thúc giao tiếp: Khi phiên hoàn tất (VD: cuộc gọi kết thúc), tầng Phiên đảm bảo rằng kết nối được đóng lại đúng cách và không có dữ liệu bị mất.
 - Tầng Giao vận (Transport): 
   
+*2. Mô hình TCP/IP*
+
+![image](https://github.com/user-attachments/assets/eb77dd67-e45a-4046-ac98-ac9382318be5)
+
+Mô hình TCP/IP được coi là phiên bản rút gọn của OSI, được tổ chức thành bốn tầng, mỗi tầng đảm nhận một nhóm các nhiệm vụ cụ thể
+- Tầng 
+
 
 
   
