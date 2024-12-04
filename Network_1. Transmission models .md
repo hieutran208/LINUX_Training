@@ -25,7 +25,7 @@ Mô hình OSI chia quá trình truyền tải dữ liệu qua mạng thành 7 t�
   - Duy trì giao tiếp: Trong suốt phiên giao tiếp, tầng Phiên đảm bảo dữ liệu truyền đi liên tục và không bị mất
   - Kết thúc giao tiếp: Khi phiên hoàn tất (VD: cuộc gọi kết thúc), tầng Phiên đảm bảo rằng kết nối được đóng lại đúng cách và không có dữ liệu bị mất.
 - Tầng Giao vận (Transport): 
-
+  
 
 
   
