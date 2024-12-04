@@ -106,7 +106,7 @@
  
     ![image](https://github.com/user-attachments/assets/8875dc38-95cc-4d88-8686-f4240424734f)
     - Ghi dữ liệu: Dữ liệu được chia thành các khối, và sao chép đồng thời vào tất cả các đĩa trong mảng. Vì vậy hiệu suất ghi dữ liệu không cải thiện so với 1 đĩa đơn
-    - Đọc dữ liệu: Các khối dữ liệu có thể được truy xuất từ bất kì ổ đĩa nào trong mảng mà không cần phụ thuộc vào 1 ổ đĩa duy nhất nên hiệu suất đọc sẽ cao hơn đĩa đơn vì hệ thống có thể lựa chọn đọc từ ổ đĩa nào cho nhanh chóng và "chia tải" giữa các ổ đĩa khi thực hiện các yêu cầu đọc.
+    - Đọc dữ liệu: Các khối dữ liệu có thể được truy xuất từ bất kì ổ đĩa nào trong mảng mà không cần phụ thuộc vào 1 ổ đĩa duy nhất. Nếu có nhiều yêu cầu đọc cùng lúc, hệ thống có thể phân phối các yêu cầu đọc đến các ổ đĩa trong mảng, tránh tình trạng một ổ đĩa cùng lúc phải xử lý quá nhiều yêu cầu, từ đó tăng hiệu suất đọc tổng thể
     - An toàn: Tốt hơn so với đĩa đơn vì khi 1 đĩa trong mảng gặp sự cố thì bản sao dữ liệu vẫn còn nguyên trên đĩa còn lại
     - Dung lượng lưu trữ: Giả sử nếu có 2 ổ RAID 1 với dung lượng bằng nhau thì dung lượng lưu trữ chỉ bằng 1/2 tổng dung lượng 2 đĩa vì dữ liệu được ghi 2 lần
   - RAID 5:
