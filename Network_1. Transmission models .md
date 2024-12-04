@@ -2,7 +2,7 @@
 
 **A. Mô hình OSI và TCP/IP**
 
-*Mô hình OSI và TCP/IP là 2 mô hình giúp chuẩn hóa cách truyền tải dữ liệu giữa các thiết bị trong mạng.*
+*Mô hình OSI và TCP/IP là 2 mô hình giúp chuẩn hóa cách truyền tải dữ liệu giữa các thiết bị trong mạng. Mô hình OSI là mô hình lý thuyết, cung cấp nhiều tầng chứa các chức năng chi tiết trong việc giao tiếp giữa các thiết bị trong mạng máy tính. Mô hình TCP/IP là mô hình được ứng dụng rộng rãi trong thực tế*
 
 *1. Mô hình OSI*
 
