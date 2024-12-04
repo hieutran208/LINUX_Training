@@ -32,13 +32,20 @@ Mô hình OSI chia quá trình truyền tải dữ liệu qua mạng thành 7 t�
 
 Mô hình TCP/IP được coi là phiên bản rút gọn của OSI, được tổ chức thành bốn tầng, mỗi tầng đảm nhận một nhóm nhiệm vụ cụ thể
 - Tầng ứng dụng (Application Layer): Là sự kết hợp của ba tầng phiên, tầng biểu diễn, tầng ứng dụng trong mô hình OSI:
-  - Cung cấp giao diện giúp người dùng tương tác với các dịch vụ mạng (trình duyệt web, ứng dụng email) và các dịch vụ truyền file.
+  - Cung cấp giao diện giúp người dùng tương tác với các dịch vụ mạng và các dịch vụ truyền file.
   - Tầng ứng dụng cung cấp các giao thức ứng dụng như HTTP, SMTP, FTP, ..., đảm bảo người dùng có thể tương tác với mạng một cách suôn sẻ và hiệu quả.
-- Tầng giao vận (Transport Layer)
-  - Chịu trách nhiệm cho việc truyền dữ liệu đáng tin cậy giữa các thiết bị khác nhau. Nó đảm bảo dữ liệu được truyền một cách chính xác, không bị lỗi, và theo thứ tự đúng.
+- Tầng giao vận (Transport Layer): Chịu trách nhiệm cho việc truyền dữ liệu đáng tin cậy giữa các thiết bị khác nhau. 
+  - Đảm bảo dữ liệu được truyền một cách chính xác, không bị lỗi, và theo thứ tự đúng.
   - Thực hiện việc kiểm soát lỗi, kiểm soát luồng dữ liệu, và cung cấp các cơ chế truyền thông đặc biệt như truyền đáng tin cậy (TCP) và truyền không đáng tin cậy nhưng nhanh chóng (UDP).
+- Tầng mạng (Network Layer): định tuyến các gói tin từ nguồn đến đích. 
+  - Tầng này sử dụng giao thức IP để xác định địa chỉ duy nhất cho mỗi thiết bị và quyết định đường đi của dữ liệu trong mạng.
+  - Tầng mạng đảm nhận việc phân mảnh và tái tổ hợp các gói tin, xử lý lỗi, và cập nhật các thông tin định tuyến.
+- Tầng truy cập mạng (Network Access Layer): Tương ứng với hai tầng vật lý và liên kết dữ liệu trong mô hình OSI
+  - Đảm bảo việc gửi và nhận dữ liệu trên phương tiện vật lý của mạng.
+  - Tầng này xử lý tất cả vấn đề liên quan đến cách dữ liệu được truyền từ thiết bị này sang thiết bị khác. Bao gồm việc đóng gói dữ liệu thành khung (frame), xác định địa chỉ vật lý, và kiểm soát quyền truy cập vào môi trường truyền dẫn.
 
-- Tầng
+
+
 
 
 
