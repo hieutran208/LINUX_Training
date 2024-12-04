@@ -23,4 +23,5 @@ a. Cấu trúc: Mô hình OSI chia quá trình truyền tải dữ liệu qua m�
     - Cung cấp giao diện giúp người dùng tương tác với các dịch vụ mạng
     - Cung cấp các giao thức cho phép phần mềm gửi, nhận thông tin và trình bày dữ liệu có ý nghĩa cho người dùng.
   - VÍ DU: Trình duyệt web (Chrome, Firefox) giúp người dùng gửi yêu cầu truy cập và nhận về thông tin từ các trang web qua giao thức HTTP/HTTPS; Ứng dụng email (Outlook, Gmail) sử dụng giao thức SMTP để gửi và POP3 hoặc IMAP để nhận email.
+
 b. Cách hoạt động
