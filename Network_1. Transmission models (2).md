@@ -15,13 +15,14 @@ a. Cấu trúc: Mô hình OSI chia quá trình truyền tải dữ liệu qua m�
 - Tầng Liên kết Dữ liệu (Data Link Layer)
 - Tầng Mạng (Network Layer)
 - Tầng Giao vận (Transport Layer)
-- Tầng Phiên (Session Layer)
 - Tầng Ứng dụng (Application Layer): chính là các ứng dụng mà người dùng sử dụng trực tiếp trên máy tính hoặc điện thoại (trình duyệt web, ứng dụng email, và các phần mềm khác) để tương tác với mạng 
   - Vai trò của tầng ứng dụng:
     - Cung cấp giao diện giúp người dùng tương tác với các dịch vụ mạng
     - Cung cấp các giao thức cho phép phần mềm gửi, nhận thông tin và trình bày dữ liệu có ý nghĩa cho người dùng.
   - VÍ DU: Trình duyệt web (Chrome, Firefox) giúp người dùng gửi yêu cầu truy cập và nhận về thông tin từ các trang web qua giao thức HTTP/HTTPS; Ứng dụng email (Outlook, Gmail) sử dụng giao thức SMTP để gửi và POP3 hoặc IMAP để nhận email.
-- Tầng Biểu diễn (Presentation Layer):
-  - Tầng kế tiếp tầng ứng dụng là tầng biểu diễn, có nhiệm vụ chuyển đổi và dịch dữ liệu để máy nhận có thể hiểu được. Cụ thể:
-    
+- Tầng Biểu diễn (Presentation Layer): Là tầng kế tiếp của tầng biểu diễn, có nhiệm vụ dịch dữ liệu sang định dạng chung hoặc định dạng tầng ứng dụng có thể sử dụng:
+    - Tại máy gửi: tầng biểu diễn ở máy gửi dịch dữ liệu được gửi từ tầng ứng dụng sang định dạng chung mà hệ thống mạng có thể hiểu được
+    - Tại máy nhận: Khi dữ liệu này được gửi qua mạng đến máy tính nhận, tầng biểu diễn ở máy nhận dịch dữ liệu từ định dạng chung (VD: HTTP/HTTPS) trở lại thành định dạng tầng ứng dụng có thể sử dụng (VD: hình ảnh, văn bản).
+- Tầng Phiên (Session Layer): 
+  
 b. Cách hoạt động
