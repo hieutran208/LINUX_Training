@@ -30,8 +30,15 @@ Mô hình OSI chia quá trình truyền tải dữ liệu qua mạng thành 7 t�
 
 ![image](https://github.com/user-attachments/assets/eb77dd67-e45a-4046-ac98-ac9382318be5)
 
-Mô hình TCP/IP được coi là phiên bản rút gọn của OSI, được tổ chức thành bốn tầng, mỗi tầng đảm nhận một nhóm các nhiệm vụ cụ thể
-- Tầng 
+Mô hình TCP/IP được coi là phiên bản rút gọn của OSI, được tổ chức thành bốn tầng, mỗi tầng đảm nhận một nhóm nhiệm vụ cụ thể
+- Tầng ứng dụng (Application Layer): Là sự kết hợp của ba tầng phiên, tầng biểu diễn, tầng ứng dụng trong mô hình OSI:
+  - Cung cấp giao diện giúp người dùng tương tác với các dịch vụ mạng (trình duyệt web, ứng dụng email) và các dịch vụ truyền file.
+  - Tầng ứng dụng cung cấp các giao thức ứng dụng như HTTP, SMTP, FTP, ..., đảm bảo người dùng có thể tương tác với mạng một cách suôn sẻ và hiệu quả.
+- Tầng giao vận (Transport Layer)
+  - Chịu trách nhiệm cho việc truyền dữ liệu đáng tin cậy giữa các thiết bị khác nhau. Nó đảm bảo dữ liệu được truyền một cách chính xác, không bị lỗi, và theo thứ tự đúng.
+  - Thực hiện việc kiểm soát lỗi, kiểm soát luồng dữ liệu, và cung cấp các cơ chế truyền thông đặc biệt như truyền đáng tin cậy (TCP) và truyền không đáng tin cậy nhưng nhanh chóng (UDP).
+
+- Tầng
 
 
 
