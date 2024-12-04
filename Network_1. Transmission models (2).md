@@ -21,7 +21,7 @@ a. Cấu trúc: Mô hình OSI chia quá trình truyền tải dữ liệu qua m�
     - Cung cấp các giao thức cho phép phần mềm gửi, nhận thông tin và trình bày dữ liệu có ý nghĩa cho người dùng.
   - VÍ DU: Trình duyệt web (Chrome, Firefox) giúp người dùng gửi yêu cầu truy cập và nhận về thông tin từ các trang web qua giao thức HTTP/HTTPS; Ứng dụng email (Outlook, Gmail) sử dụng giao thức SMTP để gửi và POP3 hoặc IMAP để nhận email.
 - Tầng Biểu diễn (Presentation Layer): Là tầng kế tiếp của tầng biểu diễn, có nhiệm vụ dịch dữ liệu sang định dạng chung hoặc định dạng tầng ứng dụng có thể sử dụng:
-    - Tại máy gửi: tầng biểu diễn ở máy gửi dịch dữ liệu được gửi từ tầng ứng dụng sang định dạng chung mà hệ thống mạng có thể hiểu được
+    - Tại máy gửi: tầng biểu diễn gửi dịch dữ liệu được gửi từ tầng ứng dụng sang định dạng chung mà hệ thống mạng có thể hiểu
     - Tại máy nhận: Khi dữ liệu này được gửi qua mạng đến máy tính nhận, tầng biểu diễn ở máy nhận dịch dữ liệu từ định dạng chung (VD: HTTP/HTTPS) trở lại thành định dạng tầng ứng dụng có thể sử dụng (VD: hình ảnh, văn bản).
 - Tầng Phiên (Session Layer): 
   
