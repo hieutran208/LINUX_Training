@@ -92,7 +92,9 @@
   - Tác dụng của phân vùng:
     - Bảo vệ dữ liệu: Khi tạo các phân vùng riêng biệt cho hệ điều hành và các dữ liệu quan trọng. Nếu hệ điều hành gặp sự cố (bị lỗi, gặp virus hoặc cần cài đặt lại) các dữ liệu quan trọng nằm trong các phân vùng riêng biệt sẽ không bị ảnh hưởng. Nếu không tạo phân vùng thì khi HĐH gặp sự cố thì dữ liệu ở toàn bộ ổ đĩa đều sẽ bị ảnh hưởng
     - Cài đặt nhiều HĐH trên cùng 1 máy: Nếu muốn sử dụng nhiều hệ điều hành trên cùng một máy tính, tách biệt từng hệ điều hành vào các phân vùng riêng biệt giúp chuyển đổi giữa các hệ điều hành mà không gây xung đột hoặc ảnh hưởng đến dữ liệu của hệ điều hành khác.
-
+- Filesystem
+  - ext4: Là loại filesystem đáp ứng được hầu hết các nhu cầu thông thường, thích hợp cho máy tính cá nhân hay máy chủ vừa và nhỏ
+  - xfs: Là loại filesystem thích hợp với máy chủ lớn, CSDL hay các ứng dụng yêu cầu hiệu suất cao
 - *Check cấu hình fstab:* Dùng lệnh *sudo mount -a*, không có gì tức là file cấu hình đã đúng
 
 - *RAID:*
